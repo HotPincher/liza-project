@@ -1,0 +1,22 @@
+.personal-info__button-submit {
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+
+	margin: 0 auto;
+
+	max-width: 246px;
+	padding: 12px 24px;
+
+	border: none;
+	border-radius: 16px;
+
+	cursor: pointer;
+}
+
+.personal-info__button-submit:hover {
+	background-color: #FF6600;
+	color: #FFF;
+}
+

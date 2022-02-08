@@ -1,0 +1,7 @@
+.disclaimer-info__text_list {
+	padding-left: 8px;
+}
+
+.disclaimer-info__text_list:nth-child(n) {
+	margin-bottom: 5px;
+}

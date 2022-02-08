@@ -1,0 +1,14 @@
+.personal-info__container {
+	display: grid;
+	grid-template-columns: 648px 312px;
+	gap: 24px;
+
+	width: 100%;
+}
+
+@media (max-width: 780px) {
+	.personal-info__container {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+}
