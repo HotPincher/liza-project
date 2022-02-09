@@ -1,0 +1,10 @@
+.courses-page {
+	display: grid;
+	grid-template-columns: 36px minmax(min-content, 1fr) minmax(min-content, 3fr) 36px;
+	grid-template-areas:
+		'header header header header'
+		'. page-title . .'
+		'. sidebar-left content .';
+	column-gap: 24px;
+}
+}
