@@ -21,4 +21,6 @@
 
 .personal-info__button:hover {
 	background-image: url(../../../images/profile_edit-icon-hover.svg);
+
+	transform: scale(0.95);
 }

@@ -4,4 +4,6 @@
 
 .personal-info__button_photo:hover {
 	background-image: url(../../../../images/profile_attach-icon-hover.svg);
+
+	transform: scale(0.95);
 }

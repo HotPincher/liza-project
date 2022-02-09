@@ -27,9 +27,9 @@
 						<label for="form-birth" class="personal-info__label-text">
 							Дата рождения
 						</label>
-						<input type="date" name="form-birth" id="form-birth" class="personal-info__input"
-							value="1990-01-01" min="1990-01-01" max="2100-01-01">
-						<!-- <button type="button" class="personal-info__button"></button>-->
+						<input type="date" name="form-birth" id="form-birth"
+							class="personal-info__input personal-info__input_date" value="1990-01-01" min="1990-01-01"
+							max="2100-01-01">
 					</li>
 					<li class="personal-info__item">
 						<label for="form-region" class="personal-info__label-text">
@@ -57,7 +57,7 @@
 						<button type="button" class="personal-info__button personal-info__button_photo"></button>
 					</li>
 				</ul>
-				<button type="submit" class="personal-info__button-submit">Сохранить изменения</button>
+				<button type="submit" class="personal-info__button-submit" disabled>Сохранить изменения</button>
 			</form>
 			<div class="disclaimer-info">
 				<p class="disclaimer-info__text">Просьба указывать настоящие ФИО, это нужно для получения сертификатов
@@ -101,7 +101,8 @@
 
 					</li>
 				</ul>
-				<button type="submit" class="button-submit personal-info__button-submit">Сохранить изменения</button>
+				<button type="submit" class="button-submit personal-info__button-submit" disabled>Сохранить
+					изменения</button>
 			</form>
 
 			<div class="disclaimer-info">

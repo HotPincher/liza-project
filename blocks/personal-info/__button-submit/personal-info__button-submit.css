@@ -12,11 +12,20 @@
 	border: none;
 	border-radius: 16px;
 
+	background-color: #FF6600;
+	color: #FFF;
+
 	cursor: pointer;
 }
 
 .personal-info__button-submit:hover {
-	background-color: #FF6600;
-	color: #FFF;
+	background-color: #F06000;
+}
+
+.personal-info__button-submit[disabled] {
+	background-color: #E6E7EB;
+	color: #9397A3;
+
+	cursor: auto;
 }
 
