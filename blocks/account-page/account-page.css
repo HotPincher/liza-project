@@ -1,9 +1,11 @@
 .account-page {
 	display: grid;
-	grid-template-columns: 36px minmax(min-content, 1fr) minmax(min-content, 3fr) minmax(min-content, 1fr) 36px;
+	grid-template-columns:
+		36px minmax(min-content, 1fr) minmax(min-content, 3fr)
+		minmax(min-content, 1fr) 36px;
 	grid-template-areas:
-		'header header header header header'
-		'. page-title . . .'
-		'. sidebar-left content sidebar-right .';
+		"header header header header header"
+		". page-title . . ."
+		". sidebar-left content sidebar-right .";
 	column-gap: 24px;
 }
