@@ -1,3 +1,11 @@
 .page {
-	width: 100%
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #fcfcfc;
+
+	font-family: 'Golos', 'Arial', sans-serif;
+	color: #212329;
+
 }
