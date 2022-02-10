@@ -15,5 +15,24 @@
 @import url(../blocks/page-title/page-title.css);
 @import url(../blocks/page-title/__heading/page-title__heading.css);
 
+/* personal-info */
+@import url(../blocks/personal-info/__container/personal-info__container.css);
+@import url(../blocks/personal-info/__form/personal-info__form.css);
+@import url(../blocks/personal-info/__list/personal-info__list.css);
+@import url(../blocks/personal-info/__item/personal-info__item.css);
+@import url(../blocks/personal-info/__title/personal-info__title.css);
+@import url(../blocks/personal-info/__label/personal-info__label.css);
+@import url(../blocks/personal-info/__label-text/personal-info__label-text.css);
+@import url(../blocks/personal-info/__input/personal-info__input.css);
+@import url(../blocks/personal-info/__input/_date/personal-info__input_date.css);
+@import url(../blocks/personal-info/__button/personal-info__button.css);
+@import url(../blocks/personal-info/__button/_photo/personal-info__button_photo.css);
+@import url(../blocks/personal-info/__button-submit/personal-info__button-submit.css);
+
+/* disclaimer-info */
+@import url(../blocks/disclaimer-info/disclaimer-info.css);
+@import url(../blocks/disclaimer-info/__text/disclaimer-info__text.css);
+@import url(../blocks/disclaimer-info/__text/_list/disclaimer-info__text_list.css);
+
 
 

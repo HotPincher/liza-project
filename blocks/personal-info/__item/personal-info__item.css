@@ -1,0 +1,14 @@
+.personal-info__item {
+	display: flex;
+	flex-direction: column;
+
+	position: relative;
+
+	font-family: Golos;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 133%;
+
+	color: #9397A3;
+}
