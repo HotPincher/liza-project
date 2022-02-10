@@ -3,6 +3,18 @@
 
 @import url(../blocks/page/page.css);
 
+@import url(../blocks/header/header.css);
+@import url(../blocks/logo/logo.css);
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__list/menu__list.css);
+@import url(../blocks/menu/__list-item/menu__list-item.css);
+@import url(../blocks/menu/__link/menu__link.css);
+@import url(../blocks/menu/__link/_active/menu__link_active.css);
+@import url(../blocks/menu/__icon/menu__icon.css);
+
+@import url(../blocks/page-title/page-title.css);
+@import url(../blocks/page-title/__heading/page-title__heading.css);
+
 /* personal-info */
 @import url(../blocks/personal-info/__container/personal-info__container.css);
 @import url(../blocks/personal-info/__form/personal-info__form.css);
@@ -21,3 +33,6 @@
 @import url(../blocks/disclaimer-info/disclaimer-info.css);
 @import url(../blocks/disclaimer-info/__text/disclaimer-info__text.css);
 @import url(../blocks/disclaimer-info/__text/_list/disclaimer-info__text_list.css);
+
+
+

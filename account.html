@@ -6,11 +6,44 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Профиль</title>
-	<link rel="stylesheet" href="../styles/index.css">
+
+	<link rel="stylesheet" href="./pages/account.css">
+
 </head>
 
 <body class="page">
-	<main>
+
+
+
+	<header class="header">
+		<a href="#" class="logo">Учебная платформа</a>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<a href="./index.html" class="menu__link menu__link_active">
+						<img src="./images/logo_courses.svg" alt="" class="menu__icon">
+						Курсы
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#" class="menu__link">
+						<img src="./images/logo_profile.svg" alt="" class="menu__icon">
+						Профиль
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="page-title">
+		<h1 class="page-title__heading">Профиль</h1>
+	</section>
+
+	<section class="sidebar-left">
+
+	</section>
+
+	<main class="content">
 		<section class="personal-info personal-info__container">
 			<form class="personal-info__form">
 				<h2 class="personal-info__title">Личные данные</h2>
@@ -53,7 +86,7 @@
 							Фото
 						</label>
 						<input type="text" name="form-avatar" id="form-avatar" class="personal-info__input"
-							value="photo.jpg" maxlength="0">
+							value="photo.jpg" maxlength="0" disabled>
 						<button type="button" class="personal-info__button personal-info__button_photo"></button>
 					</li>
 				</ul>
@@ -117,7 +150,7 @@
 		</section>
 	</main>
 
-	<script src="../script.js" defer></script>
+	<script src="./script.js" defer></script>
 </body>
 
 </html>

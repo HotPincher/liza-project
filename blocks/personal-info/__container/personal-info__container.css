@@ -4,6 +4,12 @@
 	gap: 24px;
 
 	width: 100%;
+
+	grid-area: content;
+}
+
+.personal-info__container:nth-child(n) {
+	margin-top: 108px;
 }
 
 @media (max-width: 780px) {
