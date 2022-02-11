@@ -6,49 +6,157 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Профиль</title>
-
 	<link rel="stylesheet" href="./pages/account.css">
-
 </head>
 
 <body class="page">
+	<header class="header">
+		<h2 class="logo">Учебная платформа</h2>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы" >
+					<a class="menu__link menu__link_active" href="./index.html" >Курсы</a>
+				</li>
+				<li class="menu__list-item">
+					<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль" >
+					<a class="menu__link" href="#">Профиль</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+		<h1 class="page-title">Профиль</h1>
+	<aside class="sidebar sidebar-account">
+		<div class="sidebar-account__core-content">
+			<img class="sidebar-account__image" src="./images/profile_avatar.jpg" alt="Аватар пользователя">
+			<h2 class="sidebar-account__title">Иванова Анна Сидоровна</h2>
+		</div>
+		<ul class="sidebar-account__parameters">
+			<li class="sidebar-account__list-item">
+				<img class="sidebar-account__icon" src="./images/logo_sidebar_professional.svg"
+					alt="Иконка-статус пользователя">
+				<h3 class="sidebar-account__heading">Профессионал</h3>
+			</li>
+			<li class="sidebar-account__list-item">
+				<img class="sidebar-account__icon" src="./images/logo_sidebar_kartograf.svg"
+					alt="Иконка-профессия пользователя">
+				<h3 class="sidebar-account__heading">Картограф</h3>
+			</li>
+			<li class="sidebar-account__list-item">
+				<img class="sidebar-account__icon" src="./images/logo_sidebar_course.svg"
+					alt="Иконка-курсы пользователя">
+				<h3 class="sidebar-account__heading">Пройдено 2 курса</h3>
+			</li>
+		</ul>
+		<button id="account-leave-button" class="sidebar-account__account-leave-button" type="submit"><img
+				class="sidebar-account__account-leave-button-icon" src="./images/sidebar_leave-account.svg" alt="Выйти из аккаунта">Выйти из аккаунта</button>
+	</aside>
+	<!-- <main class="content">  Данный класс не обозначен как блок CSS -->
+	<section class="personal-info">
+		<form class="personal-info__form">
+			<h2 class="personal-info__title">Личные данные</h2>
+			<ul class="personal-info__list">
+				<li class="personal-info__item">
+					<label for="form-name" class="personal-info__label-text">
+						ФИО
+					</label>
+					<input type="text" name="form-name" id="form-name" class="personal-info__input"
+						value="Иванова Анна Сидоровна">
+					<button type="button" class="personal-info__button"></button>
+				</li>
+				<li class="personal-info__item">
+					<label for="form-birth" class="personal-info__label-text">
+						Дата рождения
+					</label>
+					<input type="date" name="form-birth" id="form-birth"
+						class="personal-info__input personal-info__input_date" value="1990-01-01" min="1990-01-01"
+						max="2100-01-01">
+				</li>
+				<li class="personal-info__item">
+					<label for="form-region" class="personal-info__label-text">
+						Географический регион
+					</label>
+					<input type="text" name="form-region" id="form-region" class="personal-info__input"
+						value="г. Санкт-Петербург">
+					<button type="button" class="personal-info__button"></button>
 
+				</li>
+				<li class="personal-info__item">
+					<label for="form-nickname" class="personal-info__label-text">
+						Позывной на форуме
+					</label>
+					<input type="text" name="form-nickname" id="form-nickname" class="personal-info__input"
+						value="Белка">
+					<button type="button" class="personal-info__button"></button>
+				</li>
+				<li class="personal-info__item">
+					<label for="form-avatar" class="personal-info__label-text">
+						Фото
+					</label>
+					<input type="text" name="form-avatar" id="form-avatar" class="personal-info__input"
+						value="photo.jpg" maxlength="0" disabled>
+					<button type="button" class="personal-info__button personal-info__button_photo"></button>
+				</li>
+			</ul>
+			<button type="submit" class="personal-info__button-submit" disabled>Сохранить изменения</button>
+		</form>
+		<div class="disclaimer-info">
+			<p class="disclaimer-info__text">Просьба указывать настоящие ФИО, это нужно для получения сертификатов
+			</p>
+			<p class="disclaimer-info__text">Географический регион влияет на доступность некоторых курсов и занятий
+			</p>
+			<p class="disclaimer-info__text">Если вы не хотите, чтобы другие пользователи видели ваши ФИО, укажите
+				позывной на форуме — он будет
+				отображаться вместо ваших настоящих данных</p>
+			<p class="disclaimer-info__text">Требования к загружаемому фото:</p>
+			<ul class="disclaimer-info__list">
+				<li class="disclaimer-info__list-item">разрешение не менее 640x640px</li>
+				<li class="disclaimer-info__list-item">размер не более 3 МБ</li>
+			</ul>
+		</div>
+		<form action="#" class="personal-info__form">
+			<h2 class="personal-info__title">Аккаунт</h2>
+			<ul class="personal-info__list">
+				<li class="personal-info__item">
+					<label for="form-phone" class="personal-info__label-text">
+						Номер телефона
+					</label>
+					<input type="tel" name="form-phone" id="form-phone" class="personal-info__input"
+						placeholder="+7 123 456 78 90">
+				</li>
+				<li class="personal-info__item">
+					<label for="form-email" class="personal-info__label-text">
+						Дата рождения
+					</label>
+					<input type="email" name="form-email" id="form-email" class="personal-info__input"
+						value="anna@liza-alert.ru">
+					<button type="button" class="personal-info__button"></button>
+				</li>
+				<li class="personal-info__item">
+					<label for="form-password" class="personal-info__label-text">
+						Пароль
+					</label>
+					<input type="password" name="form-password" id="form-password" class="personal-info__input"
+						value="Белочка">
+					<button type="button" class="personal-info__button"></button>
 
-
-		<header class="header">
-			<a href="#" class="logo">Учебная платформа</a>
-			<nav class="menu">
-				<ul class="menu__list">
-					<li class="menu__list-item">
-						<a href="./index.html" class="menu__link menu__link_active">
-							<img src="./images/logo_courses.svg" alt="" class="menu__icon">
-							Курсы
-						</a>
-					</li>
-					<li class="menu__list-item">
-						<a href="#" class="menu__link">
-							<img src="./images/logo_profile.svg" alt="" class="menu__icon">
-							Профиль
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
-		<section class="page-title">
-			<h1 class="page-title__heading">Профиль</h1>
-		</section>
-
-		<section class="sidebar-left">
-
-		</section>
-
-		<main class="content">
-
-		</main>
-
-
-
+				</li>
+			</ul>
+			<button type="submit" class="button-submit personal-info__button-submit" disabled>Сохранить
+				изменения</button>
+		</form>
+		<div class="disclaimer-info">
+			<p class="disclaimer-info__text">Номер телефона используется как уникальный идентификатор пользователя,
+				поэтому его нельзя поменять вручную
+			</p>
+			<p class="disclaimer-info__text">Если по какой-то причине у вас нет доступа к номеру телефона на который
+				вы регистрировали аккаунт, напишите в поддержку
+			</p>
+			<p class="disclaimer-info__text">Email нужен для восстановления пароля</p>
+		</div>
+	</section>
+	<!-- </main> -->
+	<script src="./script.js" defer></script>
 </body>
 
 </html>

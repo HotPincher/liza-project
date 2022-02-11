@@ -1,0 +1,18 @@
+.sidebar-account {
+	/* grid-area: sidebar-left;
+	width: 100%;
+	height: fit-content; */
+	display: grid;
+	justify-items: center;
+	align-content: start;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(3, auto);
+	row-gap: 32px;
+	align-items: center;
+	/* background-color: #fff; */
+	padding-top: 32px;
+	padding-bottom: 32px;
+	/* border-radius: 16px;
+	box-shadow: 0px 0px 4px rgba(231, 232, 235, 0.6), 0px 4px 16px rgba(231, 232, 235, 0.6); */
+}
+

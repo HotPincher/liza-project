@@ -19,6 +19,7 @@
 @import url(../blocks/content/content.css);
 
 /*SIDEBAR*/
+@import url(../blocks/sidebar/sidebar.css);
 @import url(../blocks/aside/aside.css);
 @import url(../blocks/aside/__checked-item/aside__checked-item.css);
 @import url(../blocks/aside/__checked-options-list/aside__checked-options-list.css);
