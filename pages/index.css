@@ -15,5 +15,30 @@
 @import url(../blocks/page-title/page-title.css);
 @import url(../blocks/page-title/__heading/page-title__heading.css);
 
+/*CONTENT*/
+@import url(../blocks/content/content.css);
 
+/*SIDEBAR*/
+@import url(../blocks/aside/aside.css);
+@import url(../blocks/aside/__checked-item/aside__checked-item.css);
+@import url(../blocks/aside/__checked-options-list/aside__checked-options-list.css);
+@import url(../blocks/aside/__deselect-option/aside__deselect-option.css);
+@import url(../blocks/aside/__filter-block-name/aside__filter-block-name.css);
+@import url(../blocks/aside/__filter-block/aside__filter-block.css);
+@import url(../blocks/aside/__filter-form/aside__filter-form.css);
+@import url(../blocks/aside/__filter-item/aside__filter-item.css);
+@import url(../blocks/aside/__filter-items/aside__filter-items.css);
+@import url(../blocks/aside/__filter-list/aside__filter-list.css);
+@import url(../blocks/aside/__name-checked-option/aside__name-checked-option.css);
+@import url(../blocks/aside/__checkbox/aside__checkbox.css);
+@import url(../blocks/aside/__checkbox-options/aside__checkbox-options.css);
+@import url(../blocks/aside/__checkbox-pseudo/aside__checkbox-pseudo.css);
+@import url(../blocks/aside/__checkbox-label/aside__checkbox-label.css);
+@import url(../blocks/aside/__reset/aside__reset.css);
+@import url(../blocks/aside/__form-head/aside__form-head.css);
+@import url(../blocks/aside/__title/aside__title.css);
+@import url(../blocks/aside/__button-accordion/aside__button-accordion.css);
+@import url(../blocks/aside/__button-accordion/_open/aside__button-accordion_open.css);
+@import url(../blocks/aside/__filter-block-head/aside__filter-block-head.css);
+@import url(../blocks/aside/__filter-items/_open/aside__filter-items_open.css);
 
