@@ -1,18 +1,17 @@
 .page {
 	box-sizing: border-box;
+	max-width: 1440px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 	background-color: #fcfcfc;
-	font-family: "Golos", "Arial", sans-serif;
 	color: #212329;
-
 	display: grid;
-	grid-template-columns:
-		36px minmax(min-content, 1fr) minmax(min-content, 3fr) 36px;
+	grid-template-columns: 36px minmax(min-content, calc(25% - 48px)) minmax(min-content, 75%) 36px;
 	grid-template-areas:
 		"header header header header"
-		". page-title . . "
+		". page-title page-title . "
 		". sidebar-left content .";
 	column-gap: 24px;
 }
+

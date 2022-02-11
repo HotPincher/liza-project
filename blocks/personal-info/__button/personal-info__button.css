@@ -9,18 +9,15 @@
 
 	background-color: transparent;
 	border: none;
-
 	background-image: url(../../../images/profile_edit-icon.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-
 	cursor: pointer;
 }
 
 
 .personal-info__button:hover {
 	background-image: url(../../../images/profile_edit-icon-hover.svg);
-
 	transform: scale(0.95);
 }
