@@ -1,0 +1,8 @@
+.card-list__timing {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 32px;
+    margin-top: 32px;
+    align-items: flex-end;
+}

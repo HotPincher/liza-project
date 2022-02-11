@@ -35,6 +35,11 @@
 
 		<section class="page-title">
 			<h1 class="page-title__heading">Курсы</h1>
+
+			<ul class="card-list">
+				<!--Сюда будут рендериться карточки-->
+			</ul>
+
 		</section>
 
 		<section class="sidebar-left">
@@ -42,12 +47,28 @@
 		</section>
 
 		<main class="content">
-
+			
 		</main>
 
 
+<template id="cardTemplate">
+	<li class="card-list__base">
+		<img src="#" alt="шаблон" class="card-list__image">
+		<div class="card-list__description">
+			<h2 class="card-list__heading"></h2>
+			<p class="card-list__tier"></p>
+			<p class="card-list__info"></p>
+		</div>
+		<div class="card-list__timing">
+			<p class="card-list__time" id="lessons"><img src="/images/articles_book.svg" alt="книга" class="card-list__icon"></p>
+			<p class="card-list__time" id="time"><img src="images/articles_clock.svg" alt="часы" class="card-list__icon"></p>
+			<button class="card-list__button">Продолжить</button>
+		</div>
+	</li>
+</template>
 
 
+<script src="./script.js" type="module"></script>
 </body>
 
 </html>

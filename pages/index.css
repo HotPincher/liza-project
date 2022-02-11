@@ -14,3 +14,15 @@
 
 @import url(../blocks/page-title/page-title.css);
 @import url(../blocks/page-title/__heading/page-title__heading.css);
+
+@import url(../blocks/card-list/card-list.css);
+@import url(../blocks/card-list/card-list__base/card-list__base.css);
+@import url(../blocks/card-list/card-list__button/card-list__button.css);
+@import url(../blocks/card-list/card-list__description/card-list__description.css);
+@import url(../blocks/card-list/card-list__heading/card-list__heading.css);
+@import url(../blocks/card-list/card-list__icon/card-list__icon.css);
+@import url(../blocks/card-list/card-list__image/card-list__image.css);
+@import url(../blocks/card-list/card-list__info/card-list__info.css);
+@import url(../blocks/card-list/card-list__tier/card-list__tier.css);
+@import url(../blocks/card-list/card-list__time/card-list__time.css);
+@import url(../blocks/card-list/card-list__timing/card-list__timing.css);

@@ -1,0 +1,12 @@
+.card-list__info {
+    font-family: Golos;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 448px;
+    margin-top: 24px;
+    text-overflow: ellipsis; 
+    white-space: wrap; 
+    overflow: hidden;
+}

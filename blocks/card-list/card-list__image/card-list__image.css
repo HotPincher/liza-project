@@ -1,0 +1,6 @@
+.card-list__image {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 16px;
+    margin-right: 24px;
+}
