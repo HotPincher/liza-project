@@ -8,3 +8,9 @@
 }
 
 
+@media (max-width: 1024px) {
+	.aside {
+		width: 100%;
+		max-width: 100%;
+	}
+}

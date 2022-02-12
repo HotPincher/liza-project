@@ -1,6 +1,6 @@
-// const profileForms = document.querySelectorAll('.personal-info__form');
-const profileInputs = document.querySelector('.personal-info__input');
-const profileSubmitBtns = document.querySelector('.personal-info__button-submit')
+
+const profileInputs = document.querySelectorAll('.personal-info__input');
+const profileSubmitBtns = document.querySelectorAll('.personal-info__button-submit')
 
 function disableRemove(elem) {
 	elem.removeAttribute('disabled');

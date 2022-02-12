@@ -2,7 +2,6 @@ import {initialCards} from './initial-cards.js'
 
 const cardList = document.querySelector('.card-list');
 
-// рендер карточек
 const createCard = card => {
 	const cardTemplate = document.querySelector('#cardTemplate');
 	const cardTemplateElement = cardTemplate.content.querySelector('.card-list__base').cloneNode(true);
@@ -22,6 +21,5 @@ const createCard = card => {
 	return cardTemplateElement;
 };
 
-// Добавляем карточки
-	const createdCards = initialCards.map(card => createCard(card));
-  	cardList.append(...createdCards);
+const createdCards = initialCards.map(card => createCard(card));
+cardList.append(...createdCards);
