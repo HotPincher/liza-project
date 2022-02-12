@@ -1,41 +1,4 @@
-import {initialCards} from '../scripts/initial-cards.js'
-
-const profileForms = document.querySelectorAll('.personal-info__form');
-const profileInputs = document.querySelectorAll('.personal-info__input');
-const profileSubmitBtns = document.querySelectorAll('.personal-info__button-submit')
-
-function disableRemove(elem) {
-	elem.removeAttribute('disabled');
-}
-
-function disableAdd(elem) {
-	elem.setAttribute('disabled', 'disabled');
-}
-
-function submitForm() {
-	profileInputs.forEach(item => {
-
-		if (item.value.length !== 0) {
-			item.textContent = item.value;
-		}
-	});
-}
-
-profileInputs.forEach(item => {
-	item.oninput = function () {
-		let parentForm = item.closest('form');
-		const profileSubmitBtn = parentForm.querySelector('.personal-info__button-submit');
-
-		disableRemove(profileSubmitBtn);
-	}
-});
-
-
-profileSubmitBtns.forEach(button => button.addEventListener('click', () => {
-	submitForm();
-	disableAdd(button);
-}));
-
+import {initialCards} from './initial-cards.js'
 
 const cardList = document.querySelector('.card-list');
 
@@ -57,7 +20,7 @@ const createCard = card => {
 	less.textContent = card.lessons;
 	time.textContent = card.time;
 	return cardTemplateElement;
-	};
+};
 
 // Добавляем карточки
 	const createdCards = initialCards.map(card => createCard(card));
