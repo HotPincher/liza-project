@@ -1,7 +1,3 @@
-.aside__filter-block_active {
-
-}
-
 .aside__filter-block_active .aside__accordion-item-toggler {
   background-image: url(../../../../images/sidebar_open-option.svg);
 }
