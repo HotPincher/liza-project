@@ -8,3 +8,14 @@
 	flex-direction: column;
 	align-items: flex-start;
 }
+
+
+@media (max-width: 1024px) {
+	.sidebar-account__parameters {
+		grid-column: 2 / 3;
+		grid-row: 1 / 1;
+		justify-self: start;
+		align-self: flex-start;
+		margin-top: 45px;
+	}
+}

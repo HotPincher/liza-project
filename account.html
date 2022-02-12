@@ -15,17 +15,17 @@
 		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__list-item">
-					<img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы" >
-					<a class="menu__link menu__link_active" href="./index.html" >Курсы</a>
+					<img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы">
+					<a class="menu__link menu__link_active" href="./index.html">Курсы</a>
 				</li>
 				<li class="menu__list-item">
-					<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль" >
+					<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">
 					<a class="menu__link" href="#">Профиль</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-		<h1 class="page-title">Профиль</h1>
+	<h1 class="page-title">Профиль</h1>
 	<aside class="sidebar sidebar-account">
 		<div class="sidebar-account__core-content">
 			<img class="sidebar-account__image" src="./images/profile_avatar.jpg" alt="Аватар пользователя">
@@ -49,10 +49,10 @@
 			</li>
 		</ul>
 		<button id="account-leave-button" class="sidebar-account__account-leave-button" type="submit"><img
-				class="sidebar-account__account-leave-button-icon" src="./images/sidebar_leave-account.svg" alt="Выйти из аккаунта">Выйти из аккаунта</button>
+				class="sidebar-account__account-leave-button-icon" src="./images/sidebar_leave-account.svg"
+				alt="Выйти из аккаунта">Выйти из аккаунта</button>
 	</aside>
-	<!-- <main class="content">  Данный класс не обозначен как блок CSS -->
-	<section class="personal-info">
+	<main class="personal-info">
 		<form class="personal-info__form">
 			<h2 class="personal-info__title">Личные данные</h2>
 			<ul class="personal-info__list">
@@ -62,7 +62,6 @@
 					</label>
 					<input type="text" name="form-name" id="form-name" class="personal-info__input"
 						value="Иванова Анна Сидоровна">
-					<button type="button" class="personal-info__button"></button>
 				</li>
 				<li class="personal-info__item">
 					<label for="form-birth" class="personal-info__label-text">
@@ -78,8 +77,6 @@
 					</label>
 					<input type="text" name="form-region" id="form-region" class="personal-info__input"
 						value="г. Санкт-Петербург">
-					<button type="button" class="personal-info__button"></button>
-
 				</li>
 				<li class="personal-info__item">
 					<label for="form-nickname" class="personal-info__label-text">
@@ -87,15 +84,13 @@
 					</label>
 					<input type="text" name="form-nickname" id="form-nickname" class="personal-info__input"
 						value="Белка">
-					<button type="button" class="personal-info__button"></button>
 				</li>
-				<li class="personal-info__item">
-					<label for="form-avatar" class="personal-info__label-text">
+				<li class="personal-info__item personal-info__item_photo">
+					<label for="form-avatar" class="personal-info__label-text ">
 						Фото
 					</label>
-					<input type="text" name="form-avatar" id="form-avatar" class="personal-info__input"
-						value="photo.jpg" maxlength="0" disabled>
-					<button type="button" class="personal-info__button personal-info__button_photo"></button>
+					<input type="text" name="form-avatar" id="form-avatar"
+						class="personal-info__input personal-info__input_file" value="photo.jpg" maxlength="0" disabled>
 				</li>
 			</ul>
 			<button type="submit" class="personal-info__button-submit" disabled>Сохранить изменения</button>
@@ -117,7 +112,7 @@
 		<form action="#" class="personal-info__form">
 			<h2 class="personal-info__title">Аккаунт</h2>
 			<ul class="personal-info__list">
-				<li class="personal-info__item">
+				<li class="personal-info__item personal-info__item_tel">
 					<label for="form-phone" class="personal-info__label-text">
 						Номер телефона
 					</label>
@@ -126,11 +121,10 @@
 				</li>
 				<li class="personal-info__item">
 					<label for="form-email" class="personal-info__label-text">
-						Дата рождения
+						Email
 					</label>
 					<input type="email" name="form-email" id="form-email" class="personal-info__input"
 						value="anna@liza-alert.ru">
-					<button type="button" class="personal-info__button"></button>
 				</li>
 				<li class="personal-info__item">
 					<label for="form-password" class="personal-info__label-text">
@@ -138,8 +132,6 @@
 					</label>
 					<input type="password" name="form-password" id="form-password" class="personal-info__input"
 						value="Белочка">
-					<button type="button" class="personal-info__button"></button>
-
 				</li>
 			</ul>
 			<button type="submit" class="button-submit personal-info__button-submit" disabled>Сохранить
@@ -154,9 +146,8 @@
 			</p>
 			<p class="disclaimer-info__text">Email нужен для восстановления пароля</p>
 		</div>
-	</section>
-	<!-- </main> -->
-	<script src="./script.js" defer></script>
+	</main>
+	<script src="./scripts/script.js" defer></script>
 </body>
 
 </html>

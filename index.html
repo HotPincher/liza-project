@@ -10,35 +10,27 @@
 </head>
 
 <body class="page">
-
 	<header class="header">
-		<a href="#" class="logo">Учебная платформа</a>
+		<h2 class="logo">Учебная платформа</h2>
 		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__list-item">
-					<a href="#" class="menu__link menu__link_active">
-						<img src="./images/logo_courses.svg" alt="" class="menu__icon">
-						Курсы
-					</a>
+					<img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы">
+					<a class="menu__link menu__link_active" href="./index.html">Курсы</a>
 				</li>
 				<li class="menu__list-item">
-					<a href="./account.html" class="menu__link">
-						<img src="./images/logo_profile.svg" alt="" class="menu__icon">
-						Профиль
-					</a>
+					<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">
+					<a class="menu__link" href="./account.html">Профиль</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 
-	<section class="page-title">
-		<h1 class="page-title__heading">Курсы</h1>
-	</section>
-
-	<main class="content">
-
+	<h1 class="page-title">Курсы</h1>
+	<main class="articles">
+		<ul class="card-list">
+		</ul>
 	</main>
-
 	<aside class="aside sidebar">
 		<form class="aside__filter-form" action="#" method="get" name="filter-form">
 			<div class="aside__form-head">
@@ -164,6 +156,27 @@
 
 	</aside>
 
+	<template id="cardTemplate">
+		<li class="card-list__base">
+			<img src="#" alt="шаблон" class="card-list__image">
+			<div class="card-list__description">
+				<h2 class="card-list__heading"></h2>
+				<span class="card-list__tier"></span>
+				<p class="card-list__info"></p>
+			</div>
+			<ul class="card-list__timing">
+				<li class="card-list__timing-item">
+					<img class="card-list__icon" src="./images/articles_book.svg" alt="книга">
+					<p class="card-list__time" id="lessons"></p>
+				</li>
+				<li class="card-list__timing-item">
+					<img class="card-list__icon" src="./images/articles_clock.svg" alt="часы">
+					<p class="card-list__time" id="time"></p>
+				</li>
+				<button class="card-list__button">Продолжить</button>
+			</ul>
+		</li>
+	</template>
 
 	<template class="checked-item-template">
 		<li class="aside__checked-item">
@@ -174,7 +187,8 @@
 		</li>
 	</template>
 
-	<script src="./script__sidebar-accordeon.js"></script>
+	<script src="./scripts/script.js" type="module"></script>
+	<script src="./scripts/open-filter-details.js"></script>
 </body>
 
 </html>
