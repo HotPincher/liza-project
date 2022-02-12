@@ -1,0 +1,17 @@
+.card-list__image {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	border-radius: 16px;
+	margin-right: 24px;
+}
+
+@media (max-width: 1184px) {
+	.card-list__image {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		max-width: 320px;
+		height: 100%;
+		margin: 0;
+	}
+}

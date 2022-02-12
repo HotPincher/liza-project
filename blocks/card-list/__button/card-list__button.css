@@ -1,0 +1,27 @@
+.card-list__button {
+    padding: 12px;
+    background: #FF6600;
+    border-radius: 16px;
+    width: 100%;
+	font-family: Golos, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    border: 0;
+    color: #FFFFFF;
+	margin-top: 64px;
+}
+
+@media (max-width: 1184px) {
+	.card-list__button {
+		margin-top: 32px;
+	}
+}
+
+
+@media (max-width: 1184px) {
+	.card-list__button {
+		margin-top: 12px;
+	}
+}

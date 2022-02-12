@@ -25,3 +25,12 @@
 .sidebar-account__account-leave-button:hover {
 	cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+	.sidebar-account__account-leave-button {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		align-self: end;
+		justify-self: center;
+	}
+}

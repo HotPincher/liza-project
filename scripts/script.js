@@ -1,4 +1,4 @@
-import {initialCards} from './initial-cards.js'
+import {initialCards} from '../scripts/initial-cards.js'
 
 const profileForms = document.querySelectorAll('.personal-info__form');
 const profileInputs = document.querySelectorAll('.personal-info__input');
