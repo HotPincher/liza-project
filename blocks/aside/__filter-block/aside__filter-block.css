@@ -1,0 +1,13 @@
+.aside__filter-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid #E6E7EB;
+  padding-top: 32px;
+}
+
+.aside__filter-block:not(:last-child) {
+  border-bottom: 1px solid #E6E7EB;
+  padding-bottom: 33px;
+}
+

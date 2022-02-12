@@ -1,0 +1,11 @@
+.aside__checked-item {
+  margin: 0 10px 10px 0;
+  padding: 0 0 0 6px;
+  background-color: #E6E7EB;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 113px;
+}
