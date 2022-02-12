@@ -13,5 +13,5 @@
 		". page-title page-title . "
 		". sidebar-left content .";
 	column-gap: 24px;
+	font-family: "Golos", "Arial", sans-serif;
 }
-
