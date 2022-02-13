@@ -154,25 +154,25 @@
 	</aside>
 
 	<template id="cardTemplate">
-		<li class="card-list__base">
-			<img src="#" alt="шаблон" class="card-list__image">
+		<a class="card-list__base" href="#" target="_blank">
+			<img src="#" alt="№" class="card-list__image">
 			<div class="card-list__description">
 				<h2 class="card-list__heading"></h2>
 				<span class="card-list__tier"></span>
 				<p class="card-list__info"></p>
 			</div>
-			<ul class="card-list__timing">
-				<li class="card-list__timing-item">
+			<div class="card-list__timing">
+				<div class="card-list__timing-item">
 					<img class="card-list__icon" src="./images/articles_book.svg" alt="книга">
 					<p class="card-list__time" id="lessons"></p>
-				</li>
-				<li class="card-list__timing-item">
+				</div>
+				<div class="card-list__timing-item">
 					<img class="card-list__icon" src="./images/articles_clock.svg" alt="часы">
 					<p class="card-list__time" id="time"></p>
-				</li>
+				</div>
 				<button class="card-list__button">Продолжить</button>
-			</ul>
-		</li>
+			</div>
+		</a>
 	</template>
 
 	<template class="checked-item-template">

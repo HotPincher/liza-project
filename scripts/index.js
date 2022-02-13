@@ -1,25 +1,43 @@
 import {initialCards} from './initial-cards.js'
 
 const cardList = document.querySelector('.card-list');
+const cardTemplate = document.querySelector('#cardTemplate');
+const cardSeparator = document.querySelector('.aside__name-checked-option')
+
+
 
 const createCard = card => {
-	const cardTemplate = document.querySelector('#cardTemplate');
 	const cardTemplateElement = cardTemplate.content.querySelector('.card-list__base').cloneNode(true);
-	const image = cardTemplateElement.querySelector('.card-list__image');
-	const head = cardTemplateElement.querySelector('.card-list__heading');
-	const tier = cardTemplateElement.querySelector('.card-list__tier');
-	const info = cardTemplateElement.querySelector('.card-list__info');
-	const less = cardTemplateElement.querySelector('#lessons');
-	const time = cardTemplateElement.querySelector('#time');
-	head.textContent = card.name;
-	image.src = card.link;
-	image.alt = card.name;
-	tier.textContent = card.tier;
-	info.textContent = card.info;
-	less.textContent = card.lessons;
-	time.textContent = card.time;
+	const cardImage = cardTemplateElement.querySelector('.card-list__image');
+	const cardHeading = cardTemplateElement.querySelector('.card-list__heading');
+	const cardTier = cardTemplateElement.querySelector('.card-list__tier');
+	const cardInfo = cardTemplateElement.querySelector('.card-list__info');
+	const cardLesson = cardTemplateElement.querySelector('#lessons');
+	const cardTime = cardTemplateElement.querySelector('#time');
+	cardHeading.textContent = card.name;
+	cardImage.src = card.link;
+	cardImage.alt = card.name;
+	cardTier.textContent = card.tier;
+	cardInfo.textContent = card.info;
+	cardLesson.textContent = card.lessons;
+	cardTime.textContent = card.time;
+
+
 	return cardTemplateElement;
 };
 
-const createdCards = initialCards.map(card => createCard(card));
-cardList.append(...createdCards);
+const addCard = (link, name, tier, info, lessons, time) => {
+	const cardCaller = createCard(link, name, tier, info, lessons, time)
+	cardList.append(cardCaller)
+}
+
+
+initialCards.forEach(addCard)
+
+for (let i = 0; i<initialCards.length; i++) {
+	let newArr = []
+	if (initialCards[i]['tier'] === cardSeparator.textContent) {
+		newArr = initialCards[i]
+		addCard(newArr)
+	}
+}
