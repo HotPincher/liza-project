@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Курсы</title>
 	<link rel="stylesheet" href="./pages/index.css">
+	<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
 </head>
 
 <body class="page">
@@ -66,7 +67,7 @@
 					<ul class="aside__filter-items">
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="beginner" />
+								<input class="aside__checkbox-options" type="checkbox" value="Новичок" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Новичок</span>
 							</label>
@@ -74,7 +75,7 @@
 
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="experienced" />
+								<input class="aside__checkbox-options" type="checkbox" value="Бывалый" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Бывалый</span>
 							</label>
@@ -82,7 +83,7 @@
 
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="professional" />
+								<input class="aside__checkbox-options" type="checkbox" value="Профессионал" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Профессионал</span>
 							</label>
@@ -97,7 +98,8 @@
 					<ul class="aside__filter-items">
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="no-active" />
+								<input class="aside__checkbox-options aside__checkbox-options_group" type="checkbox"
+									value="Не активный" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Не активный</span>
 							</label>
@@ -105,7 +107,7 @@
 
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="recorded" />
+								<input class="aside__checkbox-options" type="checkbox" value="Вы записаны" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Вы записаны</span>
 							</label>
@@ -113,7 +115,8 @@
 
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="active" />
+								<input class="aside__checkbox-options aside__checkbox-options_group" type="checkbox"
+									value="Активный" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Активный</span>
 							</label>
@@ -121,7 +124,7 @@
 
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="completed" />
+								<input class="aside__checkbox-options" type="checkbox" value="Пройден" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Пройден</span>
 							</label>
@@ -131,25 +134,9 @@
 			</ul>
 		</form>
 		<ul class="aside__checked-options-list">
-			<li class="aside__checked-item">
-				<button class="aside__deselect-option" type="button">
-					<p class="aside__name-checked-option">Новичек</p>
-					<img src="./images/sidebar_delete-option.svg" alt="удалить" class="aside__deselect-button-img">
-				</button>
-			</li>
-			<li class="aside__checked-item">
-				<button class="aside__deselect-option" type="button">
-					<p class="aside__name-checked-option">Активный</p>
-					<img src="./images/sidebar_delete-option.svg" alt="удалить" class="aside__deselect-button-img">
-				</button>
-			</li>
-			<li class="aside__checked-item">
-				<button class="aside__deselect-option" type="button">
-					<p class="aside__name-checked-option">Бывалый</p>
-					<img src="./images/sidebar_delete-option.svg" alt="удалить" class="aside__deselect-button-img">
-				</button>
-			</li>
+
 		</ul>
+
 
 	</aside>
 
@@ -177,10 +164,12 @@
 
 	<template class="checked-item-template">
 		<li class="aside__checked-item">
-			<button class="aside__deselect-option" type="button">
+			<div class="aside__deselect-option">
 				<p class="aside__name-checked-option"></p>
-				<img src="./images/sidebar_delete-option.svg" alt="удалить" class="aside__deselect-button-img">
-			</button>
+				<button class="aside__deselect-button" type="button">
+					<img src="./images/sidebar_delete-option.svg" alt="удалить" class="aside__deselect-button-img">
+				</button>
+			</div>
 		</li>
 	</template>
 
@@ -188,6 +177,27 @@
 	<script src="./scripts/open-filter-details.js"></script>
 	<script src="./scripts/index.js" type="module"></script>
 
+	<script type="text/javascript">
+		(function () {
+			window['__CF$cv$params'] = {
+				r: '6dc8a596e9e7161c',
+				m: '2gfNAFNUDWi8BCl_dxvImtbtXK58oOh20sKGpZ9jP3A-1644698581-0-AbGyjLEE6YXbZfJH/821ijit7SbRd0omFia8AF9oNn8zmm3WMJvMS0S7LhWG2vLKJ84XLZXhamRWkrgDLYdTf2bt337/ldLjV9qtTMTmtZMlN3dODdxothggunyFU78QnY0tqecT89GGg9q7rm7quT6WzArfixnlBLx64nazZd4DwAnEbr/5HdQg8RXZzTKtJg==',
+				s: [0xe6549416fb, 0x28160adc9a],
+			}
+		})();
+
+	</script>
+	<script type="text/javascript">
+		(function () {
+			window['__CF$cv$params'] = {
+				r: '6dce2088da22005c',
+				m: 'nPdUYjmNpVeGPAr__i1e25vOi2XSy.1UJIEir05VhrA-1644756046-0-AcdjzymQyXp6yDXMpjI6JcHsU7MsaXi+RZSE3DvN7vCu4oP/+sY+ccTnS8jKojE2h44gL8Vhf4mYB1mKGu9LhDdrVADPZhHxEEaBO0OqFgzaqZA0u94JGskH78EDzLBuqQLXhC5CUmhH6Ylu8sD8gtsfSo0cB3s770qE2lwWJ12fk+E0xaZYn2Y0UQY+dgDKMw==',
+				s: [0xfa3422dcd1, 0x28160adc9a],
+			}
+		})();
+
+	</script>
 </body>
 
 </html>
+
