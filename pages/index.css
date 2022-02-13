@@ -53,6 +53,8 @@
 @import url(../blocks/card-list/__time/card-list__time.css);
 @import url(../blocks/card-list/__icon/card-list__icon.css);
 @import url(../blocks/card-list/__button/card-list__button.css);
+@import url(../blocks/aside/__deselect-button/aside__deselect-button.css);
+@import url(../blocks/aside/__checkbox-options/_group/aside__checkbox-options_group.css);
 
 
 
