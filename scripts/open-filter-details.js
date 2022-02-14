@@ -9,6 +9,7 @@ filterBlockHead.forEach(function (item) {
 	item.addEventListener("click", function (evt) {
 		evt.stopPropagation();
 		item.parentNode.classList.toggle("aside__filter-block_active");
+
 	});
 });
 
@@ -20,6 +21,7 @@ const resetAllBtn = document.querySelector('.aside__reset');
 
 checkedItems.forEach(item => item.addEventListener("click", function () {
 	createCheckedItem(item)
+
 }));
 
 resetAllBtn.addEventListener('click', function () {
@@ -41,6 +43,7 @@ function createCheckedItem(evt) {
 
 	const itemCollection = checkedList.querySelectorAll(".aside__checked-item");
 
+	const cardBox = document.querySelectorAll('.card-list__base')
 
 	if (evt.checked == true) {
 		if (evt.value == 'Активный') {
@@ -72,6 +75,16 @@ function createCheckedItem(evt) {
 		}
 
 		addCheckedItem(checkedList, checkedItem);
+
+		// const cardBox = document.querySelectorAll('.card-list__base')
+
+		cardBox.forEach(elem => {
+			elem.classList.remove('card-list__base_shattered')
+		if (!elem.classList.contains(evt.value)) {
+			elem.classList.add('card-list__base_shattered')
+		}
+	});
+
 	}
 
 	if (evt.checked == false) {
@@ -81,12 +94,17 @@ function createCheckedItem(evt) {
 				deleteCheckedItem([...itemCollection][i]);
 			}
 		}
+		cardBox.forEach(elem => {
+			elem.classList.remove('card-list__base_shattered')
+
+	});
 	}
 
 	deselectButton.addEventListener("click", function () {
 		deleteCheckedItem(checkedItem);
 		evt.checked = false;
 	});
+
 
 }
 

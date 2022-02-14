@@ -2,7 +2,6 @@ import {initialCards} from './initial-cards.js'
 
 const cardList = document.querySelector('.card-list');
 const cardTemplate = document.querySelector('#cardTemplate');
-const cardSeparator = document.querySelector('.aside__name-checked-option')
 
 
 
@@ -21,7 +20,7 @@ const createCard = card => {
 	cardInfo.textContent = card.info;
 	cardLesson.textContent = card.lessons;
 	cardTime.textContent = card.time;
-
+	cardTemplateElement.classList.add(card.tier)
 
 	return cardTemplateElement;
 };
@@ -34,10 +33,30 @@ const addCard = (link, name, tier, info, lessons, time) => {
 
 initialCards.forEach(addCard)
 
-for (let i = 0; i<initialCards.length; i++) {
-	let newArr = []
-	if (initialCards[i]['tier'] === cardSeparator.textContent) {
-		newArr = initialCards[i]
-		addCard(newArr)
-	}
-}
+// const cardSeparator = document.querySelectorAll('.aside__name-checked-option')
+
+// 	for (let i = 0; i<initialCards.length; i++) {
+// 		let newArr = []
+// 		if (initialCards[i]['tier'] === cardSeparator.textContent) {
+// 			newArr = initialCards[i]
+// 			console.log(newArr)
+// 		}
+// 	}
+// 	console.log(cardSeparator)
+
+
+// const cardSorterBox = document.querySelectorAll('.card-list__base')
+// const cardTierList = document.querySelector('#tier-list')
+
+// cardTierList.addEventListener('click', evt => {
+// 	// if (evt.target.tagName == 'INPUT') return fault;
+
+// 	let itemSorter = evt.target.closest('.aside__filter-item').dataset.f
+// 	// console.log(itemSorter)
+// 	cardSorterBox.forEach(elem => {
+
+// 	if (!elem.classList.contains(itemSorter)) {
+// 		elem.classList.add('card-list__base_shattered')
+// 	}
+// });
+// })

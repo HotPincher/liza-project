@@ -43,6 +43,7 @@
 
 @import url(../blocks/card-list/card-list.css);
 @import url(../blocks/card-list/__base/card-list__base.css);
+@import url(../blocks/card-list/__base/_shattered/card-list__base_shattered.css);
 @import url(../blocks/card-list/__image/card-list__image.css);
 @import url(../blocks/card-list/__description/card-list__description.css);
 @import url(../blocks/card-list/__heading/card-list__heading.css);

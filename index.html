@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Курсы</title>
 	<link rel="stylesheet" href="./pages/index.css">
-	<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+	<script async src="/cdn-cgi/bm/cv/669835187/api.js"></script>
 </head>
 
 <body class="page">
@@ -65,7 +65,7 @@
 						<div class="aside__accordion-item-toggler"></div>
 					</a>
 					<ul class="aside__filter-items">
-						<li class="aside__filter-item">
+						<li data-f="Новичок" class="aside__filter-item">
 							<label class="aside__checkbox">
 								<input class="aside__checkbox-options" type="checkbox" value="Новичок" />
 								<span class="aside__checkbox-pseudo"></span>
@@ -73,7 +73,7 @@
 							</label>
 						</li>
 
-						<li class="aside__filter-item">
+						<li data-f="Бывалый" class="aside__filter-item">
 							<label class="aside__checkbox">
 								<input class="aside__checkbox-options" type="checkbox" value="Бывалый" />
 								<span class="aside__checkbox-pseudo"></span>
@@ -81,7 +81,7 @@
 							</label>
 						</li>
 
-						<li class="aside__filter-item">
+						<li data-f="Профессионал" class="aside__filter-item">
 							<label class="aside__checkbox">
 								<input class="aside__checkbox-options" type="checkbox" value="Профессионал" />
 								<span class="aside__checkbox-pseudo"></span>
@@ -173,11 +173,11 @@
 		</li>
 	</template>
 
-	<script src="./scripts/active_link_toggle.js"></script>
+	<script src="./scripts/active_link_toggle.js" defer></script>
 	<script src="./scripts/open-filter-details.js"></script>
 	<script src="./scripts/index.js" type="module"></script>
 
-	<script type="text/javascript">
+	<script>
 		(function () {
 			window['__CF$cv$params'] = {
 				r: '6dc8a596e9e7161c',
@@ -187,7 +187,7 @@
 		})();
 
 	</script>
-	<script type="text/javascript">
+	<script>
 		(function () {
 			window['__CF$cv$params'] = {
 				r: '6dce2088da22005c',
@@ -200,4 +200,3 @@
 </body>
 
 </html>
-
