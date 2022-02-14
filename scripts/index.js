@@ -22,17 +22,21 @@ const createCard = card => {
 	cardLesson.textContent = card.lessons;
 	cardTime.textContent = card.time;
 	cardButtonType.innerText = card.button;
+	cardTemplateElement.classList.add(card.tier);
 	cardTemplateElement.setAttribute('data-m', `${card.status}`)
+	cardTemplateElement.setAttribute('data-f', `${card.tier}`)
 	cardButtonType.setAttribute('value', `${card.button}`)
 
 	if (card.button === 'Записаться') {
-		cardButtonType.classList.add('card-list__button_initiate')
+		cardButtonType.classList.add('card-list__button_initiate');
+		cardButtonType.addEventListener('click', evt => {
+			evt.target.closest('.card-list__button').classList.remove('card-list__button_initiate')
+			evt.target.closest('.card-list__button').innerText = 'Продолжить'
+		})
 	} else if (card.button === 'Пройден') {
 		cardButtonType.classList.add('card-list__button_disable')
 		cardButtonType.setAttribute('disabled', 'disabled')
 	}
-
-	cardTemplateElement.classList.add(card.tier);
 
 	return cardTemplateElement;
 };
