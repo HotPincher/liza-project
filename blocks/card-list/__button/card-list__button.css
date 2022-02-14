@@ -23,11 +23,17 @@
 	cursor: pointer;
 }
 
+
+@media (max-width: 1200px) {
+	.card-list__button {
+		max-width: 180px;
+	}
+}
+
 @media (max-width: 1184px) {
 	.card-list__button {
 		bottom: 24px;
 		right: 24px;
-		max-width: 224px;
 	}
 }
 
