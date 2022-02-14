@@ -20,6 +20,7 @@
 		grid-row: 1 / 2;
 		align-self: end;
 		margin: 10px;
+		margin-bottom: 24px;
 		align-items: flex-start;
 	}
 }

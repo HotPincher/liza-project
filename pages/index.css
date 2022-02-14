@@ -38,11 +38,16 @@
 @import url(../blocks/aside/__filter-block-head/aside__filter-block-head.css);
 @import url(../blocks/aside/__filter-items/_open/aside__filter-items_open.css);
 @import url(../blocks/aside/__filter-block/_active/aside__filter-block_active.css);
+@import url(../blocks/aside/__deselect-button/aside__deselect-button.css);
+
 
 @import url(../blocks/articles/articles.css);
 
+
+
 @import url(../blocks/card-list/card-list.css);
 @import url(../blocks/card-list/__base/card-list__base.css);
+@import url(../blocks/card-list/__overlay/card-list__overlay.css);
 @import url(../blocks/card-list/__base/_shattered/card-list__base_shattered.css);
 @import url(../blocks/card-list/__image/card-list__image.css);
 @import url(../blocks/card-list/__description/card-list__description.css);
@@ -54,11 +59,8 @@
 @import url(../blocks/card-list/__time/card-list__time.css);
 @import url(../blocks/card-list/__icon/card-list__icon.css);
 @import url(../blocks/card-list/__button/card-list__button.css);
-@import url(../blocks/aside/__deselect-button/aside__deselect-button.css);
-@import url(../blocks/aside/__checkbox-options/_group/aside__checkbox-options_group.css);
-
-
-
+@import url(../blocks/card-list/__button/_initiate/card-list__button_initiate.css);
+@import url(../blocks/card-list/__button/_disable/card-list__button_disable.css);
 
 
 

@@ -11,10 +11,9 @@
 }
 
 .aside__checkbox-options:checked ~ .aside__checkbox-pseudo {
-  background-image: url(../../../images/checkbox-checked.svg);
+	background-image: url(../../../images/checkbox-checked.svg);
 }
 
 .aside__checkbox-options:checked ~ .aside__checkbox-label {
-  color: #F06000;
+	color: #f06000;
 }
-

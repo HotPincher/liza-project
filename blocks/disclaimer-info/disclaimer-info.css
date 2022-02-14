@@ -5,13 +5,8 @@
 	padding: 0;
 }
 
- /* при обозначении nth-child номером указывается какой ребенок/ */
- /* Диана: касается всех детей */
-
 @media (max-width: 780px) {
 	.disclaimer-info:nth-child(n) {
 		margin-top: 32px;
 	}
 }
-
-

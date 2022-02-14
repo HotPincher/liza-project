@@ -13,7 +13,7 @@
 	opacity: 0;
 	visibility: hidden;
 	animation-name: shatterElement;
-	animation-duration: .2s;
+	animation-duration: 0.2s;
 	animation-fill-mode: forwards;
 	display: none;
 }

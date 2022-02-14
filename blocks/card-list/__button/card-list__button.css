@@ -1,24 +1,35 @@
 .card-list__button {
-    padding: 12px;
-    background: #FF6600;
-    border-radius: 16px;
-    width: 100%;
+	position: absolute;
+	right: 32px;
+	bottom: 32px;
+	max-width: 224px;
+	padding: 12px;
+	background: #ff6600;
+	border-radius: 16px;
+	width: 100%;
 	font-family: Golos, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 133%;
-    border: 0;
-    color: #FFFFFF;
-	margin-top: 64px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 133%;
+	border: 0;
+	color: #ffffff;
+	/* margin-top: 64px; */
+	z-index: 2;
+
+}
+
+.card-list__button:hover {
+	cursor: pointer;
 }
 
 @media (max-width: 1184px) {
 	.card-list__button {
-		margin-top: 32px;
+		bottom: 24px;
+		right: 24px;
+		max-width: 224px;
 	}
 }
-
 
 @media (max-width: 1184px) {
 	.card-list__button {

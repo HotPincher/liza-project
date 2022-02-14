@@ -1,29 +1,10 @@
 .card-list__base {
-    max-height: 240px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-start;
-    box-shadow: 0px 0px 4px rgba(231, 232, 235, 0.6), 0px 4px 16px rgba(231, 232, 235, 0.6);
-    border-radius: 16px;
-	overflow: hidden;
-	text-decoration: none;
-	color: #212329;
+	position: relative;
+	max-height: 240px;
 }
-
 
 @media (max-width: 1184px) {
 	.card-list__base {
 		max-height: max-content;
-		display: grid;
-		grid-template-columns: auto 1fr;
-		grid-template-rows: minmax(320px, auto);
-		gap: 24px;
-	}
-}
-
-@media (max-width: 1024px) {
-	.card-list__base {
-		gap: 12px;
 	}
 }

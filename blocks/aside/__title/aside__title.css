@@ -1,9 +1,10 @@
 .aside__title {
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+	margin: 0;
+	padding: 0;
+	font-family: Golos, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
 }
 
 @media (max-width: 1024px) {

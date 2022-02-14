@@ -141,25 +141,27 @@
 	</aside>
 
 	<template id="cardTemplate">
-		<a class="card-list__base" href="#" target="_blank">
-			<img src="#" alt="№" class="card-list__image">
-			<div class="card-list__description">
-				<h2 class="card-list__heading"></h2>
-				<span class="card-list__tier"></span>
-				<p class="card-list__info"></p>
-			</div>
-			<div class="card-list__timing">
-				<div class="card-list__timing-item">
-					<img class="card-list__icon" src="./images/articles_book.svg" alt="книга">
-					<p class="card-list__time" id="lessons"></p>
+		<div class="card-list__base">
+			<a class="card-list__overlay" href="./account.html" target="_blank">
+				<img src="#" alt="№" class="card-list__image">
+				<div class="card-list__description">
+					<h2 class="card-list__heading"></h2>
+					<span class="card-list__tier"></span>
+					<p class="card-list__info"></p>
 				</div>
-				<div class="card-list__timing-item">
-					<img class="card-list__icon" src="./images/articles_clock.svg" alt="часы">
-					<p class="card-list__time" id="time"></p>
+				<div class="card-list__timing">
+					<div class="card-list__timing-item">
+						<img class="card-list__icon" src="./images/articles_book.svg" alt="книга">
+						<p class="card-list__time" id="lessons"></p>
+					</div>
+					<div class="card-list__timing-item">
+						<img class="card-list__icon" src="./images/articles_clock.svg" alt="часы">
+						<p class="card-list__time" id="time"></p>
+					</div>
 				</div>
-				<button class="card-list__button">Продолжить</button>
-			</div>
-		</a>
+			</a>
+			<button type="button" class="card-list__button" value="#"></button>
+		</div>
 	</template>
 
 	<template class="checked-item-template">

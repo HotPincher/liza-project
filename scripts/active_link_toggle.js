@@ -1,10 +1,8 @@
 
 const courseLink = document.querySelector('#courses-page-link')
 const courseLinkIcon = document.querySelector('#courses-page-logo')
-
 const accountLink = document.querySelector('#account-page-link')
 const accountLinkIcon = document.querySelector('#account-page-logo')
-
 const docLink = window.location.href
 
 if (docLink.includes('account.html')) {

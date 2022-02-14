@@ -6,7 +6,9 @@ export const initialCards = [
 		tier: 'Бывалый',
 		info: 'Поисково-спасательная работа, следовая работа, а так же поиск тел погибших с помощью собак',
 		lessons: '144 занятия',
-		time: '144 ч'
+		time: '144 ч',
+		button: 'Продолжить',
+		status: 'Вы записаны',
     },
     {
 		link: './images/articles_duty-officer.jpg',
@@ -14,7 +16,9 @@ export const initialCards = [
 		tier: 'Профессионал',
 		info: 'Оперативное реагирование, контроль поступающих заявок и звонков, распределение задач, помощь в решении вопросов, удалённое',
 		lessons: '144 занятия',
-		time: '144 ч'
+		time: '144 ч',
+		button: 'Записаться',
+		status: 'Активный',
 	},
 	{
 		link: './images/articles_drone.jpg',
@@ -22,7 +26,9 @@ export const initialCards = [
 		tier: 'Бывалый',
 		info: 'Применение БПЛА в поиске людей, а так же передача полученной с помощью техники информации спасательным службам',
 		lessons: '144 занятия',
-		time: '144 ч'
+		time: '144 ч',
+		button: 'Записаться',
+		status: 'Активный',
 	},
 	{
 		link: './images/articles_emergency.jpg',
@@ -30,7 +36,9 @@ export const initialCards = [
 		tier: 'Бывалый',
 		info: 'Основы оказания первой помощи на поиске, юридические аспекты, базовые алгоритмы, разбор ошибок при оказания помощи на поиске',
 		lessons: '144 занятия',
-		time: '144 ч'
+		time: '144 ч',
+		button: 'Записаться',
+		status: 'Активный',
 	},
 	{
 		link: './images/articles_infogroup.jpg',
@@ -38,7 +46,9 @@ export const initialCards = [
 		tier: 'Новичок',
 		info: 'Создание ориентировок, заказ карт, связь через мини АТС, обеспечение поиска',
 		lessons: '144 занятия',
-		time: '144 ч'
+		time: '144 ч',
+		button: 'Пройден',
+		status: 'Пройден',
 	},
 	{
 		link: './images/articles_operator-8800.jpg',
@@ -46,7 +56,9 @@ export const initialCards = [
 		tier: 'Новичок',
 		info: 'Приём заявок на поиск людей с последующей передачей информации инфоргам',
 		lessons: '144 занятия',
-		time: '144 ч'
+		time: '144 ч',
+		button: 'Записаться',
+		status: 'Активный',
 	},
 	{
 		link: './images/articles_short-calls.jpg',
@@ -54,7 +66,9 @@ export const initialCards = [
 		tier: 'Новичок',
 		info: 'Прозвон больниц, ОВД, различных ведомств, иногда свидетелей и возможных свидетелей',
 		lessons: '144 занятия',
-		time: '144 ч'
+		time: '144 ч',
+		button: 'Записаться',
+		status: 'Активный',
 	},
 	{
 		link: './images/articles_newcommers.jpg',
@@ -62,6 +76,8 @@ export const initialCards = [
 		tier: 'Новичок',
 		info: 'Короткое описание курса. людей в лесу и в городе. Все поисковые мероприятия организуются силами добровольцев «ЛизаАлер…',
 		lessons: '144 занятия',
-		time: '144 ч'
+		time: '144 ч',
+		button: 'Пройден',
+		status: 'Пройден',
 	}
 ];
