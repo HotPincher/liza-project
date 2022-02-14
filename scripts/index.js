@@ -37,10 +37,11 @@ const createCard = card => {
 			evt.target.closest('.card-list__button').classList.remove('card-list__button_initiate')
 			evt.target.classList.add('card-list__button_registration')
 			evt.target.closest('.card-list__button').textContent = 'Продолжить'
+			cardTemplateElement.dataset.status = 'Вы записаны';
 		})
 	} else if (card.button === 'Пройден') {
-		cardButtonType.classList.add('card-list__button_disable')
-		cardButtonType.setAttribute('disabled', 'disabled')
+		cardButtonType.classList.add('card-list__button_disable');
+		cardButtonType.setAttribute('disabled', 'disabled');
 	}
 
 	return cardTemplateElement;
