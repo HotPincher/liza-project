@@ -19,3 +19,10 @@
 		margin-top: 45px;
 	}
 }
+
+@media (max-width: 768px) {
+	.sidebar-account__parameters {
+		align-self: center;
+		margin-top: 0;
+	}
+}

@@ -24,3 +24,9 @@
 		align-items: flex-start;
 	}
 }
+
+@media (max-width: 768px) {
+	.card-list__timing {
+		align-self: flex-start;
+	}
+}

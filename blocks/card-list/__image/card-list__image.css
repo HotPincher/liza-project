@@ -1,6 +1,5 @@
 .card-list__image {
 	display: block;
-	width: 100%;
 	max-width: 200px;
 	border-radius: 16px;
 	margin-right: 24px;
@@ -13,5 +12,11 @@
 		max-width: 320px;
 		height: 100%;
 		margin: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.card-list__image {
+		margin: 24px auto;
 	}
 }

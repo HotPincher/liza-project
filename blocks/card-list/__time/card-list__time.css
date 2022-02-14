@@ -11,4 +11,8 @@
 }
 
 
-
+@media (max-width: 768px) {
+	.card-list__time {
+		font-size: 14px;
+	}
+}

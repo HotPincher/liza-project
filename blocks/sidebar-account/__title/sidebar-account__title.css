@@ -10,6 +10,9 @@
 	margin-block-start: 0px;
 	margin-block-end: 0px;
 	margin-top: 16px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 @media (max-width: 1024px) {
@@ -17,5 +20,11 @@
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 117%;
+	}
+}
+
+@media (max-width: 320px) {
+	.sidebar-account__title {
+		width: 80%;
 	}
 }

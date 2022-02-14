@@ -38,3 +38,9 @@
 		justify-self: center;
 	}
 }
+
+@media (max-width: 768px) {
+	.sidebar-account__account-leave-button {
+		align-self: center;
+	}
+}

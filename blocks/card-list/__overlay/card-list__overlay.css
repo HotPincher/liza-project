@@ -37,3 +37,13 @@
 		gap: 12px;
 	}
 }
+
+@media (max-width: 768px) {
+	.card-list__overlay {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+

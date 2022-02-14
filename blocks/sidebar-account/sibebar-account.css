@@ -23,3 +23,10 @@
 		margin-bottom: 24px;
 	}
 }
+
+@media (max-width: 768px) {
+	.sidebar-account {
+		display: flex;
+		flex-direction: column;
+	}
+}

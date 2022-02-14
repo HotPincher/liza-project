@@ -12,7 +12,9 @@
 
 <body class="page">
 	<header class="header">
-		<a class="logo__link" target="_blank" href="#"><h2 class="logo">Учебная платформа</h2></a>
+		<a class="logo__link" target="_blank" href="#">
+			<h2 class="logo">Учебная платформа</h2>
+		</a>
 		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__list-item">
@@ -65,25 +67,28 @@
 						<div class="aside__accordion-item-toggler"></div>
 					</a>
 					<ul class="aside__filter-items">
-						<li data-f="Новичок" class="aside__filter-item">
+						<li class="aside__filter-item" data-level="level">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="Новичок" />
+								<input class="aside__checkbox-options" type="checkbox" value="Новичок"
+									data-level="Уровень" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Новичок</span>
 							</label>
 						</li>
 
-						<li data-f="Бывалый" class="aside__filter-item">
+						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="Бывалый" />
+								<input class="aside__checkbox-options" type="checkbox" value="Бывалый"
+									data-level="Уровень" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Бывалый</span>
 							</label>
 						</li>
 
-						<li data-f="Профессионал" class="aside__filter-item">
+						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="Профессионал" />
+								<input class="aside__checkbox-options" type="checkbox" value="Профессионал"
+									data-level="Уровень" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Профессионал</span>
 							</label>
@@ -99,7 +104,7 @@
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
 								<input class="aside__checkbox-options aside__checkbox-options_group" type="checkbox"
-									value="Не активный" />
+									value="Не активный" data-status="Статус" data-btn="Не активный" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Не активный</span>
 							</label>
@@ -107,7 +112,8 @@
 
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="Вы записаны" />
+								<input class="aside__checkbox-options" type="checkbox" value="Вы записаны"
+									data-status="Статус" data-btn="Вы записаны" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Вы записаны</span>
 							</label>
@@ -116,7 +122,7 @@
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
 								<input class="aside__checkbox-options aside__checkbox-options_group" type="checkbox"
-									value="Активный" />
+									value="Активный" data-status="Статус" data-btn="Активный" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Активный</span>
 							</label>
@@ -124,7 +130,8 @@
 
 						<li class="aside__filter-item">
 							<label class="aside__checkbox">
-								<input class="aside__checkbox-options" type="checkbox" value="Пройден" />
+								<input class="aside__checkbox-options" type="checkbox" value="Пройден"
+									data-status="Статус" data-btn="Пройден" />
 								<span class="aside__checkbox-pseudo"></span>
 								<span class="aside__checkbox-label">Пройден</span>
 							</label>
@@ -175,7 +182,6 @@
 		</li>
 	</template>
 
-	<script src="./scripts/active_link_toggle.js" defer></script>
 	<script src="./scripts/open-filter-details.js"></script>
 	<script src="./scripts/index.js" type="module"></script>
 </body>
