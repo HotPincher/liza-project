@@ -1,11 +1,13 @@
 .card-list__overlay {
-    max-height: 240px;
+	width: 100%;
+	max-height: 240px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: flex-start;
-    box-shadow: 0px 0px 4px rgba(231, 232, 235, 0.6), 0px 4px 16px rgba(231, 232, 235, 0.6);
-    border-radius: 16px;
+	box-shadow: 0px 0px 4px rgba(231, 232, 235, 0.6),
+		0px 4px 16px rgba(231, 232, 235, 0.6);
+	border-radius: 16px;
 	overflow: hidden;
 	text-decoration: none;
 	color: #212329;
@@ -20,9 +22,7 @@
 	box-shadow: 1px 1px 5px 1px #e6e7eb;
 }
 
-
-
-@media (max-width: 1184px) {
+@media (max-width: 1320px) {
 	.card-list__overlay {
 		max-height: max-content;
 		display: grid;
@@ -45,5 +45,3 @@
 		justify-content: center;
 	}
 }
-
-

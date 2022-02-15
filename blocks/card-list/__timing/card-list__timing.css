@@ -1,5 +1,4 @@
 .card-list__timing {
-    /* height: 100%; */
 	width: 100%;
 	max-width: 224px;
 	min-width: 142px;
@@ -14,12 +13,13 @@
    	margin-top: 32px;
 }
 
-@media (max-width: 1184px) {
+@media (max-width: 1320px) {
 	.card-list__timing {
 		grid-column: 2 / 3;
 		grid-row: 1 / 2;
 		align-self: end;
 		margin: 10px;
+		margin-right: 24px;
 		margin-bottom: 24px;
 		align-items: flex-start;
 	}

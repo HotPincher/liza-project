@@ -1,11 +1,6 @@
-const sidebar = document.querySelector(".aside");
-const filterList = sidebar.querySelector(".aside__filter-list");
-const filterBlock = filterList.querySelectorAll(".aside__filter-block");
 const filterBlockHead = document.querySelectorAll(".aside__filter-block-head");
-const detailsAcc = document.querySelectorAll(".aside__filter-items");
-const asideFilter = document.querySelector(".aside");
 const checkedItems = document.querySelectorAll(".aside__checkbox-options");
-const checkedList = asideFilter.querySelector(".aside__checked-options-list");
+const checkedList = document.querySelector(".aside__checked-options-list");
 const checkedGroupItems = document.querySelectorAll('.aside__checkbox-options_group');
 const resetAllBtn = document.querySelector('.aside__reset');
 
