@@ -1,4 +1,4 @@
-import {initialCards} from './initial-cards.js'
+import { initialCards } from './initial-cards.js'
 
 const cardList = document.querySelector('.card-list');
 const cardTemplate = document.querySelector('#cardTemplate');
@@ -23,19 +23,25 @@ const createCard = card => {
 	cardTime.textContent = card.time;
 	cardButtonType.innerText = card.button;
 	cardTemplateElement.classList.add(card.tier);
-	cardTemplateElement.setAttribute('data-m', `${card.status}`)
-	cardTemplateElement.setAttribute('data-f', `${card.tier}`)
+	cardTemplateElement.dataset.card = card.tier;
+	cardTemplateElement.setAttribute('data-status', `${card.status}`);
 	cardButtonType.setAttribute('value', `${card.button}`)
+
+	if (card.button === 'Продолжить') {
+		cardButtonType.classList.add('card-list__button_registration')
+	}
 
 	if (card.button === 'Записаться') {
 		cardButtonType.classList.add('card-list__button_initiate');
 		cardButtonType.addEventListener('click', evt => {
 			evt.target.closest('.card-list__button').classList.remove('card-list__button_initiate')
-			evt.target.closest('.card-list__button').innerText = 'Продолжить'
+			evt.target.classList.add('card-list__button_registration')
+			evt.target.closest('.card-list__button').textContent = 'Продолжить'
+			cardTemplateElement.dataset.status = 'Вы записаны';
 		})
 	} else if (card.button === 'Пройден') {
-		cardButtonType.classList.add('card-list__button_disable')
-		cardButtonType.setAttribute('disabled', 'disabled')
+		cardButtonType.classList.add('card-list__button_disable');
+		cardButtonType.setAttribute('disabled', 'disabled');
 	}
 
 	return cardTemplateElement;

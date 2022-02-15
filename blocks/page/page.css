@@ -7,7 +7,7 @@
 		". sidebar-left content .";
 	box-sizing: border-box;
 	max-width: 1440px;
-	min-width: 684px;
+	/* min-width: 684px; */
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
@@ -36,7 +36,7 @@
 
 @media (max-width: 1024px) {
 	.page {
-		grid-template-columns: 1px 1fr 1px;
+		grid-template-columns: 12px 1fr 12px;
 		grid-template-areas:
 			"header header header"
 			". page-title ."
@@ -44,3 +44,17 @@
 			". content .";
 	}
 }
+
+
+@media (max-width: 1024px) {
+	.page {
+		grid-template-columns: 12px 1fr 12px;
+		grid-template-areas:
+			"header header header"
+			". page-title ."
+			". sidebar-left ."
+			". content .";
+	}
+}
+
+

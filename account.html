@@ -8,6 +8,7 @@
 	<meta name="description" content="This is an account web-page">
 	<title>Профиль</title>
 	<link rel="stylesheet" href="./pages/account.css">
+	<script src="https://unpkg.com/imask" defer></script>
 </head>
 
 <body class="page">
@@ -54,7 +55,7 @@
 				alt="Выйти из аккаунта">Выйти из аккаунта</button>
 	</aside>
 	<main class="personal-info">
-		<form class="personal-info__form">
+		<form class="personal-info__form" name="account-form">
 			<h2 class="personal-info__title">Личные данные</h2>
 			<ul class="personal-info__list">
 				<li class="personal-info__item">
@@ -62,29 +63,29 @@
 						ФИО
 					</label>
 					<input type="text" name="form-name" id="form-name" class="personal-info__input"
-						value="Иванова Анна Сидоровна">
+						value="Иванова Анна Сидоровна" required>
 				</li>
 				<li class="personal-info__item">
 					<label for="form-birth" class="personal-info__label-text">
 						Дата рождения
 					</label>
-					<input type="date" name="form-birth" id="form-birth"
+					<input type="text" name="form-birth" id="form-birth"
 						class="personal-info__input personal-info__input_date" value="1990-01-01" min="1990-01-01"
-						max="2100-01-01">
+						max="2100-01-01" required>
 				</li>
 				<li class="personal-info__item">
 					<label for="form-region" class="personal-info__label-text">
 						Географический регион
 					</label>
 					<input type="text" name="form-region" id="form-region" class="personal-info__input"
-						value="г. Санкт-Петербург">
+						value="г. Санкт-Петербург" required>
 				</li>
 				<li class="personal-info__item">
 					<label for="form-nickname" class="personal-info__label-text">
 						Позывной на форуме
 					</label>
 					<input type="text" name="form-nickname" id="form-nickname" class="personal-info__input"
-						value="Белка">
+						value="Белка" required>
 				</li>
 				<li class="personal-info__item personal-info__item_photo">
 					<label for="form-avatar" class="personal-info__label-text ">
@@ -110,7 +111,7 @@
 				<li class="disclaimer-info__list-item">размер не более 3 МБ</li>
 			</ul>
 		</div>
-		<form action="#" class="personal-info__form">
+		<form action="#" class="personal-info__form" name="personal-form">
 			<h2 class="personal-info__title">Аккаунт</h2>
 			<ul class="personal-info__list">
 				<li class="personal-info__item personal-info__item_tel">
@@ -132,7 +133,7 @@
 						Пароль
 					</label>
 					<input type="password" name="form-password" id="form-password" class="personal-info__input"
-						value="Белочка">
+						value="Белочка" required>
 				</li>
 			</ul>
 			<button type="submit" class="button-submit personal-info__button-submit" disabled>Сохранить
@@ -148,7 +149,7 @@
 			<p class="disclaimer-info__text">Email нужен для восстановления пароля</p>
 		</div>
 	</main>
-	<script src="./scripts/active_link_toggle.js" defer></script>
+
 	<script src="./scripts/account.js" defer></script>
 </body>
 

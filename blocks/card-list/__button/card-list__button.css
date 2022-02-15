@@ -34,11 +34,6 @@
 	.card-list__button {
 		bottom: 24px;
 		right: 24px;
-	}
-}
-
-@media (max-width: 1184px) {
-	.card-list__button {
 		margin-top: 12px;
 	}
 }

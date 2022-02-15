@@ -60,6 +60,7 @@
 @import url(../blocks/card-list/__time/card-list__time.css);
 @import url(../blocks/card-list/__icon/card-list__icon.css);
 @import url(../blocks/card-list/__button/card-list__button.css);
+@import url(../blocks/card-list/__button/_registration/card-list__button_registration.css);
 @import url(../blocks/card-list/__button/_initiate/card-list__button_initiate.css);
 @import url(../blocks/card-list/__button/_disable/card-list__button_disable.css);
 

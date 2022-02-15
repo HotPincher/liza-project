@@ -3,8 +3,12 @@ const filterList = sidebar.querySelector(".aside__filter-list");
 const filterBlock = filterList.querySelectorAll(".aside__filter-block");
 const filterBlockHead = document.querySelectorAll(".aside__filter-block-head");
 const detailsAcc = document.querySelectorAll(".aside__filter-items");
+const asideFilter = document.querySelector(".aside");
+const checkedItems = document.querySelectorAll(".aside__checkbox-options");
+const checkedList = asideFilter.querySelector(".aside__checked-options-list");
+const checkedGroupItems = document.querySelectorAll('.aside__checkbox-options_group');
+const resetAllBtn = document.querySelector('.aside__reset');
 
-// Функция добавления активного класса для filterBlock
 filterBlockHead.forEach(function (item) {
 	item.addEventListener("click", function (evt) {
 		evt.stopPropagation();
@@ -13,11 +17,6 @@ filterBlockHead.forEach(function (item) {
 	});
 });
 
-const asideFilter = document.querySelector(".aside");
-const checkedItems = document.querySelectorAll(".aside__checkbox-options");
-const checkedList = asideFilter.querySelector(".aside__checked-options-list");
-const checkedGroupItems = document.querySelectorAll('.aside__checkbox-options_group');
-const resetAllBtn = document.querySelector('.aside__reset');
 
 checkedItems.forEach(item => item.addEventListener("click", function () {
 	createCheckedItem(item)
@@ -26,6 +25,13 @@ checkedItems.forEach(item => item.addEventListener("click", function () {
 
 resetAllBtn.addEventListener('click', function () {
 	checkedGroupItems.forEach(item => item.checked = false);
+	showCard();
+
+	const cardBox = document.querySelectorAll('.card-list__base');
+
+	cardBox.forEach(e => {
+		e.classList.remove('card-list__base_shattered');
+	})
 
 	while (checkedList.firstChild) {
 		checkedList.removeChild(checkedList.firstChild);
@@ -38,12 +44,9 @@ function createCheckedItem(evt) {
 	const checkedItem = checkedItemTemplate.querySelector(".aside__checked-item").cloneNode(true);
 	const deselectButton = checkedItem.querySelector(".aside__deselect-button");
 	const checkedName = checkedItem.querySelector(".aside__name-checked-option");
-
-	checkedName.textContent = evt.value;
-
 	const itemCollection = checkedList.querySelectorAll(".aside__checked-item");
 
-	const cardBox = document.querySelectorAll('.card-list__base')
+	checkedName.textContent = evt.value;
 
 	if (evt.checked == true) {
 		if (evt.value == 'Активный') {
@@ -75,16 +78,6 @@ function createCheckedItem(evt) {
 		}
 
 		addCheckedItem(checkedList, checkedItem);
-
-		// const cardBox = document.querySelectorAll('.card-list__base')
-
-		cardBox.forEach(elem => {
-			elem.classList.remove('card-list__base_shattered')
-		if (!elem.classList.contains(evt.value)) {
-			elem.classList.add('card-list__base_shattered')
-		}
-	});
-
 	}
 
 	if (evt.checked == false) {
@@ -94,19 +87,17 @@ function createCheckedItem(evt) {
 				deleteCheckedItem([...itemCollection][i]);
 			}
 		}
-		cardBox.forEach(elem => {
-			elem.classList.remove('card-list__base_shattered')
-
-	});
 	}
 
 	deselectButton.addEventListener("click", function () {
 		deleteCheckedItem(checkedItem);
 		evt.checked = false;
+		showCard();
 	});
 
-
+	showCard();
 }
+
 
 function addCheckedItem(parent, child) {
 	parent.prepend(child);
@@ -114,4 +105,34 @@ function addCheckedItem(parent, child) {
 
 function deleteCheckedItem(element) {
 	element.remove();
+}
+
+function showCard() {
+	let filterLevel = [];
+	let filterStatus = [];
+
+	const cardBox = document.querySelectorAll('.card-list__base');
+
+	checkedItems.forEach(el => {
+		if (el.checked == true && el.dataset.level === 'Уровень') {
+			filterLevel.push(el.value);
+		}
+
+		if (el.checked == true && el.dataset.status === 'Статус') {
+			filterStatus.push(el.dataset.btn);
+		}
+	})
+
+	cardBox.forEach(e => {
+		e.classList.remove('card-list__base_shattered');
+
+		if (filterLevel.length == 0 && filterStatus.length == 0) {
+			e.classList.remove('card-list__base_shattered');
+		} else if (filterLevel.includes(e.dataset.card) == false && filterLevel.length != 0) {
+			e.classList.add('card-list__base_shattered');
+		} else if
+			(filterStatus.includes(e.dataset.status) == false && filterStatus.length != 0) {
+			e.classList.add('card-list__base_shattered');
+		}
+	})
 }
