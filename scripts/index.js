@@ -1,4 +1,4 @@
-import { initialCards } from './initial-cards.js'
+// import { initialCards } from './initial-cards.js'
 
 const cardList = document.querySelector('.card-list');
 const cardTemplate = document.querySelector('#cardTemplate');

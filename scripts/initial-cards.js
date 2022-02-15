@@ -1,5 +1,5 @@
 
-export const initialCards = [
+const initialCards = [
 	{
 		link: './images/articles_kinologist.jpg',
 		name: 'Кинологическое направление',
