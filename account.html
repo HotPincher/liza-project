@@ -32,8 +32,9 @@
 	<h1 class="page-title">Профиль</h1>
 	<aside class="sidebar sidebar-account">
 		<div class="sidebar-account__core-content">
-			<img class="sidebar-account__image" onerror=" src='./images/default.jpg' " src="#" alt="Аватар пользователя">
-			<h2 class="sidebar-account__title"></h2>
+			<img class="sidebar-account__image" onerror=" src='./images/default.jpg' " src="#"
+				alt="Аватар пользователя">
+			<h2 class="sidebar-account__title">#</h2>
 		</div>
 		<ul class="sidebar-account__parameters">
 			<li class="sidebar-account__list-item">
@@ -65,7 +66,7 @@
 						ФИО
 					</label>
 					<input type="text" name="form-name" id="form-name" class="personal-info__input"
-						value="Иванова Анна Сидоровна" required>
+						value="Иванова Анна Сидоровна" maxlength="29" required>
 				</li>
 				<li class="personal-info__item">
 					<label for="form-birth" class="personal-info__label-text">
@@ -151,7 +152,6 @@
 			<p class="disclaimer-info__text">Email нужен для восстановления пароля</p>
 		</div>
 	</main>
-
 	<script src="./scripts/account.js" defer></script>
 </body>
 
