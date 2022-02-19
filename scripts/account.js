@@ -1,8 +1,6 @@
 const profileInputs = document.querySelectorAll(".personal-info__input");
 const profileSubmitForms = document.querySelectorAll(".personal-info__form");
-const profileSubmitBttn = document.querySelector(
-	".personal-info__button-submit"
-);
+const profileSubmitBttn = document.querySelector(".personal-info__button-submit");
 const profileAvatar = document.querySelector(".sidebar-account__image");
 const profileName = document.querySelector(".sidebar-account__title");
 const formAvatar = document.querySelector("#form-avatar");
