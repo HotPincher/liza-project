@@ -4,7 +4,8 @@
 	font-family: Golos, Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	font-size: 24px;
-	line-height: 28px;
+	font-style: normal;
+	line-height: 117%;
 }
 
 @media (max-width: 1024px) {

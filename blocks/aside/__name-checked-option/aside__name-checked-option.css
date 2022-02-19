@@ -1,7 +1,8 @@
 .aside__name-checked-option {
-	padding: 0 6px 0 6px;
+	padding: 0 6px;
 	margin: 0;
 	font-family: Golos, Arial, Helvetica, sans-serif;
 	font-size: 18px;
-	line-height: 24px;
+	font-style: normal;
+	line-height: 133%;
 }

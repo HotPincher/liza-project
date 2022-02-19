@@ -1,13 +1,13 @@
 
 const profileInputs = document.querySelectorAll('.personal-info__input');
 const profileSubmitForms = document.querySelectorAll('.personal-info__form');
-const profileSubmitBttns = document.querySelectorAll('.personal-info__button-submit');
-const profileAvatar = document.querySelector('.sidebar-account__image')
+const profileSubmitBttn = document.querySelector('.personal-info__button-submit');
+const profileAvatar = document.querySelector('.sidebar-account__image');
 const profileName = document.querySelector('.sidebar-account__title');
-const formAvatar = document.querySelector('#form-avatar')
+const formAvatar = document.querySelector('#form-avatar');
 const formName = document.querySelector('#form-name');
 profileName.textContent = [formName.value];
-profileAvatar.setAttribute('src', `${'./images/' + formAvatar.value}`)
+profileAvatar.setAttribute('src', `${'./images/' + formAvatar.value}`);
 
 const dateMask = IMask(
 	document.querySelector('#form-birth'),
@@ -57,8 +57,6 @@ profileInputs.forEach(item => {
 profileSubmitForms.forEach(form => form.addEventListener('submit', (evt) => {
 	evt.preventDefault()
 	submitForm();
-	profileSubmitBttns.forEach(item => {
-		disableAdd(item)
-	})
+	disableAdd(form.lastElementChild)
 })
 );
