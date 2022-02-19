@@ -1,5 +1,5 @@
 .sidebar-account__core-content {
-	max-width: 312px;
+	max-width: 290px;
 	grid-row: 1 / 2;
 	grid-column: 1 / 1;
 	display: flex;
@@ -11,6 +11,7 @@
 
 @media (max-width: 1024px) {
 	.sidebar-account__core-content {
+		max-width: 100%;
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		justify-self: center;
