@@ -8,6 +8,11 @@
 	border: none;
 	border-radius: 16px;
 	background-color: #ff6600;
+	font-family: Golos, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 133%;
 	color: #fff;
 	cursor: pointer;
 	transform: 2s linear;

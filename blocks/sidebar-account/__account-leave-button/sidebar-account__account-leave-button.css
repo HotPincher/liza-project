@@ -28,6 +28,8 @@
 .sidebar-account__account-leave-button:hover {
 	cursor: pointer;
 	box-shadow: 1px 1px 5px 1px #e6e7eb;
+	border: 1px #ff6600 solid;
+	transform: scale(1.008);
 }
 
 @media (max-width: 1024px) {

@@ -4,8 +4,7 @@
 @import url(../blocks/page/page.css);
 
 @import url(../blocks/header/header.css);
-@import url(../blocks/logo/logo.css);
-@import url(../blocks/logo/__link/logo__link.css);
+@import url(../blocks/header/__link/header__link.css);
 @import url(../blocks/menu/menu.css);
 @import url(../blocks/menu/__list/menu__list.css);
 @import url(../blocks/menu/__list-item/menu__list-item.css);
@@ -33,6 +32,7 @@
 @import url(../blocks/aside/__checkbox-pseudo/aside__checkbox-pseudo.css);
 @import url(../blocks/aside/__checkbox-label/aside__checkbox-label.css);
 @import url(../blocks/aside/__reset/aside__reset.css);
+@import url(../blocks/aside/__reset/_active/aside__reset_active.css);
 @import url(../blocks/aside/__form-head/aside__form-head.css);
 @import url(../blocks/aside/__title/aside__title.css);
 @import url(../blocks/aside/__accordion-item-toggler/aside__accordion-item-toggler.css);

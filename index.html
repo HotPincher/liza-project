@@ -12,18 +12,18 @@
 
 <body class="page">
 	<header class="header">
-		<a class="logo__link" target="_blank" href="#">
-			<h2 class="logo">Учебная платформа</h2>
-		</a>
+		<a class="header__link" target="_blank" href="#">Учебная платформа</a>
 		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__list-item">
-					<img class="menu__icon" src="./images/logo_courses_active.svg" alt="Курсы">
-					<a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">Курсы</a>
+					<a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
+						<img class="menu__icon" src="./images/logo_courses_active.svg" alt="Курсы">Курсы
+					</a>
 				</li>
 				<li class="menu__list-item">
-					<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">
-					<a class="menu__link" href="./account.html">Профиль</a>
+					<a class="menu__link" href="./account.html">
+						<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
+					</a>
 				</li>
 			</ul>
 		</nav>
@@ -37,13 +37,13 @@
 	<aside class="aside sidebar">
 		<form class="aside__filter-form" action="#" method="get" name="filter-form">
 			<div class="aside__form-head">
-				<p class="aside__title">Фильтры</p>
-				<button type="reset" class="aside__reset">Очистить</button>
+				<h2 class="aside__title">Фильтры</h2>
+				<button class="aside__reset" type="reset">Очистить</button>
 			</div>
 			<ul class="aside__filter-list">
 				<li class="aside__filter-block">
 					<a class="aside__filter-block-head">
-						<p class="aside__filter-block-name">Категория</p>
+						<h3 class="aside__filter-block-name">Категория</h3>
 						<div class="aside__accordion-item-toggler"></div>
 					</a>
 					<ul class="aside__filter-items">
@@ -53,7 +53,7 @@
 
 				<li class="aside__filter-block">
 					<a class="aside__filter-block-head">
-						<p class="aside__filter-block-name">Тематика</p>
+						<h3 class="aside__filter-block-name">Тематика</h3>
 						<div class="aside__accordion-item-toggler"></div>
 					</a>
 					<ul class="aside__filter-items">
@@ -63,7 +63,7 @@
 
 				<li class="aside__filter-block">
 					<a class="aside__filter-block-head">
-						<p class="aside__filter-block-name">Уровень</p>
+						<h3 class="aside__filter-block-name">Уровень</h3>
 						<div class="aside__accordion-item-toggler"></div>
 					</a>
 					<ul class="aside__filter-items">
@@ -97,7 +97,7 @@
 				</li>
 				<li class="aside__filter-block">
 					<a class="aside__filter-block-head">
-						<p class="aside__filter-block-name">Статус</p>
+						<h3 class="aside__filter-block-name">Статус</h3>
 						<div class="aside__accordion-item-toggler"></div>
 					</a>
 					<ul class="aside__filter-items">
@@ -152,7 +152,7 @@
 
 	<template id="cardTemplate">
 		<div class="card-list__base">
-			<a class="card-list__overlay" href="./account.html" target="_blank">
+			<a class="card-list__overlay" href="#" target="_blank">
 				<img src="#" alt="№" class="card-list__image">
 				<div class="card-list__description">
 					<h2 class="card-list__heading"></h2>

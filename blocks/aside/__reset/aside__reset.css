@@ -1,4 +1,5 @@
 .aside__reset {
+	display: none;
 	height: 28px;
 	padding: 0;
 	margin: 0;
@@ -11,3 +12,5 @@
 	border: none;
 	cursor: pointer;
 }
+
+

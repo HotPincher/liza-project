@@ -1,6 +1,13 @@
 
 const profileInputs = document.querySelectorAll('.personal-info__input');
-const profileSubmitBtns = document.querySelectorAll('.personal-info__button-submit')
+const profileSubmitForms = document.querySelectorAll('.personal-info__form');
+const profileSubmitBttns = document.querySelectorAll('.personal-info__button-submit');
+const profileAvatar = document.querySelector('.sidebar-account__image')
+const profileName = document.querySelector('.sidebar-account__title');
+const formAvatar = document.querySelector('#form-avatar')
+const formName = document.querySelector('#form-name');
+profileName.textContent = [formName.value];
+profileAvatar.setAttribute('src', `${'./images/' + formAvatar.value}`)
 
 const dateMask = IMask(
 	document.querySelector('#form-birth'),
@@ -11,7 +18,7 @@ const dateMask = IMask(
 		lazy: false
 	});
 
-var numberMask = IMask(
+const numberMask = IMask(
 	document.querySelector('#form-phone'),
 	{
 		mask: Number,
@@ -23,32 +30,35 @@ var numberMask = IMask(
 
 function disableRemove(elem) {
 	elem.removeAttribute('disabled');
-}
+};
 
 function disableAdd(elem) {
 	elem.setAttribute('disabled', 'disabled');
-}
+};
 
 function submitForm() {
 	profileInputs.forEach(item => {
-
 		if (item.value.length !== 0) {
 			item.textContent = item.value;
+			profileName.textContent = formName.value
+			profileAvatar.setAttribute('src', `${'./images/' + formAvatar.value}`,)
 		}
-	});
-}
+	})
+};
 
 profileInputs.forEach(item => {
 	item.oninput = function () {
 		let parentForm = item.closest('form');
-		const profileSubmitBtn = parentForm.querySelector('.personal-info__button-submit');
-
-		disableRemove(profileSubmitBtn);
+		const profileSubmitBttn = parentForm.querySelector('.personal-info__button-submit');
+		disableRemove(profileSubmitBttn);
 	}
 });
 
-
-profileSubmitBtns.forEach(button => button.addEventListener('click', () => {
+profileSubmitForms.forEach(form => form.addEventListener('submit', (evt) => {
+	evt.preventDefault()
 	submitForm();
-	disableAdd(button);
-}));
+	profileSubmitBttns.forEach(item => {
+		disableAdd(item)
+	})
+})
+);

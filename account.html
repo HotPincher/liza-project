@@ -13,18 +13,18 @@
 
 <body class="page">
 	<header class="header">
-		<a class="logo__link" target="_blank" href="#">
-			<h2 class="logo">Учебная платформа</h2>
-		</a>
+		<a class="header__link" target="_blank" href="#">Учебная платформа</a>
 		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__list-item">
-					<img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы">
-					<a class="menu__link" href="./index.html">Курсы</a>
+					<a class="menu__link" href="./index.html">
+						<img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы">Курсы
+					</a>
 				</li>
 				<li class="menu__list-item">
-					<img id="account-page-logo" class="menu__icon" src="./images/logo_profile_active.svg" alt="Профиль">
-					<a id="account-page-link" class="menu__link menu__link_active" href="#">Профиль</a>
+					<a id="account-page-link" class="menu__list-item menu__link menu__link_active" href="#">
+						<img class="menu__icon" src="./images/logo_profile_active.svg" alt="Профиль">Профиль
+					</a>
 				</li>
 			</ul>
 		</nav>
@@ -32,8 +32,8 @@
 	<h1 class="page-title">Профиль</h1>
 	<aside class="sidebar sidebar-account">
 		<div class="sidebar-account__core-content">
-			<img class="sidebar-account__image" src="./images/profile_avatar.jpg" alt="Аватар пользователя">
-			<h2 class="sidebar-account__title">Иванова Анна Сидоровна</h2>
+			<img class="sidebar-account__image" src="#" alt="Аватар пользователя">
+			<h2 class="sidebar-account__title"></h2>
 		</div>
 		<ul class="sidebar-account__parameters">
 			<li class="sidebar-account__list-item">
@@ -72,7 +72,7 @@
 						Дата рождения
 					</label>
 					<input type="text" name="form-birth" id="form-birth"
-						class="personal-info__input personal-info__input_date" value="1990-01-01" required>
+						class="personal-info__input personal-info__input_date" value="01-01-1991" required>
 				</li>
 				<li class="personal-info__item">
 					<label for="form-region" class="personal-info__label-text">
@@ -93,7 +93,8 @@
 						Фото
 					</label>
 					<input type="text" name="form-avatar" id="form-avatar"
-						class="personal-info__input personal-info__input_file" value="photo.jpg" maxlength="0" disabled>
+						class="personal-info__input personal-info__input_file" placeholder=".jpg" value="photo.jpg"
+						pattern=".+.jpg" required>
 				</li>
 			</ul>
 			<button type="submit" class="personal-info__button-submit" disabled>Сохранить изменения</button>
@@ -120,14 +121,14 @@
 						Номер телефона
 					</label>
 					<input type="tel" name="form-phone" id="form-phone" class="personal-info__input"
-						placeholder="+7 123 456 78 90">
+						placeholder="+7 123 456 78 90" readonly>
 				</li>
 				<li class="personal-info__item">
 					<label for="form-email" class="personal-info__label-text">
 						Email
 					</label>
 					<input type="email" name="form-email" id="form-email" class="personal-info__input"
-						value="anna@liza-alert.ru">
+						value="anna@liza-alert.ru" pattern=".+@liza-alert.ru" placeholder="name@liza-alert.ru">
 				</li>
 				<li class="personal-info__item">
 					<label for="form-password" class="personal-info__label-text">

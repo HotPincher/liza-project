@@ -12,7 +12,6 @@ filterBlockHead.forEach(function (item) {
 	});
 });
 
-
 checkedItems.forEach(item => item.addEventListener("click", function () {
 	createCheckedItem(item)
 
@@ -31,8 +30,8 @@ resetAllBtn.addEventListener('click', function () {
 	while (checkedList.firstChild) {
 		checkedList.removeChild(checkedList.firstChild);
 	}
+	resetAllBtn.classList.remove('aside__reset_active')
 })
-
 
 function createCheckedItem(evt) {
 	const checkedItemTemplate = document.querySelector(".checked-item-template").content;
@@ -40,10 +39,10 @@ function createCheckedItem(evt) {
 	const deselectButton = checkedItem.querySelector(".aside__deselect-button");
 	const checkedName = checkedItem.querySelector(".aside__name-checked-option");
 	const itemCollection = checkedList.querySelectorAll(".aside__checked-item");
-
 	checkedName.textContent = evt.value;
 
 	if (evt.checked == true) {
+		resetAllBtn.classList.add('aside__reset_active')
 		if (evt.value == 'Активный') {
 			checkedGroupItems.forEach(item => item.checked = false);
 			evt.checked = true;
@@ -71,7 +70,6 @@ function createCheckedItem(evt) {
 			}
 			addCheckedItem(checkedList, checkedItem);
 		}
-
 		addCheckedItem(checkedList, checkedItem);
 	}
 
@@ -82,14 +80,19 @@ function createCheckedItem(evt) {
 				deleteCheckedItem([...itemCollection][i]);
 			}
 		}
+		if (checkedList.children.length === 0) {
+			resetAllBtn.classList.remove('aside__reset_active')
+		}
 	}
 
 	deselectButton.addEventListener("click", function () {
 		deleteCheckedItem(checkedItem);
 		evt.checked = false;
+		if (checkedList.children.length === 0) {
+			resetAllBtn.classList.remove('aside__reset_active')
+		}
 		showCard();
 	});
-
 	showCard();
 }
 
@@ -131,3 +134,4 @@ function showCard() {
 		}
 	})
 }
+
