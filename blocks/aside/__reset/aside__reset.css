@@ -1,0 +1,17 @@
+.aside__reset {
+	display: none;
+	height: 28px;
+	padding: 0;
+	margin: 0;
+	font-family: Golos, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 133%;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+
