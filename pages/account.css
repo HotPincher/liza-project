@@ -26,12 +26,13 @@
 @import url(../blocks/sidebar-account/__core-content/sidebar-account__core-content.css);
 @import url(../blocks/sidebar-account/__image/sidebar-account__image.css);
 @import url(../blocks/sidebar-account/__title/sidebar-account__title.css);
-@import url(../blocks/sidebar-account/__parameters/sidebar-account__parameters.css);
-@import url(../blocks/sidebar-account/__list-item/sidebar-account__list-item.css);
-@import url(../blocks/sidebar-account/__icon/sidebar-account__icon.css);
-@import url(../blocks/sidebar-account/__heading/sidebar-account__heading.css);
 @import url(../blocks/sidebar-account/__account-leave-button/sidebar-account__account-leave-button.css);
 @import url(../blocks/sidebar-account/__account-leave-button-icon/sidebar-account__account-leave-button-icon.css);
+
+@import url(../blocks/parameters/parameters.css);
+@import url(../blocks/parameters/__list-item/parameters__list-item.css);
+@import url(../blocks/parameters/__heading/parameters__heading.css);
+@import url(../blocks/parameters/__icon/parameters__icon.css);
 
 /* personal-info */
 @import url(../blocks/personal-info/personal-info.css);
