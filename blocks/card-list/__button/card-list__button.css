@@ -15,7 +15,8 @@
 	border: 0;
 	color: #ffffff;
 	z-index: 2;
-
+  text-align: center;
+	text-decoration: none;
 }
 
 .card-list__button:hover {

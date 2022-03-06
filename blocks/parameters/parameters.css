@@ -1,4 +1,4 @@
-.sidebar-account__parameters {
+.parameters {
 	grid-row: 2 / 3;
 	grid-column: 1 / 1;
 	list-style: none;
@@ -11,7 +11,7 @@
 
 
 @media (max-width: 1024px) {
-	.sidebar-account__parameters {
+	.parameters {
 		grid-column: 2 / 3;
 		grid-row: 1 / 1;
 		justify-self: start;
@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 768px) {
-	.sidebar-account__parameters {
+	.parameters {
 		align-self: center;
 		margin-top: 0;
 	}

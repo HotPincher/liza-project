@@ -1,10 +1,10 @@
-.sidebar-account__list-item {
+.parameters__list-item {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.sidebar-account__list-item:nth-of-type(2) {
+.parameters__list-item:nth-of-type(2) {
 	margin-top: 16px;
 	margin-bottom: 16px;
 }

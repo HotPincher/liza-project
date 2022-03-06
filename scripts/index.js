@@ -23,10 +23,6 @@ const createCard = card => {
 	cardTemplateElement.setAttribute("data-status", `${card.status}`);
 	cardButtonType.setAttribute("value", `${card.button}`);
 
-	if (card.button === "Продолжить") {
-		cardButtonType.classList.add("card-list__button_registration");
-	}
-
 	if (card.button === "Записаться") {
 		cardButtonType.classList.add("card-list__button_initiate");
 		cardButtonType.addEventListener("click", evt => {
