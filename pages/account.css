@@ -14,6 +14,10 @@
 @import url(../blocks/menu/__link/_active/menu__link_active.css);
 @import url(../blocks/menu/__icon/menu__icon.css);
 
+/* button */
+@import url(../blocks/button/button.css);
+
+
 /* title */
 
 @import url(../blocks/page-title/page-title.css);
@@ -52,6 +56,5 @@
 @import url(../blocks/disclaimer-info/__text/disclaimer-info__text.css);
 @import url(../blocks/disclaimer-info/__list/disclaimer-info__list.css);
 @import url(../blocks/disclaimer-info/__list-item/disclaimer-info__list-item.css);
-
 
 
