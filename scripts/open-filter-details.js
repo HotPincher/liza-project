@@ -2,7 +2,7 @@ const filterBlockHead = document.querySelectorAll(".aside__filter-block-head");
 const checkedItems = document.querySelectorAll(".aside__checkbox-options");
 const checkedList = document.querySelector(".aside__checked-options-list");
 const checkedGroupItems = document.querySelectorAll(".aside__checkbox-options_group");
-const resetAllBtn = document.querySelector(".aside__reset");
+const resetAllBtn = document.querySelector(".aside__reset-button");
 
 filterBlockHead.forEach(item => {
 	item.addEventListener("click", function (evt) {
@@ -30,7 +30,7 @@ resetAllBtn.addEventListener("click", () => {
 	while (checkedList.firstChild) {
 		checkedList.removeChild(checkedList.firstChild);
 	}
-	resetAllBtn.classList.remove("aside__reset_active");
+	resetAllBtn.classList.remove("aside__reset-button_active");
 });
 
 function createCheckedItem(evt) {
@@ -48,7 +48,7 @@ function createCheckedItem(evt) {
 	checkedName.textContent = evt.value;
 
 	if (evt.checked == true) {
-		resetAllBtn.classList.add("aside__reset_active");
+		resetAllBtn.classList.add("aside__reset-button_active");
 		if (evt.value == "Активный") {
 			checkedGroupItems.forEach(item => (item.checked = false));
 			evt.checked = true;
@@ -90,7 +90,7 @@ function createCheckedItem(evt) {
 			}
 		}
 		if (checkedList.children.length === 0) {
-			resetAllBtn.classList.remove("aside__reset_active");
+			resetAllBtn.classList.remove("aside__reset-button_active");
 		}
 	}
 
@@ -98,7 +98,7 @@ function createCheckedItem(evt) {
 		deleteCheckedItem(checkedItem);
 		evt.checked = false;
 		if (checkedList.children.length === 0) {
-			resetAllBtn.classList.remove("aside__reset_active");
+			resetAllBtn.classList.remove("aside__reset-button_active");
 		}
 		showCard();
 	});
