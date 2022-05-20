@@ -1,5 +1,12 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
+@import url("../blocks/media-player/media-player.css");
+@import url("../blocks/media-player/__wrapper/media-player__wrapper.css");
+@import url("../blocks/media-player/__control-bar/media-player__control-bar.css");
+@import url("../blocks/media-player/__play/media-player__play.css");
+@import url("../blocks/media-player/__pause/media-player__pause.css");
+@import url("../blocks/media-player/__range/media-player__range.css");
+@import url("../blocks/media-player/__range/_video/media-player__range_video.css");
+@import url("../blocks/media-player/__range/_audio/media-player__range_audio.css");
+@import url("../blocks/media-player/__volume/media-player__volume.css");
+@import url("../blocks/media-player/__volume-img/media-player__volume-img.css");
+@import url("../blocks/media-player/__expand-screen/media-player__expand-screen.css");
 
-@import url(../blocks/page/page.css);
-@import url("../blocks/page/_type/page_type_lesson-page.css");

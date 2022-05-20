@@ -1,0 +1,4 @@
+.media-player__range_video {
+	flex-grow: 3;
+	max-width: 468px;
+}

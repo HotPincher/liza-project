@@ -1,14 +1,30 @@
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="This is lesson video web-page">
-	<title>Видео</title>
-	<link rel="stylesheet" href="./pages/video.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is courses web-page">
+  <title>Видео</title>
+  <link rel="stylesheet" href="./pages/video.css">
 </head>
 
-<body class="page page_type_lesson-page">
-  
+<body>
+<section class="media-player">
+	<div class="media-player__wrapper">
+     <div class="media-player__control-bar">
+        <button class="media-player__play" type="button" name="play/pause"></button>
+        <input class="media-player__range media-player__range_video" type="range" id="video" name="video" value="0" min="0" max="100" step="1">
+        <label for="video"></label>
+        <div class="media-player__volume">
+	        <button class="media-player__volume-img" type="button" name="volume-img"></button>
+            <input class="media-player__range media-player__range_audio" type="range" id="volume" name="volume" value="0" min="0" max="100" step="1">
+            <label for="volume"></label>
+        </div>
+	    <button class="media-player__expand-screen" type="button" name="expand-screen"></button>
+     </div>
+	</div>
+</section>
+<script src="scripts/video.js"></script>
 </body>

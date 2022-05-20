@@ -1,0 +1,6 @@
+.media-player__control-bar {
+	width: 92%;
+	max-height: 24px;
+	display: flex;
+	margin: 0 0 32px 0;
+}
