@@ -1,0 +1,7 @@
+.card-result__paragraph_one {
+    margin: 0;
+}
+
+.card-result__paragraph_one:first-of-type {
+	margin-bottom: 18px;
+}

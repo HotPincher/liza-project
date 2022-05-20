@@ -1,0 +1,12 @@
+@import url("../blocks/card-result/card-result.css");
+@import url("../blocks/card-result/_color-green/card-result_color-green.css");
+@import url("../blocks/card-result/_color-red/card-result_color-red.css");
+@import url("../blocks/card-result/__result/card-result__result.css");
+@import url("../blocks/card-result/__result/_color-red/card-result__result_color-red.css");
+@import url("../blocks/card-result/__result/_color-green/card-result__result_color-green.css");
+@import url("../blocks/card-result/__paragraph/card-result__paragraph.css");
+@import url("../blocks/card-result/__paragraph/_one/card-result__paragraph_one.css");
+@import url("../blocks/card-result/__paragraph/_color-green/card-result__paragraph_color-green.css");
+@import url("../blocks/card-result/__paragraph/_color-red/card-result__paragraph_color-red.css");
+@import url("../blocks/card-result/__paragraph/_span-accept/card-result__paragraph_span-accept.css");
+

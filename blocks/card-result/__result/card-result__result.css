@@ -1,0 +1,10 @@
+.card-result__result {
+    max-width: 680px;
+    font-family: "Golos-Text", Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    margin: 32px 0 24px 0;
+}
