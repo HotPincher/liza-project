@@ -1,0 +1,6 @@
+.block-test{
+  max-width: 872px;
+  padding: 32px 32px 44px;
+  box-shadow: 0px 0px 4px rgba(231, 232, 235, 0.6), 0px 4px 16px rgba(231, 232, 235, 0.6);
+  border-radius: 16px;
+}

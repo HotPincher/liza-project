@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This is courses web-page">
+	<title>Курсы</title>
+	<link rel="stylesheet" href="./pages/test.css">
+</head>
+
+<body class="page">
+	<header class="header">
+		<a class="header__link" target="_blank" href="#">Учебная платформа</a>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
+						<img class="menu__icon" src="./images/logo_courses_active.svg" alt="Курсы">Курсы
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a class="menu__link" href="./account.html">
+						<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="test-root">
+		<section class="block-test">
+			<div class="block-test__header">
+				<h2 class="title title_size_m">Тест</h2>
+				<a href="./about-test.html" class="block-test__link">Посмотреть условия</a>
+			</div>
+			<form id="form" action="">
+				<fieldset class="block-test__form-items">
+					<h3 class="title title_size_s">
+						1. В каких случаях перспективно применение следовых кинологических расчётов?
+					</h3>
+					<label class="block-test__form-item">
+						<input class="block-test__input block-test__input_disabled_true checkbox" type="checkbox"
+							value="checkbox-one" name="test-firs" id="checkbox-one">
+						<span class="block-test__icon block-test__icon_type_checkbox"></span>
+						<span class="block-test__text">
+							Оказание помощи гражданам, оказавшимся в зонах бедствия или пропавшим в безлюдной местности
+						</span>
+					</label>
+					<label class="block-test__form-item">
+						<input class="block-test__input block-test__input_disabled_true checkbox" type="checkbox"
+							value="checkbox-two" name="test-firs" id="checkbox-two" disablet="disablet">
+						<span class="block-test__icon block-test__icon_type_checkbox"></span>
+						<span class="block-test__text">
+							Обучение животного идти как по горячему, так и по остывшему следу
+						</span>
+					</label>
+					<label class="block-test__form-item">
+						<input class="block-test__input block-test__input_disabled_true checkbox" type="checkbox"
+							value="checkbox-three" name="test-firs" id="checkbox-three">
+						<span class="block-test__icon block-test__icon_type_checkbox"></span>
+						<span class="block-test__text">
+							Поиск тел и их остатков с применением специально обученных собак
+						</span>
+					</label>
+				</fieldset>
+
+				<fieldset class="block-test__form-items">
+					<h3 class="title title_size_s">
+						2. С какого возраста следует начинать дрессировку по курсу ПСС?
+					</h3>
+
+					<label class="block-test__form-item">
+						<input class="block-test__input block-test__input_disabled_false radio" type="radio"
+							name="test-second" value="half-year" id="radio-one">
+						<span class="block-test__icon block-test__icon_type_radio"></span>
+						<span class="block-test__text">
+							6 месяцев
+						</span>
+					</label>
+					<label class="block-test__form-item">
+						<input class="block-test__input block-test__input_disabled_true radio" type="radio"
+							name="test-second" value="one-year" id="radio-two">
+						<span class="block-test__icon block-test__icon_type_radio"></span>
+						<span class="block-test__text">
+							1–1,5 года
+						</span>
+					</label>
+					<label class="block-test__form-item">
+						<input class="block-test__input block-test__input_disabled_false radio" type="radio"
+							name="test-second" value="sthree-year" id="radio-three">
+						<span class="block-test__icon block-test__icon_type_radio"></span>
+						<span class="block-test__text">
+							3 года
+						</span>
+					</label>
+				</fieldset>
+				<div class="block-test__info">
+					<h2>заглушка</h2>
+				</div>
+				<input class="block-test__bt block-test__bt_active" disabled type="submit" value="показать результат">
+				<input class="block-test__bt block-test__bt_type_reset" type="reset" value="пересдать">
+			</form>
+		</section>
+	</main>
+	<script src="./scripts/script-test.js"></script>
+</body>
