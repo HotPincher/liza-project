@@ -1,0 +1,5 @@
+.checkbox-block{
+	position: relative;
+	display: flex;
+	cursor: pointer;
+}

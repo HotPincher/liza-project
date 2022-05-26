@@ -29,10 +29,22 @@
 @import url(../blocks/aside/__filter-items/aside__filter-items.css);
 @import url(../blocks/aside/__filter-list/aside__filter-list.css);
 @import url(../blocks/aside/__name-checked-option/aside__name-checked-option.css);
+
+/* подготовил классы для блока checkbox-block */
+/*@import url(../blocks/checkbox-block/checkbox-block.css);
+@import url(../blocks/checkbox-block/_type/checkbox-block_type_courses.css);
+@import url(../blocks/checkbox-block/__input/checkbox-block__input.css);
+@import url(../blocks/checkbox-block/__icon/checkbox-block__icon.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_checkbox.css);
+@import url(../blocks/checkbox-block/__text/checkbox-block__text.css);*/
+
+
+/* классы кторое буду заменены блоком checkbox-block  */
 @import url(../blocks/aside/__checkbox/aside__checkbox.css);
 @import url(../blocks/aside/__checkbox-options/aside__checkbox-options.css);
 @import url(../blocks/aside/__checkbox-pseudo/aside__checkbox-pseudo.css);
 @import url(../blocks/aside/__checkbox-label/aside__checkbox-label.css);
+
 @import url(../blocks/aside/__reset-button/aside__reset-button.css);
 @import url(../blocks/aside/__reset-button/_active/aside__reset-button_active.css);
 @import url(../blocks/aside/__form-head/aside__form-head.css);

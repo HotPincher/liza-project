@@ -1,0 +1,7 @@
+.checkbox-block_type_test{
+	margin-top: 16px;
+}
+
+.checkbox-block_type_test:last-child{
+	margin-bottom: 0;
+}

@@ -3,6 +3,7 @@
   display: flex;
   margin-top: 16px;
   justify-content: flex-start;
+  cursor: pointer;
 }
 
 .block-test__form-item:last-child{
