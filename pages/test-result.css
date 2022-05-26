@@ -1,16 +1,12 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
-@import url(../blocks/page/page.css);
-@import url("../blocks/card-result/card-result.css");
-@import url("../blocks/card-result/_color-green/card-result_color-green.css");
-@import url("../blocks/card-result/_color-red/card-result_color-red.css");
-@import url("../blocks/card-result/__result/card-result__result.css");
-@import url("../blocks/card-result/__result/_color-red/card-result__result_color-red.css");
-@import url("../blocks/card-result/__result/_color-green/card-result__result_color-green.css");
-@import url("../blocks/card-result/__container/card-result__container.css");
-@import url(../blocks/card-result/__paragraph-indent/card-result__paragraph-indent.css);
-@import url("../blocks/card-result/__container/_color-green/card-result__container_color-green.css");
-@import url("../blocks/card-result/__container/_color-red/card-result__container_color-red.css");
-@import url("../blocks/card-result/__container/_span-accept/card-result__container_span-accept.css");
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts/fonts.css");
+@import url("../blocks/page/page.css");
+@import url("../blocks/test-result/test-result.css");
+@import url("../blocks/test-result/_color/test-result_color_green.css");
+@import url("../blocks/test-result/_color/test-result_color_red.css");
+@import url("../blocks/test-result/__result/test-result__result.css");
+@import url("../blocks/test-result/__container/test-result__container.css");
+@import url("../blocks/test-result/__paragraph-indent/test-result__paragraph-indent.css");
+@import url("../blocks/test-result/__text-bold/test-result__text-bold.css");
 
 
