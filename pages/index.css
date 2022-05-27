@@ -1,8 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
-
 @import url(../blocks/page/page.css);
-
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__link/header__link.css);
 @import url(../blocks/menu/menu.css);
@@ -11,43 +9,36 @@
 @import url(../blocks/menu/__link/menu__link.css);
 @import url(../blocks/menu/__link/_active/menu__link_active.css);
 @import url(../blocks/menu/__icon/menu__icon.css);
-
 @import url(../blocks/page-title/page-title.css);
-
 @import url(../blocks/button/button.css);
 
-/*SIDEBAR*/
+/* SIDEBAR */
+
 @import url(../blocks/sidebar/sidebar.css);
-@import url(../blocks/aside/aside.css);
-@import url(../blocks/aside/__checked-item/aside__checked-item.css);
-@import url(../blocks/aside/__checked-options-list/aside__checked-options-list.css);
-@import url(../blocks/aside/__deselect-option/aside__deselect-option.css);
-@import url(../blocks/aside/__filter-block-name/aside__filter-block-name.css);
-@import url(../blocks/aside/__filter-block/aside__filter-block.css);
-@import url(../blocks/aside/__filter-form/aside__filter-form.css);
-@import url(../blocks/aside/__filter-item/aside__filter-item.css);
-@import url(../blocks/aside/__filter-items/aside__filter-items.css);
-@import url(../blocks/aside/__filter-list/aside__filter-list.css);
-@import url(../blocks/aside/__name-checked-option/aside__name-checked-option.css);
-@import url(../blocks/aside/__checkbox/aside__checkbox.css);
-@import url(../blocks/aside/__checkbox-options/aside__checkbox-options.css);
-@import url(../blocks/aside/__checkbox-pseudo/aside__checkbox-pseudo.css);
-@import url(../blocks/aside/__checkbox-label/aside__checkbox-label.css);
-@import url(../blocks/aside/__reset-button/aside__reset-button.css);
-@import url(../blocks/aside/__reset-button/_active/aside__reset-button_active.css);
-@import url(../blocks/aside/__form-head/aside__form-head.css);
-@import url(../blocks/aside/__title/aside__title.css);
-@import url(../blocks/aside/__accordion-item-toggler/aside__accordion-item-toggler.css);
-@import url(../blocks/aside/__filter-block-head/aside__filter-block-head.css);
-@import url(../blocks/aside/__filter-items/_open/aside__filter-items_open.css);
-@import url(../blocks/aside/__filter-block/_active/aside__filter-block_active.css);
-@import url(../blocks/aside/__deselect-button/aside__deselect-button.css);
-
-
+@import url(../blocks/sidebar/__checked-item/sidebar__checked-item.css);
+@import url(../blocks/sidebar/__checked-options-list/sidebar__checked-options-list.css);
+@import url(../blocks/sidebar/__deselect-option/sidebar__deselect-option.css);
+@import url(../blocks/accordion/__title/accordion__title.css);
+@import url(../blocks/sidebar/__element/sidebar__element.css);
+@import url(../blocks/sidebar/__content/sidebar__content.css);
+@import url(../blocks/accordion/__list-item/accordion__list-item.css);
+@import url(../blocks/accordion/__panel/accordion__panel.css);
+@import url(../blocks/sidebar/__elements/sidebar__elements.css);
+@import url(../blocks/sidebar/__name-checked-option/sidebar__name-checked-option.css);
+@import url(../blocks/checkbox/checkbox.css);
+@import url(../blocks/checkbox/__checkbox-options/checkbox__options.css);
+@import url(../blocks/checkbox/__pseudo/checkbox__pseudo.css);
+@import url(../blocks/checkbox/__label/checkbox__label.css);
+@import url(../blocks/block-header/__reset-button/block-header__button.css);
+@import url(../blocks/block-header/__reset-button/_active/block-header__button_active.css);
+@import url(../blocks/block-header/block-header.css);
+@import url(../blocks/block-header/__title/block-header__title.css);
+@import url(../blocks/accordion/__toggler/accordion__toggler.css);
+@import url(../blocks/accordion/__toggler/_active/accordion__toggler_active.css);
+@import url(../blocks/accordion/__header/accordion__header.css);
+@import url(../blocks/accordion/accordion.css);
+@import url(../blocks/sidebar/__deselect-button/sidebar__deselect-button.css);
 @import url(../blocks/articles/articles.css);
-
-
-
 @import url(../blocks/card-list/card-list.css);
 @import url(../blocks/card-list/__base/card-list__base.css);
 @import url(../blocks/card-list/__overlay/card-list__overlay.css);
@@ -65,6 +56,4 @@
 @import url(../blocks/card-list/__button/_registration/card-list__button_registration.css);
 @import url(../blocks/card-list/__button/_initiate/card-list__button_initiate.css);
 @import url(../blocks/card-list/__button/_disable/card-list__button_disable.css);
-
-
 

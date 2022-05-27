@@ -1,0 +1,5 @@
+.custom-list-item__icon_type_passed {
+	background-color: #008000;
+	-webkit-mask-image: url('../../../../images/passed-icon.svg');
+	mask-image: url('../../../../images/passed-icon.svg');
+}

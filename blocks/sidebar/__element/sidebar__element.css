@@ -1,0 +1,15 @@
+.sidebar__element {
+	border-top: 1px solid #e6e7eb;
+	padding-top: 32px;
+}
+
+.sidebar__element:not(:last-child) {
+	border-bottom: 1px solid #e6e7eb;
+	padding-bottom: 33px;
+}
+
+@media (max-width: 1024px) {
+	.sidebar__element:not(:last-child) {
+		border-bottom: none;
+	}
+}

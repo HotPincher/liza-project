@@ -1,0 +1,4 @@
+.custom-list-item__icon_type_lesson {
+	-webkit-mask-image: url('../../../../images/lesson-icon.svg');
+	mask-image: url('../../../../images/lesson-icon.svg');
+}

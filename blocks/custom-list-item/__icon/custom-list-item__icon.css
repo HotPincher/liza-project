@@ -1,0 +1,13 @@
+.custom-list-item__icon {
+	min-width: 24px;
+	height: 24px;
+	padding: 0;
+	background-color: #212329;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	-webkit-mask-size: 83.3%;
+	mask-size: 83.3%;
+	align-self: center;
+}
