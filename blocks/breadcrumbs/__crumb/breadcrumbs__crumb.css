@@ -1,0 +1,26 @@
+.breadcrumbs__crumb {
+  position: relative;
+  margin-right: 24px;
+}
+
+.breadcrumbs__crumb::after {
+  width: 24px;
+  height: 24px;
+
+  content: "";
+
+  background: top left / contain
+    url("../../../images/breadcrumbs_arrow_right_icon.svg");
+
+  position: absolute;
+  top: 0;
+  right: -24px;
+}
+
+.breadcrumbs__crumb:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs__crumb:last-child::after {
+  display: none;
+}
