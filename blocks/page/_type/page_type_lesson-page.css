@@ -19,8 +19,8 @@
 		grid-template-columns: 12px 1fr 12px;
 		grid-template-areas:
 			"header header header"
-			". sidebar-right ."
+			". breadcrumbs ."
 			". content ."
-			". breadcrumbs .";
+			". sidebar-right .";
   }
 }
