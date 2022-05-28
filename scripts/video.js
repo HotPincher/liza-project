@@ -22,5 +22,5 @@ function initElement(element) {
 
 elementRange.forEach(element => {
 	initElement(element);
-	element.addEventListener('change', elementRangeHandler);
+	element.addEventListener('mousemove', elementRangeHandler);
 });
