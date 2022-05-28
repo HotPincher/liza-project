@@ -1,6 +1,3 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
-
 @import url(../blocks/page/page.css);
 @import url("../blocks/page/_type/page_type_lesson-page.css");
 
@@ -18,3 +15,14 @@
 @import url("../blocks/breadcrumbs/__crumb/breadcrumbs__crumb.css");
 @import url("../blocks/breadcrumbs/__link/breadcrumbs__link.css");
 @import url("../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css");
+
+@import url("../blocks/media-player/media-player.css");
+@import url("../blocks/media-player/__control-bar/media-player__control-bar.css");
+@import url("../blocks/media-player/__play/media-player__play.css");
+@import url("../blocks/media-player/__pause/media-player__pause.css");
+@import url("../blocks/media-player/__range/media-player__range.css");
+@import url("../blocks/media-player/__range/_type/media-player__range_type_video.css");
+@import url("../blocks/media-player/__range/_type/media-player__range_type_audio.css");
+@import url("../blocks/media-player/__volume/media-player__volume.css");
+@import url("../blocks/media-player/__volume-img/media-player__volume-img.css");
+@import url("../blocks/media-player/__expand-screen/media-player__expand-screen.css");
