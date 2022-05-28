@@ -10,5 +10,93 @@
 </head>
 
 <body class="page page_type_lesson-page">
-  
+	<header class="header">
+		<a class="header__link" target="_blank" href="#">Учебная платформа</a>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
+						<img class="menu__icon" src="./images/logo_courses_active.svg" alt="Курсы">Курсы
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a class="menu__link" href="./account.html">
+						<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="block-test">
+		<div class="block-test__header">
+			<h2 class="block-test__title block-test__title_size_m">Тест</h2>
+			<a href="./test-about.html" class="block-test__link">Посмотреть условия</a>
+		</div>
+		<form id="form" action="">
+			<fieldset class="block-test__form-items">
+				<h3 class="block-test__title block-test__title_size_s">
+					1. В каких случаях перспективно применение следовых кинологических расчётов?
+				</h3>
+				<label class="checkbox-block checkbox-block_type_test">
+					<input class="checkbox-block__input checkbox-block__input_disabled_true checkbox" type="checkbox"
+						value="checkbox-one" name="test-firs" id="checkbox-one">
+					<span class="checkbox-block__icon checkbox-block__icon_type_checkbox"></span>
+					<span class="checkbox-block__text">
+						Оказание помощи гражданам, оказавшимся в зонах бедствия или пропавшим в безлюдной местности
+					</span>
+				</label>
+				<label class="checkbox-block checkbox-block_type_test">
+					<input class="checkbox-block__input checkbox-block__input_disabled_true checkbox" type="checkbox"
+						value="checkbox-two" name="test-firs" id="checkbox-two">
+					<span class="checkbox-block__icon checkbox-block__icon_type_checkbox"></span>
+					<span class="checkbox-block__text">
+						Обучение животного идти как по горячему, так и по остывшему следу
+					</span>
+				</label>
+				<label class="checkbox-block checkbox-block_type_test">
+					<input class="checkbox-block__input checkbox-block__input_disabled_true checkbox" type="checkbox"
+						value="checkbox-three" name="test-firs" id="checkbox-three">
+					<span class="checkbox-block__icon checkbox-block__icon_type_checkbox"></span>
+					<span class="checkbox-block__text">
+						Поиск тел и их остатков с применением специально обученных собак
+					</span>
+				</label>
+			</fieldset>
+
+			<fieldset class="block-test__form-items">
+				<h3 class="block-test__title block-test__title_size_s">
+					2. С какого возраста следует начинать дрессировку по курсу ПСС?
+				</h3>
+
+				<label class="checkbox-block checkbox-block_type_test">
+					<input class="checkbox-block__input checkbox-block__input_disabled_false radio" type="radio"
+						name="test-second" value="half-year" id="radio-one">
+					<span class="checkbox-block__icon checkbox-block__icon_type_radio"></span>
+					<span class="checkbox-block__text">
+						6 месяцев
+					</span>
+				</label>
+				<label class="checkbox-block checkbox-block_type_test">
+					<input class="checkbox-block__input checkbox-block__input_disabled_true radio" type="radio"
+						name="test-second" value="one-year" id="radio-two">
+					<span class="checkbox-block__icon checkbox-block__icon_type_radio"></span>
+					<span class="checkbox-block__text">
+						1–1,5 года
+					</span>
+				</label>
+				<label class="checkbox-block checkbox-block_type_test">
+					<input class="checkbox-block__input checkbox-block__input_disabled_false radio" type="radio"
+						name="test-second" value="sthree-year" id="radio-three">
+					<span class="checkbox-block__icon checkbox-block__icon_type_radio"></span>
+					<span class="checkbox-block__text">
+						3 года
+					</span>
+				</label>
+			</fieldset>
+			<input class="block-test__bt block-test__bt_active" disabled type="submit" value="показать результат">
+			<input class="block-test__bt block-test__bt_type_reset" type="reset" value="пересдать">
+		</form>
+	</section>
+
+	<script src="./scripts/script-test.js"></script>
 </body>

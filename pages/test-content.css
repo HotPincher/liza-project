@@ -3,3 +3,102 @@
 
 @import url(../blocks/page/page.css);
 @import url("../blocks/page/_type/page_type_lesson-page.css");
+
+/* header */
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/menu/__list/menu__list.css);
+@import url(../blocks/menu/__list-item/menu__list-item.css);
+@import url(../blocks/menu/__link/menu__link.css);
+@import url(../blocks/menu/__link/_active/menu__link_active.css);
+@import url(../blocks/menu/__icon/menu__icon.css);
+
+/* test */
+@import url(../blocks/block-test/block-test.css);
+@import url(../blocks/block-test/__header/block-test__header.css);
+@import url(../blocks/block-test/__link/block-test__link.css);
+@import url(../blocks/block-test/__form-items/block-test__form-items.css);
+
+
+@import url(../blocks/checkbox-block/checkbox-block.css);
+@import url(../blocks/checkbox-block/_type/checkbox-block_type_test.css);
+
+@import url(../blocks/checkbox-block/__text/checkbox-block__text.css);
+@import url(../blocks/checkbox-block/__text/_theme/checkbox-block__text_theme_false.css);
+@import url(../blocks/checkbox-block/__text/_theme/checkbox-block__text_theme_true.css);
+
+@import url(../blocks/checkbox-block/__icon/checkbox-block__icon.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_checkbox.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_checkbox-shoose.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_radio.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_radio-shoose.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_true-check.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_true-uncheck.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_false-check.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_false-uncheck.css);
+
+@import url(../blocks/checkbox-block/__input/checkbox-block__input.css);
+@import url(../blocks/checkbox-block/__input/_disabled/checkbox-block__input_disabled_true.css);
+@import url(../blocks/checkbox-block/__input/_disabled/checkbox-block__input_disabled_false.css);
+
+@import url("../blocks/test-result/test-result.css");
+@import url("../blocks/test-result/_color/test-result_color_green.css");
+@import url("../blocks/test-result/_color/test-result_color_red.css");
+@import url("../blocks/test-result/__result/test-result__result.css");
+@import url("../blocks/test-result/__container/test-result__container.css");
+@import url("../blocks/test-result/__paragraph-indent/test-result__paragraph-indent.css");
+@import url("../blocks/test-result/__text-bold/test-result__text-bold.css");
+
+
+@import url(../blocks/block-test/__bt/block-test__bt.css);
+@import url(../blocks/block-test/__bt/_active/block-test__bt_active.css);
+
+
+/* они здесь пока у мне нет нужных блоков*/
+/* это заглушка которая должна показывать результат теста, пока она просто стоновится либо зеленой либо красной'*/
+.block-test__info{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+
+.block-test__info_theme_false{
+  display: flex;
+  color: #FF0000;
+  background: rgba(255, 0, 0, 0.12);
+  border: 1.2px solid rgba(255, 0, 0, 0.6);
+}
+
+
+.block-test__info_theme_true{
+  display: flex;
+  background: rgba(0, 128, 0, 0.12);
+  color: #008000;
+  border: 1.2px solid rgba(0, 128, 0, 0.6);
+
+}
+
+.block-test__title{
+	margin: 0;
+}
+
+.block-test__title_size_m{
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.block-test__title_size_s{
+	font-size: 18px;
+	line-height: 24px;
+}
+
+
+.block-test__bt_type_reset{
+	margin-top: 32px;
+}
