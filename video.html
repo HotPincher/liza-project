@@ -10,6 +10,39 @@
 </head>
 
 <body class="page page_type_lesson-page">
+<header class="header">
+	<a class="header__link" target="_blank" href="#">Учебная платформа</a>
+	<nav class="menu">
+		<ul class="menu__list">
+			<li class="menu__list-item">
+				<a id="courses-page-link" class="menu__link" href="./index.html">
+					<img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы">Курсы
+				</a>
+			</li>
+			<li class="menu__list-item">
+				<a class="menu__link" href="./account.html">
+					<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<section class="media-player">
+	<div class="media-player__control-bar">
+		<button class="media-player__play" type="button" name="play/pause"></button>
+		<input class="media-player__range media-player__range_type_video" type="range" id="video" name="video" value="0"
+			   min="0" max="100" step="1">
+		<label for="video"></label>
+		<div class="media-player__volume">
+			<button class="media-player__volume-img" type="button" name="volume-img"></button>
+			<input class="media-player__range media-player__range_type_audio" type="range" id="volume" name="volume"
+				   value="0" min="0" max="100" step="1">
+			<label for="volume"></label>
+		</div>
+		<button class="media-player__expand-screen" type="button" name="expand-screen"></button>
+	</div>
+</section>
+<script src="scripts/video.js"></script>
 <aside class="sidebar">
 	<div class="sidebar__content">
 		<div class="block-header">
@@ -215,3 +248,4 @@
 </aside>
 <script src="./scripts/open_accordion.js"></script>
 </body>
+</html>

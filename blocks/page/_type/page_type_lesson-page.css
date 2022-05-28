@@ -1,6 +1,6 @@
 .page_type_lesson-page {
 	grid-template-columns:
-  36px minmax(min-content, 75%) minmax(min-content, calc(33% - 48px)) 36px;
+  36px minmax(min-content, 60.6%) minmax(min-content, calc(32.8% - 48px)) 36px;
 	grid-template-areas:
 		"header header header header"
 		". breadcrumbs breadcrumbs ."
@@ -8,17 +8,18 @@
 }
 
 @media (max-width: 1184px) {
-	.page {
-		grid-template-columns: 1px minmax(min-content, 75%) minmax(min-content, calc(25%)) 1px;
+  .page {
+		grid-template-columns: 1px minmax(min-content, 60.6%) minmax(min-content, calc(32.8%)) 1px;
 	}
 }
 
 @media (max-width: 1024px) {
   .page {
+		grid-template-columns: 12px 1fr 12px;
 		grid-template-areas:
 			"header header header"
 			". breadcrumbs ."
-			". sidebar ."
-			". content .";
+			". content ."
+			". sidebar .";
   }
 }
