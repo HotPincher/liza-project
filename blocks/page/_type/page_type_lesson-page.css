@@ -4,13 +4,12 @@
 	grid-template-areas:
 		"header header header header"
 		". breadcrumbs breadcrumbs ."
-		". content sidebar-right .";
+		". content sidebar .";
 }
 
 @media (max-width: 1184px) {
   .page {
-		grid-template-columns:
-			1px minmax(min-content, 60.6%) minmax(min-content, calc(32.8%)) 1px;
+		grid-template-columns: 1px minmax(min-content, 60.6%) minmax(min-content, calc(32.8%)) 1px;
 	}
 }
 
@@ -21,6 +20,6 @@
 			"header header header"
 			". breadcrumbs ."
 			". content ."
-			". sidebar-right .";
+			". sidebar .";
   }
 }

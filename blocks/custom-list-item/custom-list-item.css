@@ -1,0 +1,7 @@
+.custom-list-item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}

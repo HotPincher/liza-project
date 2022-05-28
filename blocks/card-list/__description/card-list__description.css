@@ -17,7 +17,7 @@
 
 @media (max-width: 1320px) {
 	.card-list__description {
-		grid-column: 2 / 3;
+		grid-column: 2 / 4;
 		grid-row: 1 / 2;
 		justify-self: start;
 		max-width: 100%;
