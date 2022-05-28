@@ -42,28 +42,6 @@
 @import url(../blocks/checkbox-block/__input/_disabled/checkbox-block__input_disabled_false.css);
 
 
-
-
-/*@import url(../blocks/block-test/__form-item/block-test__form-item.css);
-
-@import url(../blocks/block-test/__text/block-test__text.css);
-@import url(../blocks/block-test/__text/_theme/block-test__text_theme_false.css);
-@import url(../blocks/block-test/__text/_theme/block-test__text_theme_true.css);
-
-@import url(../blocks/block-test/__icon/block-test__icon.css);
-@import url(../blocks/block-test/__icon/_type/block-test__icon_type_checkbox.css);
-@import url(../blocks/block-test/__icon/_type/block-test__icon_type_checkbox-shoose.css);
-@import url(../blocks/block-test/__icon/_type/block-test__icon_type_radio.css);
-@import url(../blocks/block-test/__icon/_type/block-test__icon_type_radio-shoose.css);
-@import url(../blocks/block-test/__icon/_type/block-test__icon_type_true-check.css);
-@import url(../blocks/block-test/__icon/_type/block-test__icon_type_true-uncheck.css);
-@import url(../blocks/block-test/__icon/_type/block-test__icon_type_false-check.css);
-@import url(../blocks/block-test/__icon/_type/block-test__icon_type_false-uncheck.css);
-
-@import url(../blocks/block-test/__input/block-test__input.css);
-@import url(../blocks/block-test/__input/_disabled/block-test__input_disabled_true.css);
-@import url(../blocks/block-test/__input/_disabled/block-test__input_disabled_false.css);*/
-
 @import url(../blocks/block-test/__bt/block-test__bt.css);
 @import url(../blocks/block-test/__bt/_active/block-test__bt_active.css);
 
