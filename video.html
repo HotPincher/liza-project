@@ -11,23 +11,41 @@
 </head>
 
 <body class="page page_type_lesson-page">
-<header class="header">
-	<a class="header__link" target="_blank" href="#">Учебная платформа</a>
-	<nav class="menu">
-		<ul class="menu__list">
-			<li class="menu__list-item">
-				<a id="courses-page-link" class="menu__link" href="./index.html">
-					<img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы">Курсы
-				</a>
-			</li>
-			<li class="menu__list-item">
-				<a class="menu__link" href="./account.html">
-					<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
-				</a>
-			</li>
-		</ul>
-	</nav>
-</header>
+	<header class="header">
+		<a class="header__link" target="_blank" href="#">Учебная платформа</a>
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<a id="courses-page-link" class="menu__link" href="./index.html">
+            <img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы">Курсы
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a class="menu__link" href="./account.html">
+						<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+  <nav class="breadcrumbs" aria-label="breadcrumb">
+    <ol class="breadcrumbs__crumbs-list">
+      <li class="breadcrumbs__crumb">
+        <a class="breadcrumbs__link" href="#">Курсы</a>
+      </li>
+      <li class="breadcrumbs__crumb">
+        <a class="breadcrumbs__link" href="#">Кинологическое направление</a>
+      </li>
+      <li class="breadcrumbs__crumb">
+        <a class="breadcrumbs__link" href="#">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a>
+      </li>
+      <li class="breadcrumbs__crumb">
+        <a class="breadcrumbs__link breadcrumbs__link_type_current" href="#" aria-current="page">Тест</a>
+      </li>
+    </ol>
+  </nav>
+
 <section class="media-player">
 	<div class="media-player__control-bar">
 		<button class="media-player__play" type="button" name="play/pause"></button>
@@ -43,6 +61,7 @@
 		<button class="media-player__expand-screen" type="button" name="expand-screen"></button>
 	</div>
 </section>
+
 <script src="scripts/video.js"></script>
 </body>
 </html>

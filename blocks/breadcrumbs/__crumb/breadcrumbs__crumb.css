@@ -1,0 +1,19 @@
+.breadcrumbs__crumb {
+  display: inline;
+}
+
+.breadcrumbs__crumb::before {
+  width: 24px;
+  height: 24px;
+
+  padding: 0 12px;
+
+  content: "";
+
+  background: top left / contain
+    url("../../../images/breadcrumbs_arrow_right_icon.svg");
+}
+
+.breadcrumbs__crumb:first-child::before {
+  display: none;
+}
