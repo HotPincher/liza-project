@@ -22,7 +22,7 @@
 					</a>
 				</li>
 				<li class="menu__list-item">
-					<a id="account-page-link" class="menu__list-item menu__link menu__link_active" href="#">
+					<a id="account-page-link" class="menu__link menu__link_active" href="#">
 						<img class="menu__icon" src="./images/logo_profile_active.svg" alt="Профиль">Профиль
 					</a>
 				</li>
@@ -30,32 +30,32 @@
 		</nav>
 	</header>
 	<h1 class="page-title">Профиль</h1>
-	<aside class="sidebar sidebar_type_account">
+	<aside class="sidebar sidebar-account">
 		<div class="sidebar-account__core-content">
 			<img class="sidebar-account__image" onerror=" src='./images/default.jpg' " src="#"
 				alt="Аватар пользователя">
-			<h2 class="sidebar-account__title">#</h2>
+			<p class="sidebar-account__title">#</p>
 		</div>
 
 		<ul class="parameters">
 			<li class="parameters__list-item">
 				<img class="parameters__icon" src="./images/logo_sidebar_professional.svg"
 					alt="Иконка-статус пользователя">
-				<h3 class="parameters__heading">Профессионал</h3>
+				<p class="parameters__heading">Профессионал</p>
 			</li>
 			<li class="parameters__list-item">
 				<img class="parameters__icon" src="./images/logo_sidebar_kartograf.svg"
 					alt="Иконка-профессия пользователя">
-				<h3 class="parameters__heading">Картограф</h3>
+				<p class="parameters__heading">Картограф</p>
 			</li>
 			<li class="parameters__list-item">
 				<img class="parameters__icon" src="./images/logo_sidebar_course.svg"
 					alt="Иконка-курсы пользователя">
-				<h3 class="parameters__heading">Пройдено 2 курса</h3>
+				<p class="parameters__heading">Пройдено 2 курса</p>
 			</li>
 		</ul>
 
-		<button id="account-leave-button" class="button button_type_account-leave" type="button"><img
+		<button id="account-leave-button" class="button button_type_account-leave sidebar-account__leave-button" type="button"><img
 				class="sidebar-account__account-leave-button-icon" src="./images/sidebar_leave-account.svg"
 				alt="Выйти из аккаунта">Выйти из аккаунта</button>
 	</aside>

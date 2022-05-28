@@ -1,4 +1,4 @@
-.sidebar_type_account {
+.sidebar-account {
 	min-width: 295px;
 	display: grid;
 	justify-items: center;
@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 1024px) {
-	.sidebar_type_account {
+	.sidebar-account {
 		grid-template-columns: repeat(2, auto);
 		grid-template-rows: minmax(min-content, 320px);
 		margin-top: 24px;
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 768px) {
-	.sidebar_type_account {
+	.sidebar-account {
 		display: flex;
 		flex-direction: column;
 	}
