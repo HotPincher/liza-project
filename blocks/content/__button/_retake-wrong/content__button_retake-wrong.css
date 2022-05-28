@@ -1,0 +1,27 @@
+.content__button_retake-wrong {
+  width: 176px;
+  height: 48px;
+  margin-left: 348px;
+  padding-left: 48px;
+  background-color: #F06000;
+  color: #fff;
+  transition: opacity .2s linear;
+}
+
+.content__button_retake-wrong::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+  background: url('/images/testRetake.svg');
+  background-repeat: no-repeat;
+}
+
+.content__button_retake-wrong:hover {
+  opacity: .6;
+}

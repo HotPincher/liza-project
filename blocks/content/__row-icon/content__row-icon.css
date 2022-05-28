@@ -1,0 +1,9 @@
+.content__row-icon{
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 8px 0 0;
+  align-self: center;
+}

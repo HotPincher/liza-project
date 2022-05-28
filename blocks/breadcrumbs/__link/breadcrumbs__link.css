@@ -1,0 +1,15 @@
+.breadcrumbs__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212329;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: underline;
+  opacity: .6;
+  transition: all 0.5s;
+  cursor: pointer;
+}

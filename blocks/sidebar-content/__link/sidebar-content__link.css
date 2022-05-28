@@ -1,0 +1,9 @@
+.sidebar-content__link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 10px;
+  color: #212329;
+  align-items: flex-start;
+}

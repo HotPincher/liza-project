@@ -1,0 +1,8 @@
+.breadcrumbs__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-left: 60px;
+  margin: 0;
+}

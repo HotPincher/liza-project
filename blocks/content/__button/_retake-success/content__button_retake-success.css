@@ -1,0 +1,23 @@
+.content__button_retake-success {
+  width: 176px;
+  height: 48px;
+  margin-left: 348px;
+  padding-left: 48px;
+  background-color: white;
+  color: #F06000;
+  border: 1.2px solid #E6E7EB;
+}
+
+.content__button_retake-success::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 1;
+  background: url('/images/TestRetakeOrange.svg');
+  background-repeat: no-repeat;
+}

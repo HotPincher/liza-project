@@ -1,0 +1,18 @@
+.completed-course__text {
+  max-width: 680px;
+  margin: 0;
+  margin-left: 96px;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.completed-course__text:nth-child(5) {
+  padding-top: 0;
+}
+
+.completed-course__text:last-child {
+  margin-bottom: 32px;
+}

@@ -1,0 +1,10 @@
+.content__button_active {
+  background-color: #F06000;
+  color: white;
+  cursor: pointer;
+  transition: opacity .2s linear;
+}
+
+.content__button_active:hover {
+  opacity: .6;
+}

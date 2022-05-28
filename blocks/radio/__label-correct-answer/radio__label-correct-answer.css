@@ -1,0 +1,17 @@
+.radio__label-correct-answer {
+  padding-left: 31px;
+  font: 400 18px/24px 'Golos', sans-serif;
+}
+
+.radio__label-correct-answer::before {
+  border: none;
+  top: 6px;
+  left: 3px;
+  width: 15px;
+  height: 12px;
+  background: url('/images/FirstTestCorrectAnswer.svg'), no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
