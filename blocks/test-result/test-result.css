@@ -1,0 +1,6 @@
+.test-result {
+	grid-area: content;
+	display: block;
+	width: 808px;
+	justify-content: center;
+}

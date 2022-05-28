@@ -2,11 +2,8 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	font-family: Golos, "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 133%;
 	color: #9397a3;
 }
 
@@ -27,5 +24,5 @@
 }
 
 .personal-info__item_photo::after {
-	background-image: url(../../../../images/profile_attach-icon.svg);
+	background-image: url(../../../images/profile_attach-icon.svg);
 }

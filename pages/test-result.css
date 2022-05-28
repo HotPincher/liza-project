@@ -1,0 +1,12 @@
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts/fonts.css");
+@import url("../blocks/page/page.css");
+@import url("../blocks/test-result/test-result.css");
+@import url("../blocks/test-result/_color/test-result_color_green.css");
+@import url("../blocks/test-result/_color/test-result_color_red.css");
+@import url("../blocks/test-result/__result/test-result__result.css");
+@import url("../blocks/test-result/__container/test-result__container.css");
+@import url("../blocks/test-result/__paragraph-indent/test-result__paragraph-indent.css");
+@import url("../blocks/test-result/__text-bold/test-result__text-bold.css");
+
+

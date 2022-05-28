@@ -1,0 +1,7 @@
+.test-result__paragraph-indent {
+    margin: 0;
+}
+
+.test-result__paragraph-indent:first-of-type {
+	margin-bottom: 18px;
+}

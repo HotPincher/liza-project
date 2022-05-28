@@ -1,0 +1,9 @@
+.test-result__result {
+    max-width: 680px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    margin: 32px auto 24px;
+}
