@@ -13,6 +13,12 @@
 @import url(../blocks/menu/__link/_active/menu__link_active.css);
 @import url(../blocks/menu/__icon/menu__icon.css);
 
+@import url("../blocks/breadcrumbs/breadcrumbs.css");
+@import url("../blocks/breadcrumbs/__crumbs-list/breadcrumbs__crumbs-list.css");
+@import url("../blocks/breadcrumbs/__crumb/breadcrumbs__crumb.css");
+@import url("../blocks/breadcrumbs/__link/breadcrumbs__link.css");
+@import url("../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css");
+
 @import url("../blocks/test-result/test-result.css");
 @import url("../blocks/test-result/_color/test-result_color_green.css");
 @import url("../blocks/test-result/_color/test-result_color_red.css");
@@ -20,5 +26,3 @@
 @import url("../blocks/test-result/__container/test-result__container.css");
 @import url("../blocks/test-result/__paragraph-indent/test-result__paragraph-indent.css");
 @import url("../blocks/test-result/__text-bold/test-result__text-bold.css");
-
-
