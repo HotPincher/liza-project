@@ -2,183 +2,183 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="This is courses web-page">
-	<title>Курсы</title>
-	<link rel="stylesheet" href="./pages/index.css">
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="This is courses web-page" name="description">
+  <title>Курсы</title>
+  <link href="./pages/index.css" rel="stylesheet">
 </head>
 
 <body class="page">
 <header class="header">
-	<a class="header__link" target="_blank" href="#">Учебная платформа</a>
-	<nav class="menu">
-		<ul class="menu__list">
-			<li class="menu__list-item">
-				<a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
-					<img class="menu__icon" src="./images/logo_courses_active.svg" alt="Курсы">Курсы
-				</a>
-			</li>
-			<li class="menu__list-item">
-				<a class="menu__link" href="./account.html">
-					<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
-				</a>
-			</li>
-		</ul>
-	</nav>
+  <a class="header__link" href="#" target="_blank">Учебная платформа</a>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__list-item">
+        <a class="menu__link menu__link_active" href="./index.html" id="courses-page-link">
+          <img alt="Курсы" class="menu__icon" src="./images/logo_courses_active.svg">Курсы
+        </a>
+      </li>
+      <li class="menu__list-item">
+        <a class="menu__link" href="./account.html">
+          <img alt="Профиль" class="menu__icon" src="./images/logo_profile.svg">Профиль
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>
 <h1 class="page-title">Курсы</h1>
 <main class="articles">
-	<ul class="card-list">
-	</ul>
+  <ul class="card-list">
+  </ul>
 </main>
 <aside class="sidebar">
-	<form class="sidebar__content" action="#" method="get" name="filter-form">
-		<div class="block-header">
-			<h2 class="block-header__title">Фильтры</h2>
-			<button class="button block-header__button filter__reset-button" type="reset">Очистить</button>
-		</div>
-		<ul class="sidebar__elements">
-			<li class="sidebar__element">
-				<div class="accordion">
-					<a class="accordion__header">
-						<h3 class="accordion__title">Категория</h3>
-						<div class="accordion__toggler"></div>
-					</a>
-					<ul class="accordion__panel">
-						<li class="accordion__list-item"></li>
-					</ul>
-				</div>
-			</li>
-			<li class="sidebar__element">
-				<div class="accordion">
-					<a class="accordion__header">
-						<h3 class="accordion__title">Тематика</h3>
-						<div class="accordion__toggler"></div>
-					</a>
-					<ul class="accordion__panel">
-						<li class="accordion__list-item"></li>
-					</ul>
-				</div>
-			</li>
-			<li class="sidebar__element">
-				<div class="accordion">
-					<a class="accordion__header">
-						<h3 class="accordion__title">Уровень</h3>
-						<div class="accordion__toggler"></div>
-					</a>
-					<ul class="accordion__panel">
-						<li class="accordion__list-item" data-level="level">
-							<label class="sidebar__checkbox" for="level-new">
-								<input class="checkbox__options" type="checkbox" value="Новичок" name="level-new"
-									   id="level-new" data-level="Уровень"/>
-								<span class="checkbox__pseudo"></span>
-								<span class="checkbox__label">Новичок</span>
-							</label>
-						</li>
-						<li class="accordion__list-item">
-							<label class="sidebar__checkbox" for="level-experienced">
-								<input class="checkbox__options" type="checkbox" value="Бывалый"
-									   name="level-experienced" id="level-experienced" data-level="Уровень"/>
-								<span class="checkbox__pseudo"></span>
-								<span class="checkbox__label">Бывалый</span>
-							</label>
-						</li>
-						<li class="accordion__list-item">
-							<label class="sidebar__checkbox" for="level-profecional">
-								<input class="checkbox__options" type="checkbox" value="Профессионал"
-									   name="level-profecional" id="level-profecional" data-level="Уровень"/>
-								<span class="checkbox__pseudo"></span>
-								<span class="checkbox__label">Профессионал</span>
-							</label>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li class="sidebar__element">
-				<div class="accordion">
-					<a class="accordion__header">
-						<h3 class="accordion__title">Статус</h3>
-						<div class="accordion__toggler"></div>
-					</a>
-					<ul class="accordion__panel">
-						<li class="accordion__list-item">
-							<label class="sidebar__checkbox" for="status-inactive">
-								<input class="checkbox__options sidebar__checkbox-options_group" type="checkbox"
-									   value="Не активный" name="status-inactive" id="status-inactive"
-									   data-status="Статус"
-									   data-btn="Не активный"/>
-								<span class="checkbox__pseudo"></span>
-								<span class="checkbox__label">Не активный</span>
-							</label>
-						</li>
-						<li class="accordion__list-item">
-							<label class="sidebar__checkbox" for="status-registration">
-								<input class="checkbox__options" type="checkbox" value="Вы записаны"
-									   name="status-registration" id="status-registration" data-status="Статус"
-									   data-btn="Вы записаны"/>
-								<span class="checkbox__pseudo"></span>
-								<span class="checkbox__label">Вы записаны</span>
-							</label>
-						</li>
-						<li class="accordion__list-item">
-							<label class="sidebar__checkbox" for="status-passed">
-								<input class="checkbox__options sidebar__checkbox-options_group" type="checkbox"
-									   value="Активный" name="status-passed" id="status-passed" data-status="Статус"
-									   data-btn="Активный"/>
-								<span class="checkbox__pseudo"></span>
-								<span class="checkbox__label">Активный</span>
-							</label>
-						</li>
-						<li class="accordion__list-item">
-							<label class="sidebar__checkbox" for="status-active">
-								<input class="checkbox__options" type="checkbox" value="Пройден"
-									   name="status-active" id="status-active" data-status="Статус" data-btn="Пройден"/>
-								<span class="checkbox__pseudo"></span>
-								<span class="checkbox__label">Пройден</span>
-							</label>
-						</li>
-					</ul>
-				</div>
-			</li>
-		</ul>
-	</form>
-	<ul class="sidebar__checked-options-list">
-	</ul>
+  <form action="#" class="sidebar__content" method="get" name="filter-form">
+    <div class="block-header">
+      <h2 class="block-header__title">Фильтры</h2>
+      <button class="button block-header__button filter__reset-button" type="reset">Очистить</button>
+    </div>
+    <ul class="sidebar__elements">
+      <li class="sidebar__element">
+        <div class="accordion">
+          <a class="accordion__header">
+            <h3 class="accordion__title">Категория</h3>
+            <div class="accordion__toggler"></div>
+          </a>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item"></li>
+          </ul>
+        </div>
+      </li>
+      <li class="sidebar__element">
+        <div class="accordion">
+          <a class="accordion__header">
+            <h3 class="accordion__title">Тематика</h3>
+            <div class="accordion__toggler"></div>
+          </a>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item"></li>
+          </ul>
+        </div>
+      </li>
+      <li class="sidebar__element">
+        <div class="accordion">
+          <a class="accordion__header">
+            <h3 class="accordion__title">Уровень</h3>
+            <div class="accordion__toggler"></div>
+          </a>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item" data-level="level">
+              <label class="sidebar__checkbox" for="level-new">
+                <input class="checkbox__options" data-level="Уровень" id="level-new" name="level-new"
+                       type="checkbox" value="Новичок"/>
+                <span class="checkbox__pseudo"></span>
+                <span class="checkbox__label">Новичок</span>
+              </label>
+            </li>
+            <li class="accordion__list-item">
+              <label class="sidebar__checkbox" for="level-experienced">
+                <input class="checkbox__options" data-level="Уровень" id="level-experienced"
+                       name="level-experienced" type="checkbox" value="Бывалый"/>
+                <span class="checkbox__pseudo"></span>
+                <span class="checkbox__label">Бывалый</span>
+              </label>
+            </li>
+            <li class="accordion__list-item">
+              <label class="sidebar__checkbox" for="level-profecional">
+                <input class="checkbox__options" data-level="Уровень" id="level-profecional"
+                       name="level-profecional" type="checkbox" value="Профессионал"/>
+                <span class="checkbox__pseudo"></span>
+                <span class="checkbox__label">Профессионал</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="sidebar__element">
+        <div class="accordion">
+          <a class="accordion__header">
+            <h3 class="accordion__title">Статус</h3>
+            <div class="accordion__toggler"></div>
+          </a>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item">
+              <label class="sidebar__checkbox" for="status-inactive">
+                <input class="checkbox__options sidebar__checkbox-options_group" data-btn="Не активный"
+                       data-status="Статус" id="status-inactive" name="status-inactive"
+                       type="checkbox"
+                       value="Не активный"/>
+                <span class="checkbox__pseudo"></span>
+                <span class="checkbox__label">Не активный</span>
+              </label>
+            </li>
+            <li class="accordion__list-item">
+              <label class="sidebar__checkbox" for="status-registration">
+                <input class="checkbox__options" data-btn="Вы записаны" data-status="Статус"
+                       id="status-registration" name="status-registration" type="checkbox"
+                       value="Вы записаны"/>
+                <span class="checkbox__pseudo"></span>
+                <span class="checkbox__label">Вы записаны</span>
+              </label>
+            </li>
+            <li class="accordion__list-item">
+              <label class="sidebar__checkbox" for="status-passed">
+                <input class="checkbox__options sidebar__checkbox-options_group" data-btn="Активный"
+                       data-status="Статус" id="status-passed" name="status-passed" type="checkbox"
+                       value="Активный"/>
+                <span class="checkbox__pseudo"></span>
+                <span class="checkbox__label">Активный</span>
+              </label>
+            </li>
+            <li class="accordion__list-item">
+              <label class="sidebar__checkbox" for="status-active">
+                <input class="checkbox__options" data-btn="Пройден" data-status="Статус"
+                       id="status-active" name="status-active" type="checkbox" value="Пройден"/>
+                <span class="checkbox__pseudo"></span>
+                <span class="checkbox__label">Пройден</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </form>
+  <ul class="sidebar__checked-options-list">
+  </ul>
 </aside>
 <template id="cardTemplate">
-	<div class="card-list__base">
-		<a class="card-list__overlay" href="#" target="_blank">
-			<img src="#" alt="№" class="card-list__image">
-			<div class="card-list__description">
-				<h2 class="card-list__heading"></h2>
-				<span class="card-list__tier"></span>
-				<p class="card-list__info"></p>
-			</div>
-			<div class="card-list__timing">
-				<div class="card-list__timing-item">
-					<img class="card-list__icon" src="./images/articles_book.svg" alt="книга">
-					<p class="card-list__time" id="lessons"></p>
-				</div>
-				<div class="card-list__timing-item">
-					<img class="card-list__icon" src="./images/articles_clock.svg" alt="часы">
-					<p class="card-list__time" id="time"></p>
-				</div>
-			</div>
-		</a>
-		<a href="#" class="button card-list__button"></a>
-	</div>
+  <div class="card-list__base">
+    <a class="card-list__overlay" href="#" target="_blank">
+      <img alt="№" class="card-list__image" src="#">
+      <div class="card-list__description">
+        <h2 class="card-list__heading"></h2>
+        <span class="card-list__tier"></span>
+        <p class="card-list__info"></p>
+      </div>
+      <div class="card-list__timing">
+        <div class="card-list__timing-item">
+          <img alt="книга" class="card-list__icon" src="./images/articles_book.svg">
+          <p class="card-list__time" id="lessons"></p>
+        </div>
+        <div class="card-list__timing-item">
+          <img alt="часы" class="card-list__icon" src="./images/articles_clock.svg">
+          <p class="card-list__time" id="time"></p>
+        </div>
+      </div>
+    </a>
+    <a class="button card-list__button" href="#"></a>
+  </div>
 </template>
 <template class="checked-item-template">
-	<li class="sidebar__checked-item">
-		<div class="sidebar__deselect-option">
-			<p class="sidebar__name-checked-option"></p>
-			<button class="button sidebar__deselect-button" type="button">
-				<img src="./images/sidebar_delete-option.svg" alt="удалить" class="sidebar__deselect-button-img">
-			</button>
-		</div>
-	</li>
+  <li class="sidebar__checked-item">
+    <div class="sidebar__deselect-option">
+      <p class="sidebar__name-checked-option"></p>
+      <button class="button sidebar__deselect-button" type="button">
+        <img alt="удалить" class="sidebar__deselect-button-img" src="./images/sidebar_delete-option.svg">
+      </button>
+    </div>
+  </li>
 </template>
 <script src="./scripts/open_accordion.js"></script>
 <script src="./scripts/open-filter-details.js"></script>
