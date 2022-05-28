@@ -2,49 +2,49 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="This is courses web-page">
-	<title>Результат</title>
-	<link rel="stylesheet" href="./pages/test-result.css">
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="This is courses web-page" name="description">
+  <title>Результат</title>
+  <link href="./pages/test-result.css" rel="stylesheet">
 </head>
 
 <body class="page page_type_lesson-page">
-	<header class="header">
-		<a class="header__link" target="_blank" href="#">Учебная платформа</a>
-		<nav class="menu">
-			<ul class="menu__list">
-				<li class="menu__list-item">
-					<a id="courses-page-link" class="menu__link" href="./index.html">
-						<img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы">Курсы
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a class="menu__link" href="./account.html">
-						<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-
-  <nav class="breadcrumbs" aria-label="breadcrumb">
-    <ol class="breadcrumbs__crumbs-list">
-      <li class="breadcrumbs__crumb">
-        <a class="breadcrumbs__link" href="#">Курсы</a>
+<header class="header">
+  <a class="header__link" href="#" target="_blank">Учебная платформа</a>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__list-item">
+        <a class="menu__link" href="./index.html" id="courses-page-link">
+          <img alt="Курсы" class="menu__icon" src="./images/logo_courses.svg">Курсы
+        </a>
       </li>
-      <li class="breadcrumbs__crumb">
-        <a class="breadcrumbs__link" href="#">Кинологическое направление</a>
+      <li class="menu__list-item">
+        <a class="menu__link" href="./account.html">
+          <img alt="Профиль" class="menu__icon" src="./images/logo_profile.svg">Профиль
+        </a>
       </li>
-      <li class="breadcrumbs__crumb">
-        <a class="breadcrumbs__link" href="#">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a>
-      </li>
-      <li class="breadcrumbs__crumb">
-        <a class="breadcrumbs__link breadcrumbs__link_type_current" href="#" aria-current="page">Тест</a>
-      </li>
-    </ol>
+    </ul>
   </nav>
+</header>
+
+<nav aria-label="breadcrumb" class="breadcrumbs">
+  <ol class="breadcrumbs__crumbs-list">
+    <li class="breadcrumbs__crumb">
+      <a class="breadcrumbs__link" href="#">Курсы</a>
+    </li>
+    <li class="breadcrumbs__crumb">
+      <a class="breadcrumbs__link" href="#">Кинологическое направление</a>
+    </li>
+    <li class="breadcrumbs__crumb">
+      <a class="breadcrumbs__link" href="#">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a>
+    </li>
+    <li class="breadcrumbs__crumb">
+      <a aria-current="page" class="breadcrumbs__link breadcrumbs__link_type_current" href="#">Тест</a>
+    </li>
+  </ol>
+</nav>
 <section class="test-result">
   <div aria-label="Результат" class="test-result__result">Поздравляем!</div>
   <div class="test-result__container"><p class="test-result__paragraph-indent">Вы успешно завершили курс «Кинологическое
