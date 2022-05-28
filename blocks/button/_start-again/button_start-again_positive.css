@@ -1,0 +1,13 @@
+.button_start-again_positive {
+  background: #FFFFFF;
+  border: 1.2px solid #E6E7EB;
+  color: #FF6600;
+  fill: #FF6600;
+  text-decoration: none;
+  transition: transform 0.6s, border 0.6s;
+}
+
+.button_start-again_positive:hover {
+  border: 1px #ff6600 solid;
+  transform: scale(1.008);
+}

@@ -24,17 +24,19 @@ const createCard = card => {
 	cardButtonType.setAttribute("value", `${card.button}`);
 
 	if (card.button === "Записаться") {
-		cardButtonType.classList.add("card-list__button_initiate");
+		cardButtonType.classList.add("button_initiate");
 		cardButtonType.addEventListener("click", evt => {
 			evt.target
 				.closest(".card-list__button")
-				.classList.remove("card-list__button_initiate");
-			evt.target.classList.add("card-list__button_registration");
+				.classList.remove("button_initiate");
+			evt.target.classList.add("button_registration");
 			evt.target.closest(".card-list__button").textContent = "Продолжить";
 			cardTemplateElement.dataset.status = "Вы записаны";
 		});
-	} else if (card.button === "Пройден") {
-		cardButtonType.classList.add("card-list__button_disable");
+	} else if (card.button === "Продолжить") {
+		cardButtonType.classList.add("button_continue");	
+	}	else if (card.button === "Пройден") {
+		cardButtonType.classList.add("button_finished", "button_disabled");
 		cardButtonType.setAttribute("disabled", "disabled");
 	}
 

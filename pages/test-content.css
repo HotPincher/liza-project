@@ -3,3 +3,12 @@
 
 @import url(../blocks/page/page.css);
 @import url("../blocks/page/_type/page_type_lesson-page.css");
+
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/__icon/button__icon.css);
+@import url(../blocks/button/_show-result/button_show-result.css);
+@import url(../blocks/button/_start-again/button_start-again_negative.css);
+@import url(../blocks/button/_start-again/button_start-again_positive.css);
+@import url(../blocks/button/_return-back/button_return-back.css);
+@import url(../blocks/button/_go-next/button_go-next.css);
+@import url(../blocks/button/_disabled/button_disabled.css);

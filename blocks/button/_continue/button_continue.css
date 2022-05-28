@@ -1,0 +1,12 @@
+.button_continue {
+  width: 250px;
+	background: #ff6600;
+	color: #ffffff;
+	text-decoration: none;
+  transform: 2s linear;
+}
+
+.button_continue:hover {
+	background-color: #f06000;
+	transform: scale(1.008);
+}

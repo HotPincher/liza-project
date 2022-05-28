@@ -1,0 +1,13 @@
+.button_return-back {
+  border: 1.2px solid #E6E7EB;
+  background: #FFFFFF;
+  color: #FF6600;
+  fill:  #FF6600;
+  transition: transform 0.6s, border 0.6s;
+  text-decoration: none;
+}
+
+.button_return-back:hover {
+  border: 1px #ff6600 solid;
+  transform: scale(1.008);
+}
