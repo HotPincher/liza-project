@@ -1,19 +1,44 @@
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
-
-@import url(../blocks/page/page.css);
-@import url("../blocks/page/_type/page_type_lesson-page.css");
-
-/* header */
-
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts/fonts.css');
+@import url('../blocks/page/page.css');
+@import url('../blocks/page/_type/page_type_lesson-page.css');
 @import url(../blocks/header/header.css);
-@import url(../blocks/menu/menu.css);
 @import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/menu/menu.css);
 @import url(../blocks/menu/__list/menu__list.css);
 @import url(../blocks/menu/__list-item/menu__list-item.css);
 @import url(../blocks/menu/__link/menu__link.css);
 @import url(../blocks/menu/__link/_active/menu__link_active.css);
 @import url(../blocks/menu/__icon/menu__icon.css);
+@import url('../blocks/sidebar/sidebar.css');
+@import url('../blocks/sidebar/__content/sidebar__content.css');
+@import url('../blocks/block-header/block-header.css');
+@import url('../blocks/sidebar/__elements/sidebar__elements.css');
+@import url('../blocks/sidebar/__element/sidebar__element.css');
+@import url('../blocks/accordion/__header/accordion__header.css');
+@import url('../blocks/accordion/__title/accordion__title.css');
+@import url('../blocks/accordion/__toggler/accordion__toggler.css');
+@import url('../blocks/accordion/__toggler/_active/accordion__toggler_active.css');
+@import url('../blocks/accordion/accordion.css');
+@import url('../blocks/accordion/__panel/accordion__panel.css');
+@import url('../blocks/accordion/__list-item/accordion__list-item.css');
+@import url('../blocks/custom-list-item/custom-list-item.css');
+@import url('../blocks/custom-list-item/__text/_color/custom-list-item__text_color_orange.css');
+@import url('../blocks/custom-list-item/__icon/custom-list-item__icon.css');
+@import url('../blocks/custom-list-item/__text/custom-list-item__text.css');
+@import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_in-progress.css');
+@import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_lesson.css');
+@import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_passed.css');
+@import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_webinar.css');
+@import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_video.css');
+@import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_test.css');
+@import url('../blocks/block-header/__title/block-header__title.css');
+
+@import url("../blocks/breadcrumbs/breadcrumbs.css");
+@import url("../blocks/breadcrumbs/__crumbs-list/breadcrumbs__crumbs-list.css");
+@import url("../blocks/breadcrumbs/__crumb/breadcrumbs__crumb.css");
+@import url("../blocks/breadcrumbs/__link/breadcrumbs__link.css");
+@import url("../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css");
 
 /* test */
 @import url(../blocks/block-test/block-test.css);
@@ -58,31 +83,6 @@
 
 /* они здесь пока у мне нет нужных блоков*/
 /* это заглушка которая должна показывать результат теста, пока она просто стоновится либо зеленой либо красной'*/
-.block-test__info{
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 200px;
-  border-radius: 16px;
-  margin-bottom: 32px;
-}
-
-.block-test__info_theme_false{
-  display: flex;
-  color: #FF0000;
-  background: rgba(255, 0, 0, 0.12);
-  border: 1.2px solid rgba(255, 0, 0, 0.6);
-}
-
-
-.block-test__info_theme_true{
-  display: flex;
-  background: rgba(0, 128, 0, 0.12);
-  color: #008000;
-  border: 1.2px solid rgba(0, 128, 0, 0.6);
-
-}
 
 .block-test__title{
 	margin: 0;
@@ -98,7 +98,8 @@
 	line-height: 24px;
 }
 
-
 .block-test__bt_type_reset{
 	margin-top: 32px;
 }
+
+

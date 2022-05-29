@@ -1,0 +1,8 @@
+.sidebar__checkbox {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+	justify-content: flex-start;
+}

@@ -1,0 +1,4 @@
+.custom-list-item__icon_type_video {
+	-webkit-mask-image: url('../../../../images/video-icon.svg');
+	mask-image: url('../../../../images/video-icon.svg');
+}

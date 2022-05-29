@@ -1,0 +1,19 @@
+.sidebar-account__leave-button{
+	grid-row: 3 / 4;
+	grid-column: 1 / 1;
+}
+
+@media (max-width: 1024px) {
+	.sidebar-account__leave-button {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+		align-self: end;
+		justify-self: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.sidebar-account__leave-button {
+		align-self: center;
+	}
+}

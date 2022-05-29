@@ -1,0 +1,8 @@
+.sidebar__deselect-button {
+	display: flex;
+	padding-right: 2px;
+	align-items: center;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
