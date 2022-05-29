@@ -45,19 +45,17 @@
 @import url("../blocks/block-test/__header/block-test__header.css");
 @import url("../blocks/block-test/__title/block-test__title.css");
 @import url("../blocks/block-test/__title/_size/block-test__title_size_m.css");
-/* Передалть позже стили по БЭМ */
 @import url("../blocks/test-informaition-block/test-information-block.css");
 
 @import url("../blocks/information-list/information-list.css");
 @import url("../blocks/information-list/_align/information-list_align_right.css");
 @import url("../blocks/information-list/__item/information-list__item.css");
 @import url("../blocks/information-list/__heading/information-list__heading.css");
-@import url("../blocks/block-test/button-wrapper.css");
-@import url(../blocks/block-test/block-test__wrapper.css);
+@import url("../blocks/block-test/__wrapper/block-test__wrapper.css");
 
-
-@import url(../blocks/button/button.css);
-@import url(../blocks/button/_color/button_color_white.css);
-@import url(../blocks/button/_color/button_color_orange.css);
-@import url(../blocks/button/__icon/button__icon.css);
-@import url(../blocks/button/_disabled/button_disabled.css);
+@import url("../blocks/button/button.css");
+@import url("../blocks/button/_color/button_color_white.css");
+@import url("../blocks/button/_color/button_color_orange.css");
+@import url("../blocks/button/__icon/button__icon.css");
+@import url("../blocks/button/_disabled/button_disabled.css");
+@import url("../blocks/button-wrapper/button-wrapper.css");
