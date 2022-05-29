@@ -6,8 +6,9 @@ const items = form.querySelectorAll('.block-test__form-items');
 
 const checkbox = form.querySelectorAll('.checkbox__pseudo_type_checkbox');
 const radio = form.querySelectorAll('.checkbox__pseudo_type_radio');
-const bt = form.querySelector('.block-test__bt');
+const bt = form.querySelector('#btResult');
 const btReset = form.querySelector('.block-test__bt_type_reset');
+const btNext = document.querySelector('#btNext');
 
 
 form.addEventListener('change', function (e) {
@@ -27,6 +28,7 @@ form.addEventListener('change', function (e) {
 
   if (checkboxActive.length > 0 && radioActive.length > 0) {
     bt.removeAttribute('disabled');
+    bt.classList.remove('button_disabled');
   } else {
     bt.setAttribute('disabled', 'true');
   }
@@ -59,7 +61,6 @@ form.addEventListener('submit', function (e) {
     }
 
   }
-  console.log(time);
   if (time > 2) {
     bt.insertAdjacentHTML('beforebegin', `
 		<section class="test-result test-result_color_green">
@@ -72,6 +73,8 @@ form.addEventListener('submit', function (e) {
 				</div>
 		</section>
 		`);
+    btNext.classList.remove('button_disabled');
+    btReset.classList.add('button_color_white');
   } else {
     bt.insertAdjacentHTML('beforebegin', `
 		<section class="test-result test-result_color_red">
@@ -82,13 +85,15 @@ form.addEventListener('submit', function (e) {
 			</div>
 		</section>
 		`);
+    btReset.classList.add('button_color_orange');
   }
 
-  bt.classList.remove('block-test__bt_active');
-  btReset.classList.add('block-test__bt_active');
+  bt.classList.add('block-test__bt_active');
+  btReset.classList.remove('block-test__bt_active');
 });
+
+
 
 btReset.addEventListener('click', function () {
   location.reload();
 });
-

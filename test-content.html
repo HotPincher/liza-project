@@ -97,7 +97,7 @@
         </label>
 
         <label class="checkbox checkbox_type_test">
-          <input class="checkbox__options checkbox__options_disabled_false radio-item" type="radio" name="test-second"
+          <input class="checkbox__options checkbox__options_disabled_true radio-item" type="radio" name="test-second"
             value="sthree-year" id="radio-three">
           <span class="checkbox__pseudo checkbox__pseudo_type_radio"></span>
           <span class="checkbox__label">
@@ -113,11 +113,38 @@
           </span>
         </label>
       </fieldset>
-      <input class="block-test__bt block-test__bt_active" disabled type="submit" value="показать результат">
-      <input class="block-test__bt block-test__bt_type_reset" type="reset" value="пересдать">
+
+      <input id="btResult" class="button button_color_orange block-test__bt button_disabled " disabled type="submit"
+        value="показать результат">
+
+      <button class="button button_color_orange block-test__bt_type_reset block-test__bt_active" type="reset">
+        <svg class="button__icon">
+          <path
+            d="M19.91 15.51h-4.53a1 1 0 0 0 0 2h2.4A8 8 0 0 1 4 12a1 1 0 1 0-2 0 10 10 0 0 0 16.88 7.23V21a1 1 0 0 0 2 0v-4.5a1 1 0 0 0-.97-.99ZM12 2a10 10 0 0 0-6.88 2.77V3a1 1 0 0 0-2 0v4.5a1 1 0 0 0 1 1h4.5a1 1 0 0 0 0-2h-2.4A8 8 0 0 1 20 12a1 1 0 0 0 2 0A10 10 0 0 0 12 2Z" />
+        </svg>
+        Пересдать
+      </button>
+
     </form>
   </section>
+  <div class="button-wrapper">
+    <a class="button button_color_white" href="./test-preview.html" title="Вернуться назад">
+      <svg class="button__icon">
+        <path
+          d="m11.16 19.07-6.37-6.36a1 1 0 0 1 0-1.42l6.37-6.36a1 1 0 1 1 1.41 1.41L7.91 11H19.5a1 1 0 1 1 0 2H7.91l4.66 4.66a1 1 0 0 1-1.41 1.41Z" />
+      </svg>
+      Назад
+    </a>
 
+    <a id="btNext" class="button button_color_orange button_disabled" href="./test-result.html" title="Перейти далее"
+      disabled>
+      Далее
+      <svg class="button__icon">
+        <path
+          d="m13.34 19.07 6.37-6.36a1 1 0 0 0 0-1.42l-6.37-6.36a1 1 0 1 0-1.41 1.41L16.59 11H5a1 1 0 1 0 0 2h11.59l-4.66 4.66a1 1 0 0 0 1.41 1.41Z" />
+      </svg>
+    </a>
+  </div>
   <!-- сайдбар -->
   <aside class="sidebar">
     <div class="sidebar__content">
@@ -317,32 +344,13 @@
               </li>
             </ul>
           </div>
-          <<<<<<< HEAD </li>
+        </li>
       </ul>
     </div>
     <ul class="sidebar__elements"></ul>
   </aside>
   <script src="./scripts/open_accordion.js"></script>
   <script src="./scripts/script-test.js"></script>
-
-  <ul class="accordion__panel">
-    <li class="accordion__list-item  custom-list-item">
-      <div class="custom-list-item__icon custom-list-item__icon_type_webinar "></div>
-      <p class="custom-list-item__text">Вебинар</p>
-    </li>
-    <li class="accordion__list-item  custom-list-item">
-      <div class="custom-list-item__icon custom-list-item__icon_type_test"></div>
-      <p class="custom-list-item__text">Тест</p>
-    </li>
-  </ul>
-  </div>
-  </li>
-  </ul>
-  </div>
-  <ul class="sidebar__elements"></ul>
-  </aside>
-
-  <script src="./scripts/open_accordion.js"></script>
 </body>
 
 
