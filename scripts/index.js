@@ -29,12 +29,12 @@ const createCard = card => {
 			evt.target
 				.closest(".card-list__button")
 				.classList.remove("button_color_white");
-			evt.target.classList.add("button_color_red");
+			evt.target.classList.add("button_color_orange");
 			evt.target.closest(".card-list__button").textContent = "Продолжить";
 			cardTemplateElement.dataset.status = "Вы записаны";
 		});
 	}	else if (card.button === "Продолжить") {
-		cardButtonType.classList.add("button_color_red");
+		cardButtonType.classList.add("button_color_orange");
 	} else if (card.button === "Пройден") {
 		cardButtonType.classList.add("button_disabled");
 		cardButtonType.setAttribute("disabled", "disabled");

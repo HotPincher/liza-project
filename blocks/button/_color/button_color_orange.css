@@ -1,12 +1,15 @@
-.button_color_red {
+.button_color_orange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   background:  #FF6600;
   color: #FFFFFF;
   text-decoration: none;
   fill: #FFFFFF;
-  transition: transform 0.6s, background-color 0.6s;
 }
 
-.button_color_red:hover {
+.button_color_orange:hover {
   background-color: #f06000;
   transform: scale(1.008);
 }

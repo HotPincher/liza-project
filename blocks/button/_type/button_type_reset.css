@@ -1,8 +1,5 @@
 .button_type_reset {
-	padding: 0;
-	margin: 0;
-	font-weight: 500;
-	font-style: normal;
-	line-height: 1.33;
+	width: auto;
+	height: auto;
 	border: none;
 }

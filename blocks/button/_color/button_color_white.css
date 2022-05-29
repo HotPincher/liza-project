@@ -1,4 +1,8 @@
 .button_color_white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   border: 1.2px solid #E6E7EB;
   background: #FFFFFF;
   color: #FF6600;
