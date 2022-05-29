@@ -46,3 +46,8 @@
   margin-top: -7px;
 }
 
+@media screen and (max-width: 1439px) {
+  .media-player__timeline {
+    width: 270px;
+  }
+}
