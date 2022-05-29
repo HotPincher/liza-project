@@ -11,6 +11,7 @@
 	line-height: 1.33;
   text-decoration: none;
   transition: transform 0.6s, background-color 0.6s;
+  border: none;
 }
 
 .button:hover {
