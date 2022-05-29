@@ -30,9 +30,11 @@
 @import url(../blocks/sidebar-account/__core-content/sidebar-account__core-content.css);
 @import url(../blocks/sidebar-account/__image/sidebar-account__image.css);
 @import url(../blocks/sidebar-account/__title/sidebar-account__title.css);
-@import url(../blocks/button/_type/button_type_account-leave.css);
-@import url(../blocks/sidebar-account/__account-leave-button-icon/sidebar-account__account-leave-button-icon.css);
-@import url(../blocks/sidebar-account/__leave-button/sidebar-account__leave-button.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/button//__icon/_size/button__icon_size_s.css);
+@import url(../blocks/button/_color/button_color_orange.css);
+@import url(../blocks/button/_color/button_color_white.css);
+@import url(../blocks/button/_size/button_size_xl.css);
 
 @import url(../blocks/parameters/parameters.css);
 @import url(../blocks/parameters/__list-item/parameters__list-item.css);

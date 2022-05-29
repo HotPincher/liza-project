@@ -37,7 +37,7 @@
   <form action="#" class="sidebar__content" method="get" name="filter-form">
     <div class="block-header">
       <h2 class="block-header__title">Фильтры</h2>
-      <button class="button block-header__button filter__reset-button" type="reset">Очистить</button>
+      <button class="button button_type_reset block-header__button filter__reset-button" type="reset">Очистить</button>
     </div>
     <ul class="sidebar__elements">
       <li class="sidebar__element">
@@ -144,12 +144,14 @@
       </li>
     </ul>
   </form>
+
   <ul class="sidebar__checked-options-list">
-  </ul>
+  </ul>  
 </aside>
+
 <template id="cardTemplate">
   <div class="card-list__base">
-    <a class="card-list__overlay" href="#" target="_blank">
+    <div class="card-list__overlay">
       <img alt="№" class="card-list__image" src="#">
       <div class="card-list__description">
         <h2 class="card-list__heading"></h2>
@@ -166,15 +168,16 @@
           <p class="card-list__time" id="time"></p>
         </div>
       </div>
-    </a>
+    </div>
     <a class="button card-list__button" href="#"></a>
   </div>
 </template>
+
 <template class="checked-item-template">
   <li class="sidebar__checked-item">
     <div class="sidebar__deselect-option">
       <p class="sidebar__name-checked-option"></p>
-      <button class="button sidebar__deselect-button" type="button">
+      <button class="button button_type_reset sidebar__deselect-button" type="button">
         <img alt="удалить" class="sidebar__deselect-button-img" src="./images/sidebar_delete-option.svg">
       </button>
     </div>
@@ -185,5 +188,4 @@
 <script src="./scripts/initial-cards.js"></script>
 <script src="./scripts/index.js"></script>
 </body>
-
 </html>

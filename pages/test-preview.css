@@ -38,3 +38,9 @@
 @import url("../blocks/breadcrumbs/__crumb/breadcrumbs__crumb.css");
 @import url("../blocks/breadcrumbs/__link/breadcrumbs__link.css");
 @import url("../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css");
+
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/_color/button_color_orange.css);
+@import url(../blocks/button/_color/button_color_white.css);
+@import url(../blocks/button/__icon/button__icon.css);
+@import url(../blocks/button/_disabled/button_disabled.css);
