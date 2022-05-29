@@ -1,0 +1,11 @@
+.test-result__button {
+  grid-area: content;
+  position: relative;
+  top: 450px;
+  display: flex;
+  border: 1px solid red;
+  max-width: 872px;
+  justify-content: flex-end;
+  max-height: 48px;
+  gap: 24px;
+}
