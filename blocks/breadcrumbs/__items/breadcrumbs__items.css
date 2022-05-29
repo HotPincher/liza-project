@@ -6,3 +6,9 @@
   padding-left: 60px;
   margin: 0;
 }
+
+@media screen and (max-width: 1439px) {
+  .breadcrumbs__items {
+    padding: 0 20px;
+  }
+}

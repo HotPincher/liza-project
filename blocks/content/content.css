@@ -7,3 +7,11 @@
   margin-left: 60px;
   padding-bottom: 32px;
 }
+
+@media screen and (max-width: 1439px) {
+  .content {
+    margin-left: 20px;
+    margin-right: 0;
+    width: 664px;
+  }
+}

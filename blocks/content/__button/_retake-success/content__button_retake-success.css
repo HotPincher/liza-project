@@ -21,3 +21,9 @@
   background: url('/images/TestRetakeOrange.svg');
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1439px) {
+  .content__button_retake-success {
+    margin: 32px 240px 0;
+  }
+}

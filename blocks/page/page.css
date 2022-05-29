@@ -1,6 +1,12 @@
 .page {
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
-  padding: 0 60px;
+  padding: 0 calc(100%-1440px);
   font-family: 'Golos', Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 1439px) {
+  .page {
+    padding: 0 calc(100%-1024px);
+  }
 }

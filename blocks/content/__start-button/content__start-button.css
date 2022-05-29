@@ -17,3 +17,9 @@
   opacity: .6;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1439px) {
+  .content__start-button {
+    margin-left: 240px;
+  }
+}
