@@ -1,0 +1,8 @@
+.button-wrapper {
+  grid-area: buttons;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 32px;
+  gap: 24px;
+}
