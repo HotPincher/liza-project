@@ -1,11 +1,12 @@
-.button_complete-test {
-  background: #FF6600;
+.button_color_red {
+  background:  #FF6600;
   color: #FFFFFF;
+  text-decoration: none;
+  fill: #FFFFFF;
   transition: transform 0.6s, background-color 0.6s;
 }
 
-.button_complete-test:hover {
+.button_color_red:hover {
   background-color: #f06000;
   transform: scale(1.008);
 }
-

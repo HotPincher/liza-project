@@ -41,10 +41,7 @@
 @import url(../blocks/aside/__filter-block/_active/aside__filter-block_active.css);
 @import url(../blocks/aside/__deselect-button/aside__deselect-button.css);
 
-
 @import url(../blocks/articles/articles.css);
-
-
 
 @import url(../blocks/card-list/card-list.css);
 @import url(../blocks/card-list/__base/card-list__base.css);
@@ -61,15 +58,6 @@
 @import url(../blocks/card-list/__icon/card-list__icon.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/card-list/__button/card-list__button.css);
-@import url(../blocks/button/_registration/button_registration.css);
-@import url(../blocks/button/_initiatie/button_initiate.css);
-@import url(../blocks/button/_continue/button_continue.css);
-@import url(../blocks/button/_finished/button_finished.css);
+@import url(../blocks/button/_color/button_color_white.css);
+@import url(../blocks/button/_color/button_color_red.css);
 @import url(../blocks/button/_disabled/button_disabled.css);
-
-/* @import url(../blocks/card-list/__button/_registration/card-list__button_registration.css);
-@import url(../blocks/card-list/__button/_initiate/card-list__button_initiate.css);
-@import url(../blocks/card-list/__button/_disable/card-list__button_disable.css); */
-
-
-

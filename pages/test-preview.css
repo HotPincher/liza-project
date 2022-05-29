@@ -5,8 +5,7 @@
 @import url("../blocks/page/_type/page_type_lesson-page.css");
 
 @import url(../blocks/button/button.css);
-@import url(../blocks/button/_start-test/button_start-test.css);
-@import url(../blocks/button/_return-back/button_return-back.css);
+@import url(../blocks/button/_color/button_color_red.css);
+@import url(../blocks/button/_color/button_color_white.css);
 @import url(../blocks/button/__icon/button__icon.css);
-@import url(../blocks/button/_go-next/button_go-next.css);
 @import url(../blocks/button/_disabled/button_disabled.css);

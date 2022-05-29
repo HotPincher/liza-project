@@ -40,7 +40,7 @@
 		<form class="aside__filter-form" action="#" method="get" name="filter-form">
 			<div class="aside__form-head">
 				<h2 class="aside__title">Фильтры</h2>
-				<button class="button aside__reset-button" type="reset">Очистить</button>
+				<button class="button_type_reset aside__reset-button" type="reset">Очистить</button>
 			</div>
 			<ul class="aside__filter-list">
 				<li class="aside__filter-block">
@@ -141,10 +141,10 @@
 		<ul class="aside__checked-options-list">
 		</ul>
 	</aside>
-	
+
 	<template id="cardTemplate">
 		<div class="card-list__base">
-			<a class="card-list__overlay" href="#" target="_blank">
+			<div class="card-list__overlay">
 				<img src="#" alt="№" class="card-list__image">
 				<div class="card-list__description">
 					<h2 class="card-list__heading"></h2>
@@ -161,7 +161,7 @@
 						<p class="card-list__time" id="time"></p>
 					</div>
 				</div>
-			</a>
+			</div>
 			<a href="#" class="button card-list__button"></a>
 		</div>
 	</template>
