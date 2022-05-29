@@ -22,6 +22,7 @@
 @import url(../blocks/accordion/__list-item/accordion__list-item.css);
 @import url(../blocks/accordion/__panel/accordion__panel.css);
 @import url(../blocks/sidebar/__elements/sidebar__elements.css);
+@import url(../blocks/sidebar/__elements/_type/sidebar__elements_type_filter.css);
 @import url(../blocks/sidebar/__name-checked-option/sidebar__name-checked-option.css);
 @import url(../blocks/checkbox/checkbox.css);
 @import url(../blocks/checkbox/__checkbox-options/checkbox__options.css);
