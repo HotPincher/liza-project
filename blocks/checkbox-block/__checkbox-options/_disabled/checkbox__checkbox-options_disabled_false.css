@@ -1,3 +1,3 @@
-.checkbox-block__input_disabled_false:disabled + .block-test__icon{
+.checkbox__checkbox-options_disabled_false:disabled + .block-test__icon{
   background: url(../images/test/test_cross_icon.svg) center no-repeat;
 }
