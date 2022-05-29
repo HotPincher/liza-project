@@ -67,6 +67,6 @@ buttonBack.addEventListener('click', () => {
     updateBreadCrumps()
     document.querySelector(".breadcrumbs > ul > li:nth-child(3)").style.display = 'block'
     btnMoved.textContent = 'Далее';
-    resetOptionColorIcon()
   }
+  resetOptionColorIconBackwards()
 })

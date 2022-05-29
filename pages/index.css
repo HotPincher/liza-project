@@ -84,6 +84,7 @@
 @import url(../blocks/results/__red/results__red.css);
 @import url(../blocks/results/__title/results__title.css);
 
+
 @import url(../blocks/sidebar-content/sidebar-content.css);
 @import url(../blocks/sidebar-content/__container/sidebar-content__container.css);
 @import url(../blocks/sidebar-content/__header/sidebar-content__header.css);
@@ -93,9 +94,16 @@
 @import url(../blocks/sidebar-content/__item-icon/sidebar-content__item-icon.css);
 @import url(../blocks/sidebar-content/__item-icon/_active/sidebar-content__item-icon_active.css);
 @import url(../blocks/sidebar-content/__options/sidebar-content__options.css);
-@import url(../blocks/sidebar-content/__options/__options_active/sidebar-content__options_active.css);
+@import url(../blocks/sidebar-content/__options/_active/sidebar-content__options_active.css);
 @import url(../blocks/sidebar-content/__option-wrapper/sidebar-content__option-wrapper.css);
 @import url(../blocks/sidebar-content/__option-icon/sidebar-content__option-icon.css);
+@import url(../blocks/sidebar-content/__option-icon/_completed/sidebar-content__option-icon_lesson.css);
+@import url(../blocks/sidebar-content/__option-icon/_lesson/sidebar-content__option-icon_lesson.css);
+@import url(../blocks/sidebar-content/__option-icon/_test/sidebar-content__option-icon_test.css);
+@import url(../blocks/sidebar-content/__option-icon/_test/_active/sidebar-content__option-icon_test.css);
+@import url(../blocks/sidebar-content/__option-icon/_video/sidebar-content__option-icon_video.css);
+@import url(../blocks/sidebar-content/__option-icon/_video/_active/sidebar-content__option-icon_video.css);
+@import url(../blocks/sidebar-content/__option-icon/_web/sidebar-content__option-icon_web.css);
 @import url(../blocks/sidebar-content/__option/sidebar-content__option.css);
 @import url(../blocks/sidebar-content/__option/_active/sidebar-content__option_active.css);
 @import url(../blocks/sidebar-content/__link/sidebar-content__link.css);

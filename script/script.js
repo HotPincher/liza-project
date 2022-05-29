@@ -283,6 +283,7 @@ const dropDownTriggerIcon = document.querySelectorAll(
 );
 const dropDownTriggerText = document.querySelectorAll(".sidebar-content__item");
 const optionsItem = document.querySelectorAll(".sidebar-content__link");
+const course = document.querySelectorAll(".breadcrumbs__link");
 
 //Открытие содержания при клике на иконку
 function openOptionsTriggerIcon(el) {
@@ -313,80 +314,141 @@ dropDownTriggerText.forEach(function (item) {
   item.addEventListener("click", openOptionsTriggerText);
 });
 
-//Изменение иконок и цвета пунков меню
+//Изменение иконок и цвета пунков содержания
 
-const titles = document.querySelectorAll(".content__title");
-const course = document.querySelectorAll(".breadcrumbs__link");
 
-const arrTitles = [...titles];
-
-// Преобразую NodeList в массив, ищу элемент, чей текст совпадает с текстом в основном блоке,
-//меняю его цвет и создаю новый массив от начала до этого элемента
+// Преобразую NodeList из подпунктов содержания в массив, ищу элемент, чей текст
+//совпадает с текстом в основном блоке,
+//меняю его цвет и создаю новый массив от начала до этого элемента, а также от текущего
+//элемента до конца
 
 const arrCoursesAll = [...optionsItem];
 let arrCoursesCompleted;
+let arrCoursesNonCompleted;
 
 //Функция изменения цвета и иконок пунктов содержания при загрузке и нажатии на кнопку "вперед"
-
-function resetOptionColorIcon() {
+function resetOptionColorIconForward() {
 
   arrCoursesAll.forEach(function (item) {
     const optionItemCurrent = item.closest("ul").dataset.target;
     let activeItem;
-
-    arrTitles.forEach(function (el) {
-      if (
-        item.lastElementChild.textContent == el.textContent &&
-        optionItemCurrent === course[2].dataset.path &&
-        !el.closest("div").parentElement.classList.contains("hidden")
-      ) {
-
-        changeOptionColor(item);
-        activeItem = arrCoursesAll.indexOf(item);
-        arrCoursesCompleted = arrCoursesAll.slice(0, activeItem);
-        arrCoursesCompleted.forEach(function (item) {
-          changeIcon(item)
-        })
-
-      } if (
-        item.lastElementChild.textContent === "Тест" &&
-        el.textContent === "Курс завершен" &&
-        optionItemCurrent === course[2].dataset.path &&
-        !el.closest("section").classList.contains("hidden")
-      ) {
-        changeIcon(item);
-        activeItem = arrCoursesAll.indexOf(item);
-        arrCoursesCompleted = arrCoursesAll.slice(0, activeItem);
-      }
-
-    });
+    if (
+      item.lastElementChild.textContent == linkCurrent.textContent &&
+      optionItemCurrent === course[2].dataset.path
+    ) {
+      highlightCurrentOption(item);
+      activeItem = arrCoursesAll.indexOf(item);
+      arrCoursesCompleted = arrCoursesAll.slice(0, activeItem);
+      arrCoursesCompleted.forEach(function (item) {
+        changeIconGreen(item)
+      })
+    }
+    if (
+      item.lastElementChild.textContent === "Тест" &&
+      linkCurrent.textContent === "Курс завершен" &&
+      optionItemCurrent === course[2].dataset.path
+    ) {
+      changeIconGreen(item);
+    }
   });
-
 }
-resetOptionColorIcon()
 
-frowardButton.addEventListener("click", resetOptionColorIcon);
-buttonBack.addEventListener("click", resetOptionColorIcon);
+resetOptionColorIconForward()
 
-//Функция изменения цвета у текущей темы
-function changeOptionColor(el) {
-  const icon = el.firstElementChild.childNodes[1];
+//Функция изменения цвета иконок и пунктов содержания при загрузке и нажатии на кнопку "назад"
+
+function resetOptionColorIconBackwards() {
+  arrCoursesAll.forEach(function (item) {
+    const optionItemCurrent = item.closest("ul").dataset.target;
+    let activeItem;
+    let prevItem;
+    if (
+      item.lastElementChild.textContent == linkCurrent.textContent &&
+      optionItemCurrent === course[2].dataset.path
+    ) {
+      highlightCurrentOption(item);
+      activeItem = arrCoursesAll.indexOf(item);
+      prevItem = activeItem - 1;
+
+      arrCoursesCompleted = arrCoursesAll.slice(0, prevItem);
+      arrCoursesCompleted.forEach(function (item) {
+        changeIconGreen(item)
+      })
+
+      arrCoursesNonCompleted = arrCoursesAll.slice(activeItem + 1);
+      arrCoursesNonCompleted.forEach(function (item) {
+        resetOption(item)
+      })
+    }
+  });
+}
+
+frowardButton.addEventListener("click", resetOptionColorIconForward);
+
+
+//Функция изменения цвета у текущего пункта содержания
+//При добавлении страниц необходимо будет добавитить соответствующие условия
+
+function highlightCurrentOption(el) {
+  const icon = el.firstElementChild;
   const optionText = el.childNodes[3];
   optionText.classList.add("sidebar-content__option_active");
-  icon.style.fill = "#F06000";
+
+  if (optionText.textContent === "Тест") {
+    icon.classList.add("sidebar-content__option-icon_test_active")
+  }
+  if (optionText.textContent === "Видео") {
+    icon.classList.add("sidebar-content__option-icon_video_active")
+  }
+
+}
+
+//Функция возврата пункта меню к белой теме при нажатии на кнопку "назад".
+//При добавлении страниц необходимо будет добавитить соответствующие условия
+
+function resetOption(el) {
+  const icon = el.firstElementChild;
+  const optionText = el.childNodes[3];
+  optionText.classList.remove("sidebar-content__option_active");
+  if (optionText.textContent === "Тест") {
+    icon.classList.remove("sidebar-content__option-icon_test_active")
+    icon.classList.remove("sidebar-content__option-icon_completed")
+    icon.classList.add("sidebar-content__option-icon_test")
+  }
 }
 
 //Функция смены иконки пройденной темы
-function changeIcon(el) {
+//При добавлении страниц необходимо будет добавитить соответствующие условия
+
+function changeIconGreen(el) {
   const icon = el.childNodes[1];
   const optionText = el.childNodes[3];
-  const iconNew = document.createElement("img");
-  iconNew.src = "./images/icon-green.svg";
-  iconNew.alt = "Иконка";
-  icon.replaceWith(iconNew);
+  icon.classList.add("sidebar-content__option-icon_completed")
   optionText.classList.remove("sidebar-content__option_active");
+  if (optionText.textContent === "Тест") {
+    icon.classList.remove("sidebar-content__option-icon_test")
+    icon.classList.remove("sidebar-content__option-icon_test_active")
+  }
+  if (optionText.textContent === "Видео") {
+    icon.classList.remove("sidebar-content__option-icon_video")
+    icon.classList.remove("sidebar-content__option-icon_video_active")
+  }
+  if (optionText.textContent === "Вебинар") {
+    icon.classList.remove("sidebar-content__option-icon_web")
+    icon.classList.remove("sidebar-content__option-icon_web_active")
+  }
+  if (optionText.textContent === "Урок"
+    || optionText.textContent === "Дрессировка поисково-спасательных собак") {
+    icon.classList.remove("sidebar-content__option-icon_lesson")
+  }
+  if (
+    el.lastElementChild.textContent === "Тест" &&
+    linkCurrent.textContent === "Курс завершен"
+  ) {
+    icon.classList.remove("sidebar-content__option-icon_test_active")
+    icon.classList.add("sidebar-content__option-icon_completed")
+  }
 }
-
 
 // Логика для страницы №2 о тесте
 // блок "о тесте"
@@ -422,7 +484,7 @@ function returnToTheTest() {
   buttonReturnToTheTest.classList.add("hidden");
   mainContentSection.classList.remove("hidden");
   aboutTest.classList.add("hidden");
-  if (results.classList.contains("results__green")||results.classList.contains("results__red")) {
+  if (results.classList.contains("results__green") || results.classList.contains("results__red")) {
     btnMvdActive()
   }
 }
