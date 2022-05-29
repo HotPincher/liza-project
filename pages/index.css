@@ -64,10 +64,14 @@
 @import url(../blocks/accordion/__panel/accordion__panel.css);
 @import url(../blocks/sidebar/__elements/sidebar__elements.css);
 @import url(../blocks/sidebar/__name-checked-option/sidebar__name-checked-option.css);
+
 @import url(../blocks/checkbox/checkbox.css);
-@import url(../blocks/checkbox/__checkbox-options/checkbox__options.css);
+@import url(../blocks/checkbox/_type/checkbox_type_courses.css);
+@import url(../blocks/checkbox/__options/checkbox__options.css);
 @import url(../blocks/checkbox/__pseudo/checkbox__pseudo.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_checkbox.css);
 @import url(../blocks/checkbox/__label/checkbox__label.css);
+
 @import url(../blocks/block-header/__reset-button/block-header__button.css);
 @import url(../blocks/block-header/__reset-button/_active/block-header__button_active.css);
 @import url(../blocks/block-header/block-header.css);
