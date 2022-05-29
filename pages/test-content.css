@@ -40,7 +40,6 @@
 @import url("../blocks/breadcrumbs/__crumb/breadcrumbs__crumb.css");
 @import url("../blocks/breadcrumbs/__link/breadcrumbs__link.css");
 @import url("../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css");
-
 /* test */
 @import url(../blocks/block-test/block-test.css);
 @import url(../blocks/block-test/__header/block-test__header.css);
@@ -86,6 +85,13 @@
 @import url(../blocks/block-test/__bt/block-test__bt.css);
 @import url(../blocks/block-test/__bt/_active/block-test__bt_active.css);
 
+@import url(../blocks/button/button.css);
+@import url(../blocks/button/__icon/button__icon.css);
+@import url(../blocks/button/_color/button_color_orange.css);
+@import url(../blocks/button/_color/button_color_white.css);
+@import url(../blocks/button/_size/button_size_l.css);
+@import url(../blocks/button/_disabled/button_disabled.css);
+@import url(../blocks/button-wrapper/button-wrapper.css);
 
 /* они здесь пока у мне нет нужных блоков*/
 
