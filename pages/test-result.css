@@ -47,6 +47,7 @@
 @import url("../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css");
 
 @import url("../blocks/test-result/test-result.css");
+@import url("../blocks/test-result/__wrapper/test-result__wrapper.css");
 @import url("../blocks/test-result/_color/test-result_color_green.css");
 @import url("../blocks/test-result/_color/test-result_color_red.css");
 @import url("../blocks/test-result/__result/test-result__result.css");
