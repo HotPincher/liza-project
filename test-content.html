@@ -1,46 +1,280 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="This is test content web-page">
-	<title>Тест</title>
-	<link rel="stylesheet" href="./pages/test-content.css">
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="This is test content web-page" name="description">
+  <title>Тест</title>
+  <link href="./pages/test-content.css" rel="stylesheet">
 </head>
 
 <body class="page page_type_lesson-page">
-  <input class="button button_color_red button_size_l button_disabled" type="submit" value="Показать результат" disabled>
 
-	<button  class="button button button_color_red" type="reset">
-    <svg class="button__icon">
-      <path
-       d="M19.91 15.51h-4.53a1 1 0 0 0 0 2h2.4A8 8 0 0 1 4 12a1 1 0 1 0-2 0 10 10 0 0 0 16.88 7.23V21a1 1 0 0 0 2 0v-4.5a1 1 0 0 0-.97-.99ZM12 2a10 10 0 0 0-6.88 2.77V3a1 1 0 0 0-2 0v4.5a1 1 0 0 0 1 1h4.5a1 1 0 0 0 0-2h-2.4A8 8 0 0 1 20 12a1 1 0 0 0 2 0A10 10 0 0 0 12 2Z"/>
-    </svg>
-    Пересдать
-  </button>
+<header class="header">
+  <a class="header__link" href="#" target="_blank">Учебная платформа</a>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__list-item">
+        <a class="menu__link" href="./index.html" id="courses-page-link">
+          <img alt="Курсы" class="menu__icon" src="./images/logo_courses.svg">Курсы
+        </a>
+      </li>
+      <li class="menu__list-item">
+        <a class="menu__link" href="./account.html">
+          <img alt="Профиль" class="menu__icon" src="./images/logo_profile.svg">Профиль
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-	<!-- Вторая кнопка - для примера стилей при разных значениях результата теста. При необходимости навешивать на одну кнопку разные модификаторы -->
-  <button type="reset" class="button button button_color_white" type="reset">
-    <svg class="button__icon">
-      <path
-       d="M19.91 15.51h-4.53a1 1 0 0 0 0 2h2.4A8 8 0 0 1 4 12a1 1 0 1 0-2 0 10 10 0 0 0 16.88 7.23V21a1 1 0 0 0 2 0v-4.5a1 1 0 0 0-.97-.99ZM12 2a10 10 0 0 0-6.88 2.77V3a1 1 0 0 0-2 0v4.5a1 1 0 0 0 1 1h4.5a1 1 0 0 0 0-2h-2.4A8 8 0 0 1 20 12a1 1 0 0 0 2 0A10 10 0 0 0 12 2Z"/>
-    </svg>
-    Пересдать
-  </button>
+<nav aria-label="breadcrumb" class="breadcrumbs">
+  <ol class="breadcrumbs__crumbs-list">
+    <li class="breadcrumbs__crumb">
+      <a class="breadcrumbs__link" href="#">Курсы</a>
+    </li>
+    <li class="breadcrumbs__crumb">
+      <a class="breadcrumbs__link" href="#">Кинологическое направление</a>
+    </li>
+    <li class="breadcrumbs__crumb">
+      <a class="breadcrumbs__link" href="#">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a>
+    </li>
+    <li class="breadcrumbs__crumb">
+      <a aria-current="page" class="breadcrumbs__link breadcrumbs__link_type_current" href="#">Тест</a>
+    </li>
+  </ol>
+</nav>
 
-  <a class="button button_color_white" href="./test-preview.html" title="Вернуться назад">
-    <svg class="button__icon">
-      <path
-        d="m11.16 19.07-6.37-6.36a1 1 0 0 1 0-1.42l6.37-6.36a1 1 0 1 1 1.41 1.41L7.91 11H19.5a1 1 0 1 1 0 2H7.91l4.66 4.66a1 1 0 0 1-1.41 1.41Z" />
-    </svg>
-    Назад
-  </a>
+<!-- <input class="button button_color_red button_size_l button_disabled" type="submit" value="Показать результат" disabled>
 
-  <a class="button button_color_red button_disabled" href="./test-result.html" title="Перейти далее" disabled>
-    Далее
-    <svg class="button__icon">
-      <path d="m13.34 19.07 6.37-6.36a1 1 0 0 0 0-1.42l-6.37-6.36a1 1 0 1 0-1.41 1.41L16.59 11H5a1 1 0 1 0 0 2h11.59l-4.66 4.66a1 1 0 0 0 1.41 1.41Z"/>
-    </svg>
-  </a>
+<button  class="button button button_color_red" type="reset">
+  <svg class="button__icon">
+    <path
+     d="M19.91 15.51h-4.53a1 1 0 0 0 0 2h2.4A8 8 0 0 1 4 12a1 1 0 1 0-2 0 10 10 0 0 0 16.88 7.23V21a1 1 0 0 0 2 0v-4.5a1 1 0 0 0-.97-.99ZM12 2a10 10 0 0 0-6.88 2.77V3a1 1 0 0 0-2 0v4.5a1 1 0 0 0 1 1h4.5a1 1 0 0 0 0-2h-2.4A8 8 0 0 1 20 12a1 1 0 0 0 2 0A10 10 0 0 0 12 2Z"/>
+  </svg>
+  Пересдать
+</button>
+
+<a class="button button_color_white" href="./test-preview.html" title="Вернуться назад">
+  <svg class="button__icon">
+    <path
+      d="m11.16 19.07-6.37-6.36a1 1 0 0 1 0-1.42l6.37-6.36a1 1 0 1 1 1.41 1.41L7.91 11H19.5a1 1 0 1 1 0 2H7.91l4.66 4.66a1 1 0 0 1-1.41 1.41Z" />
+  </svg>
+  Назад
+</a>
+
+<a class="button button_color_red button_disabled" href="./test-result.html" title="Перейти далее" disabled>
+  Далее
+  <svg class="button__icon">
+    <path d="m13.34 19.07 6.37-6.36a1 1 0 0 0 0-1.42l-6.37-6.36a1 1 0 1 0-1.41 1.41L16.59 11H5a1 1 0 1 0 0 2h11.59l-4.66 4.66a1 1 0 0 0 1.41 1.41Z"/>
+  </svg>
+</a> -->
+
+<aside class="sidebar">
+  <div class="sidebar__content">
+    <div class="block-header">
+      <h2 class="block-header__title">Содержание</h2>
+    </div>
+    <ul class="sidebar__elements">
+      <li class="sidebar__element">
+        <div class="accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">1. В каких случаях перспективно применение следовых кинологических
+              расчётов</h3>
+            <div class="accordion__toggler"></div>
+          </div>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Урок</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Видео</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Урок</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Вебинар</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Тест</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="sidebar__element">
+        <div class="accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">2. Необходимые обеспечительные меры для успешного применения
+              следовых
+              (розыскных собак)</h3>
+            <div class="accordion__toggler"></div>
+          </div>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Урок</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Вебинар</p>
+            </li>
+            <li class="accordion__list-item custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Урок</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Видео</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Тест</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="sidebar__element">
+        <div class="accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">3. Особенности привлечения следовых расчётов на ПСР и особенности
+              взаимодействия</h3>
+            <div class="accordion__toggler"></div>
+          </div>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Урок</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Вебинар</p>
+            </li>
+            <li class="accordion__list-item custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Урок</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Видео</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Тест</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="sidebar__element">
+        <div class="accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">4. Корректная постановка задачи кинологу и особенности
+              её исполнения</h3>
+            <div class="accordion__toggler"></div>
+          </div>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Вебинар</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="sidebar__element">
+        <div class="accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">5. Работа «второго номера» совместно со следовым кинологическим
+              расчётом</h3>
+            <div class="accordion__toggler"></div>
+          </div>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Дрессировка поисково-спасательных собак
+              </p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Вебинар</p>
+            </li>
+            <li class="accordion__list-item custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Урок</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Видео</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div
+                class="custom-list-item__icon custom-list-item__icon_type_test custom-list-item__icon_type_in-progress "></div>
+              <p class="custom-list-item__text custom-list-item__text_color_orange">Тест</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="sidebar__element">
+        <div class="accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">6. Оценка качества и особенности анализа результата проделанной
+              следовым кинологическим расчётом работы</h3>
+            <div class="accordion__toggler"></div>
+          </div>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_lesson "></div>
+              <p class="custom-list-item__text">Урок</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_webinar "></div>
+              <p class="custom-list-item__text">Вебинар</p>
+            </li>
+            <li class="accordion__list-item custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_lesson "></div>
+              <p class="custom-list-item__text">Урок</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_video "></div>
+              <p class="custom-list-item__text">Видео</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div
+                class="custom-list-item__icon custom-list-item__icon_type_test"></div>
+              <p class="custom-list-item__text">Тест</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="sidebar__element">
+        <div class="accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">7. Особенности и пределы использования РПРС ом полученной в ходе
+              применения специальной следовой собаки информации в целях успешного разрешения поисков</h3>
+            <div class="accordion__toggler"></div>
+          </div>
+          <ul class="accordion__panel">
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_webinar "></div>
+              <p class="custom-list-item__text">Вебинар</p>
+            </li>
+            <li class="accordion__list-item  custom-list-item">
+              <div class="custom-list-item__icon custom-list-item__icon_type_test"></div>
+              <p class="custom-list-item__text">Тест</p>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <ul class="sidebar__elements"></ul>
+</aside>
+
+<script src="./scripts/open_accordion.js"></script>
+>>>>>>> develop
 </body>

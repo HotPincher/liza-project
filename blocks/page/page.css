@@ -4,7 +4,7 @@
 	grid-template-areas:
 		"header header header header"
 		". page-title page-title . "
-		". sidebar-left content .";
+		". sidebar content .";
 	box-sizing: border-box;
 	max-width: 1440px;
 	width: 100%;
@@ -14,6 +14,9 @@
 	column-gap: 24px;
 	background-color: #fcfcfc;
 	color: #212329;
+	font-family: "Golos", Arial, sans-serif;
+	line-height: 133%;
+	font-size: 18px;
 }
 
 @media (max-width: 1184px) {
@@ -23,7 +26,7 @@
 		grid-template-areas:
 			"header header header header"
 			". page-title page-title . "
-			". sidebar-left content .";
+			". sidebar content .";
 	}
 }
 
@@ -33,11 +36,8 @@
 		grid-template-areas:
 			"header header header"
 			". page-title ."
-			". sidebar-left ."
+			". sidebar ."
 			". content .";
 		column-gap: 12px;
 	}
 }
-
-
-

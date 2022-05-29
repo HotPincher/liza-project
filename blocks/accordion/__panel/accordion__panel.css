@@ -1,0 +1,7 @@
+.accordion__panel {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s;
+	padding-left: 0;
+	list-style: none;
+}

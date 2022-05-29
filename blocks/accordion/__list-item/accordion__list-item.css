@@ -1,0 +1,11 @@
+.accordion__list-item {
+	box-sizing: content-box;
+}
+
+.accordion__list-item:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.accordion__list-item:first-child {
+	margin-top: 32px;
+}

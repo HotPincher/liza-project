@@ -1,0 +1,28 @@
+.sidebar__elements {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media (max-width: 1024px) {
+	.sidebar__elements {
+		display: grid;
+		width: 100%;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 12px;
+	}
+}
+
+@media (max-width: 780px) {
+	.sidebar__elements {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 480px) {
+	.sidebar__elements {
+		grid-template-columns: 1fr;
+	}
+}

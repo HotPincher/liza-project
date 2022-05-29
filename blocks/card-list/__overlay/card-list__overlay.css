@@ -24,7 +24,7 @@
 	.card-list__overlay {
 		max-height: max-content;
 		display: grid;
-		grid-template-columns: auto 1fr;
+		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: minmax(320px, auto);
 		gap: 24px;
 	}

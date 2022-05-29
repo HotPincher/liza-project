@@ -1,0 +1,103 @@
+/*сброс всех границ и фонов*/
+.media-player__range[type="range"] {
+	appearance: none;
+	outline: none;
+	border: none;
+	background: transparent;
+	-webkit-appearance: none;
+}
+/*дорожка для хрома*/
+.media-player__range[type="range"]::-webkit-slider-runnable-track {
+	height: 6px;
+	background: #9397A3;
+	border-radius: 16px;
+	align-self: center;
+	background: -webkit-linear-gradient(left, #FF6600 0%, #FF6600 25%, #9397A3 25%, #9397A3 100%);
+}
+/*дорожка для moz */
+.media-player__range[type="range"]::-moz-range-track {
+	height: 6px;
+	-moz-appearance: none;
+	background: #9397A3;
+	border-radius: 16px;
+	align-self: center;
+}
+/*дорожка аудио для IE */
+.media-player__range[type="range"]::-ms-track {
+	height: 6px;
+	appearance: none;
+	background: #9397A3;
+	border-radius: 16px;
+	align-self: center;
+}
+/*ползунок для хрома*/
+.media-player__range[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border-radius: 24px;
+	width: 24px;
+	height: 24px;
+	background: #FFFFFF;
+	cursor: pointer;
+	border: transparent;
+	vertical-align: center;
+	position: relative;
+	top: -8px;
+}
+
+/*ползунок для мазилы*/
+	.media-player__range[type="range"]::-moz-range-thumb{
+	border-radius: 24px;
+	width: 24px;
+	height: 24px;
+	background: #FFFFFF;
+	cursor: pointer;
+	border: transparent;
+}
+/*ползунок для IE*/
+.media-player__range[type="range"]::-ms-thumb {
+	-webkit-appearance: none;
+	border-radius: 24px;
+	width: 24px;
+	height: 24px;
+	background: #FFFFFF;
+	cursor: pointer;
+}
+
+/*изменение прогресса в мазиле*/
+.media-player__range[type="range"]::-moz-range-progress {
+	height: 6px;
+	border-radius: 16px;
+	background-color: #FF6600;
+}
+/*прогресс в IE*/
+.media-player__range[type="range"]::-ms-track {
+	background-color: #9397A3;
+
+}.media-player__range[type="range"]::-ms-fill-lower {
+	background-color: #FF6600;
+}
+.media-player__range[type="range"]::-ms-fill-upper {
+	background-color: #9397A3;
+}
+
+@media screen and (max-width: 460px) {
+	.media-player__range[type="range"]::-webkit-slider-thumb {
+		width: 15px;
+		height: 15px;
+		top: -5px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.media-player__range[type="range"]::-moz-range-thumb {
+		width: 15px;
+		height: 15px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+.media-player__range[type="range"]::-ms-thumb {
+	width: 15px;
+	height: 15px;
+	}
+}
