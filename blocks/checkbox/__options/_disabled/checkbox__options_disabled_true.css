@@ -1,0 +1,3 @@
+.checkbox__options_disabled_true:disabled + .block-test__icon{
+  background: url(../images/test/test_check_icon.svg) center no-repeat;
+}

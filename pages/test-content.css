@@ -70,9 +70,9 @@
 @import url(../blocks/checkbox-block/__pseudo/_type/checkbox__pseudo_type_false-check.css);
 @import url(../blocks/checkbox-block/__pseudo/_type/checkbox__pseudo_type_false-uncheck.css);
 
-@import url(../blocks/checkbox-block/__checkbox-options/checkbox__checkbox-options.css);
-@import url(../blocks/checkbox-block/__checkbox-options/_disabled/checkbox__checkbox-options_disabled_true.css);
-@import url(../blocks/checkbox-block/__checkbox-options/_disabled/checkbox__checkbox-options_disabled_false.css);
+@import url(../blocks/checkbox-block/__options/checkbox__options.css);
+@import url(../blocks/checkbox-block/__options/_disabled/checkbox__options_disabled_true.css);
+@import url(../blocks/checkbox-block/__options/_disabled/checkbox__options_disabled_false.css);
 
 @import url("../blocks/test-result/test-result.css");
 @import url("../blocks/test-result/_color/test-result_color_green.css");
