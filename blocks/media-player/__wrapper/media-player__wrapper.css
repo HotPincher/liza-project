@@ -1,5 +1,4 @@
 .media-player__wrapper {
-  grid-area: content;
   width: 100%;
   aspect-ratio: 101 / 57;
   background-color: #212329;
