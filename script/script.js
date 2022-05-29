@@ -16,7 +16,6 @@ const radioLabelThird = document.querySelector("#radioLabelThird");
 const results = document.querySelector("#results");
 
 testButton.addEventListener("click", () => {
-  // TODO reaname testButton
   if (
     (testCheck1.checked || testCheck2.checked || testCheck3.checked) &&
     (testRadio1.checked || testRadio2.checked || testRadio3.checked)
@@ -24,7 +23,6 @@ testButton.addEventListener("click", () => {
     validateAnswers();
     showResultTest();
   }
-  // validateAnswers(q1Answer, q2Answer)
 });
 
 const showResult = () => {
@@ -40,15 +38,12 @@ const collectAnswers = (form) => {
   const answerList = [];
 
   for (const [index, element] of Array.from(form).entries()) {
-    // TODO remove [ index ] later
     answerList.push(element.checked);
   }
   return answerList;
 };
 
 const highlightAnswer = (element, highlightType, inputType) => {
-  // highlightType = correct / success / wrong / cross
-  //  check if highlightType have correct value
   if (inputType === "checkbox") {
     const validTypes = ["success", "correct"];
     if (validTypes.includes(highlightType)) {
@@ -90,7 +85,6 @@ function ifCurrect() {
   const q1Answer = collectAnswers(document.forms["testFirst"]);
   const q2Answer = collectAnswers(document.forms["testSecond"]);
   for (let i = 0; i < document.forms["testSecond"].elements.length; i++) {
-    // check if both of forms have at least one answer
     if (
       q1Answer.some((x) => x) &&
       document.forms["testSecond"].elements[i].checked
@@ -114,28 +108,22 @@ const checkAnswer = (given_answer, correct_answer) => {
 const validateAnswers = () => {
   const q1Answer = collectAnswers(document.forms["testFirst"]);
   const q2Answer = collectAnswers(document.forms["testSecond"]);
-  // console.info('#q1 check');
   for (const [index, answer] of q1Answer.entries()) {
-    // console.log(index, answer);
     const response = checkAnswer(
       (given_answer = answer),
       (correct_answer = correctAswers["q1"][index])
     );
-    // console.log(response);
     highlightAnswer(
       (element = answerMapQ1[index]),
       (highlightType = `${response}`),
       (inputType = "checkbox")
     );
   }
-  // console.info('#q2 check');
   for (const [index, answer] of q2Answer.entries()) {
-    // console.log(index, answer);
     const response = checkAnswer(
       (given_answer = answer),
       (correct_answer = correctAswers["q2"][index])
     );
-    // console.log(response);
     highlightAnswer(
       (element = answerMapQ2[index]),
       (highlightType = `${response}-answer`),
@@ -206,10 +194,7 @@ let completedCourseTextTwo = completedCourseSection.querySelector(
 let completedCourseTextThree = completedCourseSection.querySelector(
   "#completed-course_text_three"
 );
-//переменная с блоком основного контента
 let mainContentSection = document.querySelector("#block-main");
-
-//переменная с блоком основного контента
 let buttonForward = document.querySelector("#button_forward");
 
 //функция скрывающая сексии с результатами и основного контента и показывающее результирующее окно курса

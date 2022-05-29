@@ -39,19 +39,19 @@ function hiddenCard(card) {
 const buttonBack = document.querySelector('#button_back')
 
 buttonBack.addEventListener('click', () => {
-  if (aboutTest.classList.contains('content')&&(!aboutTest.classList.contains('hidden'))) {
+  if (!aboutTest.classList.contains('hidden')) {
     video.classList.remove('hidden')
     aboutTest.classList.add('hidden')
     btnMvdActive()
     updateBreadCrumps()
   }
-  if (testBlock.classList.contains('content')&&(!testBlock.classList.contains('hidden'))) {
+  if (!testBlock.classList.contains('hidden')) {
     testBlock.classList.add('hidden')
     aboutTest.classList.remove('hidden')
     updateBreadCrumps()
     btnMvdDisabled()
   }
-  if (buttonReturnToTheTest.classList.contains('hidden') === false) {
+  if (!buttonReturnToTheTest.classList.contains('hidden')) {
     aboutTest.classList.add('hidden')
     video.classList.add('hidden')
     testBlock.classList.remove('hidden')
@@ -61,7 +61,7 @@ buttonBack.addEventListener('click', () => {
       btnMvdActive()
     }
   }
-  if (completedCourseSection.classList.contains('hidden') === false) {
+  if (!completedCourseSection.classList.contains('hidden')) {
     testBlock.classList.remove('hidden')
     completedCourseSection.classList.add('hidden')
     updateBreadCrumps()

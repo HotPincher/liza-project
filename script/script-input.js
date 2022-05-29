@@ -1,4 +1,3 @@
-
 const rangeInputs = document.querySelectorAll('input[type="range"]')
 
 function handleInputChange(e) {
@@ -6,14 +5,9 @@ function handleInputChange(e) {
   if (e.target.type !== 'range') {
     target = document.getElementById('range')
   }
-  const min = target.min
-  const max = target.max
-  const val = target.value
-
   target.style.backgroundSize = target.value + "% 100%";
 }
 
 rangeInputs.forEach(input => {
   input.addEventListener('input', handleInputChange)
 })
-
