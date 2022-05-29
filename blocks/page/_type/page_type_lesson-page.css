@@ -6,7 +6,6 @@
 		". breadcrumbs breadcrumbs ."
 		". content sidebar ."
 		". buttons sidebar .";
-	grid-template-rows: 1fr 1fr auto 5fr ;
 }
 
 @media (max-width: 1184px) {

@@ -11,6 +11,8 @@
 @import url(../blocks/menu/__link/_active/menu__link_active.css);
 @import url(../blocks/menu/__icon/menu__icon.css);
 
+@import url("../blocks/content/content.css");
+
 @import url('../blocks/sidebar/sidebar.css');
 @import url('../blocks/sidebar/__content/sidebar__content.css');
 @import url('../blocks/block-header/block-header.css');
