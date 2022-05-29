@@ -10,6 +10,7 @@
 @import url(../blocks/menu/__link/menu__link.css);
 @import url(../blocks/menu/__link/_active/menu__link_active.css);
 @import url(../blocks/menu/__icon/menu__icon.css);
+
 @import url('../blocks/sidebar/sidebar.css');
 @import url('../blocks/sidebar/__content/sidebar__content.css');
 @import url('../blocks/block-header/block-header.css');
@@ -45,6 +46,11 @@
 @import url(../blocks/block-test/__header/block-test__header.css);
 @import url(../blocks/block-test/__link/block-test__link.css);
 @import url(../blocks/block-test/__form-items/block-test__form-items.css);
+
+@import url(../blocks/block-test/__title/block-test__title.css);
+@import url(../blocks/block-test/__title/_size/block-test__title_size_m.css);
+@import url(../blocks/block-test/__title/_size/block-test__title_size_s.css);
+
 
 
 @import url(../blocks/checkbox-block/checkbox-block.css);
@@ -82,21 +88,6 @@
 
 
 /* они здесь пока у мне нет нужных блоков*/
-/* это заглушка которая должна показывать результат теста, пока она просто стоновится либо зеленой либо красной'*/
-
-.block-test__title{
-	margin: 0;
-}
-
-.block-test__title_size_m{
-	font-size: 24px;
-	line-height: 28px;
-}
-
-.block-test__title_size_s{
-	font-size: 18px;
-	line-height: 24px;
-}
 
 .block-test__bt_type_reset{
 	margin-top: 32px;
