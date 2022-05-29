@@ -1,12 +1,11 @@
 .media-player {
-	grid-area: content;
-	max-width: 808px;
-	aspect-ratio: 101 / 57;
-	background-color: #212329;
-	display: flex;
-	align-items: flex-end;
-	align-self: center;
-	justify-content: center;
-	box-shadow: 0 0 4px rgba(233, 234, 237, 0.6), 0 4px 16px rgba(233, 234, 237, 0.4);
-	border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 101 / 57;
+  grid-area: content;
+  width: 808px;
+  background: #FFFFFF;
+  box-shadow: 0 0 4px rgba(231, 232, 235, 0.6), 0 4px 16px rgba(231, 232, 235, 0.6);
+  border-radius: 16px;
 }
