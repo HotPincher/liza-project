@@ -43,13 +43,12 @@
 @import url("../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css");
 
 @import url("../blocks/block-header/block-header");
-@import url("../blocks/block-header//_type/block-header_type_additional.css");
+@import url("../blocks/block-header/_type/block-header_type_additional.css");
 @import url("../blocks/block-header/__title/block-header__title.css");
-@import url("../blocks/block-header/__reset-button/block-header__button.css");
-
+@import url("../blocks/block-header/__button/block-header__button.css");
+@import url("../blocks/block-header/__button/_active/block-header__button_active.css");
 @import url("../blocks/block-test/block-test.css");
 @import url("../blocks/block-test/__text/block-test__text.css");
-@import url("../blocks/block-test/__header/block-test__header.css");
 @import url("../blocks/block-test/__title/block-test__title.css");
 @import url("../blocks/block-test/__title/_size/block-test__title_size_m.css");
 @import url("../blocks/test-informaition-block/test-information-block.css");

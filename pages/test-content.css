@@ -50,16 +50,11 @@
 
 @import url(../blocks/block-header/block-header.css);
 @import url(../blocks/block-header/__title/block-header__title.css);
-@import url(../blocks/block-header/__reset-button/block-header__button.css);
-@import url(../blocks/block-header/__reset-button/_active/block-header__button_active.css);
+@import url(../blocks/block-header/__button/block-header__button.css);
+@import url(../blocks/block-header/__button/_active/block-header__button_active.css);
 
-@import url(../blocks/block-test/__header/block-test__header.css);
-@import url(../blocks/block-test/__link/block-test__link.css);
 @import url(../blocks/block-test/__form-items/block-test__form-items.css);
-
 @import url(../blocks/block-test/__title/block-test__title.css);
-@import url(../blocks/block-test/__title/_size/block-test__title_size_m.css);
-@import url(../blocks/block-test/__title/_size/block-test__title_size_s.css);
 @import url(../blocks/block-test/__form/block-test__form.css);
 
 @import url(../blocks/checkbox/checkbox.css);

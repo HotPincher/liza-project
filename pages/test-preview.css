@@ -41,14 +41,12 @@
 
 @import url("../blocks/content/content.css");
 @import url("../blocks/block-header/block-header");
-@import url("../blocks/block-header//_type/block-header_type_additional.css");
 @import url("../blocks/block-header/__title/block-header__title.css");
-@import url("../blocks/block-header/__reset-button/block-header__button.css");
+@import url("../blocks/block-header/__button/block-header__button.css");
 
 @import url("../blocks/block-test/block-test.css");
 @import url("../blocks/block-test/__text/block-test__text.css");
 @import url("../blocks/block-test/__link/block-test__link.css");
-@import url("../blocks/block-test/__header/block-test__header.css");
 @import url("../blocks/block-test/__title/block-test__title.css");
 @import url("../blocks/block-test/__title/_size/block-test__title_size_m.css");
 @import url("../blocks/test-informaition-block/test-information-block.css");
@@ -57,8 +55,8 @@
 @import url("../blocks/information-list/_align/information-list_align_right.css");
 @import url("../blocks/information-list/__item/information-list__item.css");
 @import url("../blocks/information-list/__heading/information-list__heading.css");
-@import url("../blocks/block-test//__wrapper/block-test__wrapper.css");
-@import url("../blocks/block-test//__wrapper/_type/block-test__wrapper_type_additional.css");
+@import url("../blocks/block-test/__wrapper/block-test__wrapper.css");
+@import url("../blocks/block-test/__wrapper/_type/block-test__wrapper_type_additional.css");
 
 @import url("../blocks/button/button.css");
 @import url("../blocks/button/_color/button_color_orange.css");
