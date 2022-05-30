@@ -1,0 +1,6 @@
+.test-result__wrapper {
+  grid-area: content;
+  display: block;
+  width: 100%;
+  justify-content: center;
+}

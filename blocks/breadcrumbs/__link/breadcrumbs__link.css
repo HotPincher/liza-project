@@ -3,3 +3,7 @@
 
   color: #212329;
 }
+
+.breadcrumbs__link:hover {
+  opacity: 0.8;
+}
