@@ -1,8 +1,7 @@
 .block-test{
-  background: #fff;
-  grid-area: content;
-  /*max-width: 872px;*/
+  /* grid-area: content; */
   padding: 32px;
   box-shadow: 0px 0px 4px rgba(231, 232, 235, 0.6), 0px 4px 16px rgba(231, 232, 235, 0.6);
   border-radius: 16px;
+  box-sizing: border-box;
 }

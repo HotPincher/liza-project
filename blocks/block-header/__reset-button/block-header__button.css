@@ -1,12 +1,21 @@
 .block-header__button {
-	display: none;
 	height: 28px;
 	color: inherit;
 	background-color: transparent;
 	cursor: pointer;
+<<<<<<< HEAD
+	text-decoration: none;
+}
+
+.block-header__button:hover {
+	text-decoration: underline;
+}
+
+=======
   text-decoration: none;
 }
 
 .block-header__button:hover{
   text-decoration: underline;
 }
+>>>>>>> develop

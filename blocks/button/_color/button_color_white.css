@@ -8,6 +8,8 @@
   color: #FF6600;
   fill:  #FF6600;
   transition: transform 0.6s, border 0.6s;
+  width: 184px;
+  height: 48px;
 }
 
 .button_color_white:hover {

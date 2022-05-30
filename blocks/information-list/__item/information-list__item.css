@@ -1,0 +1,11 @@
+.information-list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  gap:10px;
+  padding-bottom: 16px;
+}
+
+.information-list__item:last-of-type {
+  padding-bottom: 0px;
+}

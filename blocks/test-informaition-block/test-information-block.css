@@ -1,0 +1,8 @@
+.test-information-block {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 1fr;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

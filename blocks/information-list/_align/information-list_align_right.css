@@ -1,0 +1,5 @@
+.information-list_align_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

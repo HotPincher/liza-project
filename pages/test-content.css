@@ -50,8 +50,8 @@
 
 @import url(../blocks/block-header/block-header.css);
 @import url(../blocks/block-header/__title/block-header__title.css);
-@import url(../blocks/block-header/__reset-button/block-header__button.css);
-@import url(../blocks/block-header/__reset-button/_active/block-header__button_active.css);
+@import url(../blocks/block-header/__button/block-header__button.css);
+@import url(../blocks/block-header/__button/_active/block-header__button_active.css);
 
 @import url(../blocks/block-test/__form-items/block-test__form-items.css);
 @import url(../blocks/block-test/__title/block-test__title.css);
