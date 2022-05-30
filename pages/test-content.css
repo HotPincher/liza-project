@@ -10,6 +10,7 @@
 @import url(../blocks/menu/__link/menu__link.css);
 @import url(../blocks/menu/__link/_active/menu__link_active.css);
 @import url(../blocks/menu/__icon/menu__icon.css);
+
 @import url('../blocks/sidebar/sidebar.css');
 @import url('../blocks/sidebar/__content/sidebar__content.css');
 @import url('../blocks/block-header/block-header.css');
@@ -32,12 +33,63 @@
 @import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_webinar.css');
 @import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_video.css');
 @import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_test.css');
+@import url('../blocks/block-header/__title/block-header__title.css');
 
 @import url("../blocks/breadcrumbs/breadcrumbs.css");
 @import url("../blocks/breadcrumbs/__crumbs-list/breadcrumbs__crumbs-list.css");
 @import url("../blocks/breadcrumbs/__crumb/breadcrumbs__crumb.css");
 @import url("../blocks/breadcrumbs/__link/breadcrumbs__link.css");
 @import url("../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css");
+
+
+@import url("../blocks/content/content.css");
+
+
+/* test */
+@import url(../blocks/block-test/block-test.css);
+
+@import url(../blocks/block-header/block-header.css);
+@import url(../blocks/block-header/__title/block-header__title.css);
+@import url(../blocks/block-header/__reset-button/block-header__button.css);
+@import url(../blocks/block-header/__reset-button/_active/block-header__button_active.css);
+
+@import url(../blocks/block-test/__header/block-test__header.css);
+@import url(../blocks/block-test/__link/block-test__link.css);
+@import url(../blocks/block-test/__form-items/block-test__form-items.css);
+
+@import url(../blocks/block-test/__title/block-test__title.css);
+@import url(../blocks/block-test/__title/_size/block-test__title_size_m.css);
+@import url(../blocks/block-test/__title/_size/block-test__title_size_s.css);
+@import url(../blocks/block-test/__form/block-test__form.css);
+
+@import url(../blocks/checkbox/checkbox.css);
+@import url(../blocks/checkbox/_type/checkbox_type_test.css);
+
+@import url(../blocks/checkbox/__label/checkbox__label.css);
+@import url(../blocks/checkbox/__label/_theme/checkbox__label_theme_false.css);
+@import url(../blocks/checkbox/__label/_theme/checkbox__label_theme_true.css);
+
+@import url(../blocks/checkbox/__pseudo/checkbox__pseudo.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_checkbox.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_checkbox-shoose.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_radio.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_radio-shoose.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_true-check.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_true-uncheck.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_false-check.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_false-uncheck.css);
+
+@import url(../blocks/checkbox/__options/checkbox__options.css);
+@import url(../blocks/checkbox/__options/_disabled/checkbox__options_disabled_true.css);
+@import url(../blocks/checkbox/__options/_disabled/checkbox__options_disabled_false.css);
+
+@import url("../blocks/test-result/test-result.css");
+@import url("../blocks/test-result/_color/test-result_color_green.css");
+@import url("../blocks/test-result/_color/test-result_color_red.css");
+@import url("../blocks/test-result/__result/test-result__result.css");
+@import url("../blocks/test-result/__container/test-result__container.css");
+@import url("../blocks/test-result/__paragraph-indent/test-result__paragraph-indent.css");
+@import url("../blocks/test-result/__text-bold/test-result__text-bold.css");
 
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/__icon/button__icon.css);
@@ -46,3 +98,7 @@
 @import url(../blocks/button/_size/button_size_l.css);
 @import url(../blocks/button/_disabled/button_disabled.css);
 @import url(../blocks/button-wrapper/button-wrapper.css);
+@import url(../blocks/block-test/__bt/block-test__bt.css);
+@import url(../blocks/block-test/__bt/_active/block-test__bt_active.css);
+
+@import url(../blocks/block-test/__bt/_type/block-test__bt_type_reset.css);

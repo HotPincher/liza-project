@@ -13,6 +13,45 @@
 
 /* SIDEBAR */
 @import url(../blocks/sidebar/sidebar.css);
+
+@import url(../blocks/aside/aside.css);
+@import url(../blocks/aside/__checked-item/aside__checked-item.css);
+@import url(../blocks/aside/__checked-options-list/aside__checked-options-list.css);
+@import url(../blocks/aside/__deselect-option/aside__deselect-option.css);
+@import url(../blocks/aside/__filter-block-name/aside__filter-block-name.css);
+@import url(../blocks/aside/__filter-block/aside__filter-block.css);
+@import url(../blocks/aside/__filter-form/aside__filter-form.css);
+@import url(../blocks/aside/__filter-item/aside__filter-item.css);
+@import url(../blocks/aside/__filter-items/aside__filter-items.css);
+@import url(../blocks/aside/__filter-list/aside__filter-list.css);
+@import url(../blocks/aside/__name-checked-option/aside__name-checked-option.css);
+
+/* подготовил классы для блока checkbox-block */
+/*@import url(../blocks/checkbox-block/checkbox-block.css);
+@import url(../blocks/checkbox-block/_type/checkbox-block_type_courses.css);
+@import url(../blocks/checkbox-block/__input/checkbox-block__input.css);
+@import url(../blocks/checkbox-block/__icon/checkbox-block__icon.css);
+@import url(../blocks/checkbox-block/__icon/_type/checkbox-block__icon_type_checkbox.css);
+@import url(../blocks/checkbox-block/__text/checkbox-block__text.css);*/
+
+
+/* классы кторое буду заменены блоком checkbox-block  */
+@import url(../blocks/aside/__checkbox/aside__checkbox.css);
+@import url(../blocks/aside/__checkbox-options/aside__checkbox-options.css);
+@import url(../blocks/aside/__checkbox-pseudo/aside__checkbox-pseudo.css);
+@import url(../blocks/aside/__checkbox-label/aside__checkbox-label.css);
+
+@import url(../blocks/aside/__reset-button/aside__reset-button.css);
+@import url(../blocks/aside/__reset-button/_active/aside__reset-button_active.css);
+@import url(../blocks/aside/__form-head/aside__form-head.css);
+@import url(../blocks/aside/__title/aside__title.css);
+@import url(../blocks/aside/__accordion-item-toggler/aside__accordion-item-toggler.css);
+@import url(../blocks/aside/__filter-block-head/aside__filter-block-head.css);
+@import url(../blocks/aside/__filter-items/_open/aside__filter-items_open.css);
+@import url(../blocks/aside/__filter-block/_active/aside__filter-block_active.css);
+@import url(../blocks/aside/__deselect-button/aside__deselect-button.css);
+
+
 @import url(../blocks/sidebar/__checked-item/sidebar__checked-item.css);
 @import url(../blocks/sidebar/__checked-options-list/sidebar__checked-options-list.css);
 @import url(../blocks/sidebar/__deselect-option/sidebar__deselect-option.css);
@@ -24,10 +63,14 @@
 @import url(../blocks/sidebar/__elements/sidebar__elements.css);
 @import url(../blocks/sidebar/__elements/_type/sidebar__elements_type_filter.css);
 @import url(../blocks/sidebar/__name-checked-option/sidebar__name-checked-option.css);
+
 @import url(../blocks/checkbox/checkbox.css);
-@import url(../blocks/checkbox/__checkbox-options/checkbox__options.css);
+@import url(../blocks/checkbox/_type/checkbox_type_courses.css);
+@import url(../blocks/checkbox/__options/checkbox__options.css);
 @import url(../blocks/checkbox/__pseudo/checkbox__pseudo.css);
+@import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_checkbox.css);
 @import url(../blocks/checkbox/__label/checkbox__label.css);
+
 @import url(../blocks/block-header/__reset-button/block-header__button.css);
 @import url(../blocks/block-header/__reset-button/_active/block-header__button_active.css);
 @import url(../blocks/block-header/block-header.css);
@@ -37,6 +80,8 @@
 @import url(../blocks/accordion/__header/accordion__header.css);
 @import url(../blocks/accordion/accordion.css);
 @import url(../blocks/sidebar/__deselect-button/sidebar__deselect-button.css);
+
+
 @import url(../blocks/articles/articles.css);
 @import url(../blocks/card-list/card-list.css);
 @import url(../blocks/card-list/__base/card-list__base.css);
