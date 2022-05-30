@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="This is lesson video web-page" name="description">
-  <title>Видео</title>
-  <link href="./pages/video.css" rel="stylesheet">
+  <meta content="This is courses web-page" name="description">
+  <title>Результат</title>
+  <link href="./pages/test-result-congrats.css" rel="stylesheet">
 </head>
 
 <body class="page page_type_lesson-page">
@@ -32,64 +32,46 @@
 <nav aria-label="breadcrumb" class="breadcrumbs">
   <ol class="breadcrumbs__crumbs-list">
     <li class="breadcrumbs__crumb">
-      <a class="breadcrumbs__link" href="./index.html">Курсы</a>
+      <a class="breadcrumbs__link" href="#">Курсы</a>
     </li>
     <li class="breadcrumbs__crumb">
       <a class="breadcrumbs__link" href="#">Кинологическое направление</a>
     </li>
     <li class="breadcrumbs__crumb">
-      <a class="breadcrumbs__link" href="#">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a>
-    </li>
-    <li class="breadcrumbs__crumb">
-      <a aria-current="page" class="breadcrumbs__link breadcrumbs__link_type_current" href="#">Видео</a>
+      <a aria-current="page" class="breadcrumbs__link breadcrumbs__link_type_current" href="#">Курс завершен</a>
     </li>
   </ol>
 </nav>
 <main class="content">
-  <div class="media-player">
-    <div class="block-header">
-      <h2 class="block-header__title">Видео</h2>
-    </div>
-    <div class="media-player__wrapper">
-      <div class="media-player__control-bar">
-        <button class="media-player__play" name="play/pause" type="button"></button>
-        <input class="media-player__range media-player__range_type_video" id="video" max="100" min="0" name="video"
-               step="1" type="range" value="0">
-        <label for="video"></label>
-        <div class="media-player__volume">
-          <button class="media-player__volume-img" name="volume-img" type="button"></button>
-          <input class="media-player__range media-player__range_type_audio" id="volume" max="100" min="0"
-                 name="volume" step="1" type="range" value="0">
-          <label for="volume"></label>
-        </div>
-        <button class="media-player__expand-screen" name="expand-screen" type="button"></button>
-      </div>
+<section class="test-result">
+  <div class="block-header">
+    <h2 class="block-header__title">Курс завершен</h2>
+  </div>
+  <div class="test-result__wrapper">
+    <div aria-label="Результат" class="test-result__result">Поздравляем</div>
+    <div class="test-result__container"><p class="test-result__paragraph-indent">Вы успешно завершили курс «Кинологическое направление».</p>
+      Теперь вы можете участвовать в поисково-спасательных мероприятиях со своей собакой.
     </div>
   </div>
-  <div class="button-wrapper">
-    <button class="button button_color_white">
-      <svg class="button__icon">
-        <path
-          d="m11.16 19.07-6.37-6.36a1 1 0 0 1 0-1.42l6.37-6.36a1 1 0 1 1 1.41 1.41L7.91 11H19.5a1 1 0 1 1 0 2H7.91l4.66 4.66a1 1 0 0 1-1.41 1.41Z"/>
-      </svg>
-      Назад
-    </button>
+</section>
 
-    <a class="button button_color_orange" href="./test-preview.html" title="Перейти к тесту">
-      Далее
-      <svg class="button__icon">
-        <path
-          d="m13.34 19.07 6.37-6.36a1 1 0 0 0 0-1.42l-6.37-6.36a1 1 0 1 0-1.41 1.41L16.59 11H5a1 1 0 1 0 0 2h11.59l-4.66 4.66a1 1 0 0 0 1.41 1.41Z"/>
-      </svg>
-    </a>
-  </div>
+<div class="button-wrapper">
+   <a class="button button_color_white" href="#" title="Вернуться назад">
+    <svg class="button__icon">
+      <path
+        d="m11.16 19.07-6.37-6.36a1 1 0 0 1 0-1.42l6.37-6.36a1 1 0 1 1 1.41 1.41L7.91 11H19.5a1 1 0 1 1 0 2H7.91l4.66 4.66a1 1 0 0 1-1.41 1.41Z" />
+    </svg>
+    Назад
+  </a>
+  <button class="button button_color_orange">Завершить</button>
+</div>
 </main>
-
 <aside class="sidebar">
   <div class="sidebar__content">
     <div class="block-header">
       <h2 class="block-header__title">Содержание</h2>
     </div>
+
     <ul class="sidebar__elements">
       <li class="sidebar__element">
         <div class="accordion">
@@ -222,13 +204,12 @@
               <p class="custom-list-item__text">Урок</p>
             </li>
             <li class="accordion__list-item  custom-list-item">
-              <div
-                class="custom-list-item__icon custom-list-item__icon_type_video custom-list-item__icon_type_in-progress "></div>
-              <p class="custom-list-item__text custom-list-item__text_color_orange">Видео</p>
+              <div class="custom-list-item__icon custom-list-item__icon_type_passed "></div>
+              <p class="custom-list-item__text">Видео</p>
             </li>
             <li class="accordion__list-item  custom-list-item">
               <div
-                class="custom-list-item__icon custom-list-item__icon_type_test  "></div>
+                class="custom-list-item__icon custom-list-item__icon_type_passed"></div>
               <p class="custom-list-item__text ">Тест</p>
             </li>
           </ul>
@@ -289,8 +270,6 @@
   </div>
   <ul class="sidebar__elements"></ul>
 </aside>
-
-<script src="scripts/video.js"></script>
 <script src="./scripts/open_accordion.js"></script>
 </body>
 </html>
