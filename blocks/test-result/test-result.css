@@ -1,9 +1,9 @@
 .test-result {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   grid-area: content;
-  aspect-ratio: 436 / 189;
-  width: 808px;
+  max-width: 808px;
   padding: 32px;
   background: #FFFFFF;
   box-shadow: 0 0 4px rgba(231, 232, 235, 0.6), 0 4px 16px rgba(231, 232, 235, 0.6);
