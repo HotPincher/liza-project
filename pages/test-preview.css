@@ -46,9 +46,6 @@
 
 @import url("../blocks/block-test/block-test.css");
 @import url("../blocks/block-test/__text/block-test__text.css");
-@import url("../blocks/block-test/__link/block-test__link.css");
-@import url("../blocks/block-test/__title/block-test__title.css");
-@import url("../blocks/block-test/__title/_size/block-test__title_size_m.css");
 @import url("../blocks/test-informaition-block/test-information-block.css");
 
 @import url("../blocks/information-list/information-list.css");
