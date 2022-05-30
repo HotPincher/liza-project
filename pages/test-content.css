@@ -96,7 +96,7 @@
 @import url(../blocks/block-test/__bt/_active/block-test__bt_active.css);
 
 /* они здесь пока у мне нет нужных блоков*/
-
+@import url('../blocks/content/content.css');
 
 .block-test__bt_type_reset{
   margin: 32px auto 0;
