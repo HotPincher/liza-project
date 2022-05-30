@@ -59,3 +59,5 @@
 @import url(../blocks/button/_disabled/button_disabled.css);
 @import url(../blocks/button-wrapper/button-wrapper.css);
 @import url('../blocks/block-header/__title/block-header__title.css');
+
+@import url('../blocks/content/content.css');

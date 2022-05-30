@@ -2,88 +2,88 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="This is lesson video web-page">
-	<title>Видео</title>
-	<link rel="stylesheet" href="./pages/video.css">
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="This is lesson video web-page" name="description">
+  <title>Видео</title>
+  <link href="./pages/video.css" rel="stylesheet">
 </head>
 
 <body class="page page_type_lesson-page">
-	<header class="header">
-		<a class="header__link" target="_blank" href="#">Учебная платформа</a>
-		<nav class="menu">
-			<ul class="menu__list">
-				<li class="menu__list-item">
-					<a id="courses-page-link" class="menu__link" href="./index.html">
-            <img class="menu__icon" src="./images/logo_courses.svg" alt="Курсы">Курсы
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a class="menu__link" href="./account.html">
-						<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-
-  <nav class="breadcrumbs" aria-label="breadcrumb">
-    <ol class="breadcrumbs__crumbs-list">
-      <li class="breadcrumbs__crumb">
-        <a class="breadcrumbs__link" href="./index.html">Курсы</a>
+<header class="header">
+  <a class="header__link" href="#" target="_blank">Учебная платформа</a>
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__list-item">
+        <a class="menu__link" href="./index.html" id="courses-page-link">
+          <img alt="Курсы" class="menu__icon" src="./images/logo_courses.svg">Курсы
+        </a>
       </li>
-      <li class="breadcrumbs__crumb">
-        <a class="breadcrumbs__link" href="#">Кинологическое направление</a>
+      <li class="menu__list-item">
+        <a class="menu__link" href="./account.html">
+          <img alt="Профиль" class="menu__icon" src="./images/logo_profile.svg">Профиль
+        </a>
       </li>
-      <li class="breadcrumbs__crumb">
-        <a class="breadcrumbs__link" href="#">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a>
-      </li>
-      <li class="breadcrumbs__crumb">
-        <a class="breadcrumbs__link breadcrumbs__link_type_current" href="#" aria-current="page">Видео</a>
-      </li>
-    </ol>
+    </ul>
   </nav>
+</header>
 
-<section class="media-player">
-  <div class="block-header">
-    <h2 class="block-header__title">Видео</h2>
+<nav aria-label="breadcrumb" class="breadcrumbs">
+  <ol class="breadcrumbs__crumbs-list">
+    <li class="breadcrumbs__crumb">
+      <a class="breadcrumbs__link" href="./index.html">Курсы</a>
+    </li>
+    <li class="breadcrumbs__crumb">
+      <a class="breadcrumbs__link" href="#">Кинологическое направление</a>
+    </li>
+    <li class="breadcrumbs__crumb">
+      <a class="breadcrumbs__link" href="#">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a>
+    </li>
+    <li class="breadcrumbs__crumb">
+      <a aria-current="page" class="breadcrumbs__link breadcrumbs__link_type_current" href="#">Видео</a>
+    </li>
+  </ol>
+</nav>
+<main class="content">
+  <div class="media-player">
+    <div class="block-header">
+      <h2 class="block-header__title">Видео</h2>
+    </div>
+    <div class="media-player__wrapper">
+      <div class="media-player__control-bar">
+        <button class="media-player__play" name="play/pause" type="button"></button>
+        <input class="media-player__range media-player__range_type_video" id="video" max="100" min="0" name="video"
+               step="1" type="range" value="0">
+        <label for="video"></label>
+        <div class="media-player__volume">
+          <button class="media-player__volume-img" name="volume-img" type="button"></button>
+          <input class="media-player__range media-player__range_type_audio" id="volume" max="100" min="0"
+                 name="volume" step="1" type="range" value="0">
+          <label for="volume"></label>
+        </div>
+        <button class="media-player__expand-screen" name="expand-screen" type="button"></button>
+      </div>
+    </div>
   </div>
-  <div class="media-player__wrapper">
-	<div class="media-player__control-bar">
-		<button class="media-player__play" type="button" name="play/pause"></button>
-		<input class="media-player__range media-player__range_type_video" type="range" id="video" name="video" value="0"
-			   min="0" max="100" step="1">
-		<label for="video"></label>
-		<div class="media-player__volume">
-			<button class="media-player__volume-img" type="button" name="volume-img"></button>
-			<input class="media-player__range media-player__range_type_audio" type="range" id="volume" name="volume"
-				   value="0" min="0" max="100" step="1">
-			<label for="volume"></label>
-		</div>
-		<button class="media-player__expand-screen" type="button" name="expand-screen"></button>
-	</div>
-  </div>
-</section>
-
   <div class="button-wrapper">
- <button class="button button_color_white">
-  <svg class="button__icon">
-    <path
-      d="m11.16 19.07-6.37-6.36a1 1 0 0 1 0-1.42l6.37-6.36a1 1 0 1 1 1.41 1.41L7.91 11H19.5a1 1 0 1 1 0 2H7.91l4.66 4.66a1 1 0 0 1-1.41 1.41Z" />
-  </svg>
-  Назад
-</button>
+    <button class="button button_color_white">
+      <svg class="button__icon">
+        <path
+          d="m11.16 19.07-6.37-6.36a1 1 0 0 1 0-1.42l6.37-6.36a1 1 0 1 1 1.41 1.41L7.91 11H19.5a1 1 0 1 1 0 2H7.91l4.66 4.66a1 1 0 0 1-1.41 1.41Z"/>
+      </svg>
+      Назад
+    </button>
 
-<a class="button button_color_orange" href="./test-preview.html" title="Перейти к тесту">
-  Далее
-  <svg class="button__icon">
-    <path
-      d="m13.34 19.07 6.37-6.36a1 1 0 0 0 0-1.42l-6.37-6.36a1 1 0 1 0-1.41 1.41L16.59 11H5a1 1 0 1 0 0 2h11.59l-4.66 4.66a1 1 0 0 0 1.41 1.41Z" />
-  </svg>
-</a>
+    <a class="button button_color_orange" href="./test-preview.html" title="Перейти к тесту">
+      Далее
+      <svg class="button__icon">
+        <path
+          d="m13.34 19.07 6.37-6.36a1 1 0 0 0 0-1.42l-6.37-6.36a1 1 0 1 0-1.41 1.41L16.59 11H5a1 1 0 1 0 0 2h11.59l-4.66 4.66a1 1 0 0 0 1.41 1.41Z"/>
+      </svg>
+    </a>
   </div>
+</main>
 
 <aside class="sidebar">
   <div class="sidebar__content">
