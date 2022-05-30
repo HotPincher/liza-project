@@ -75,6 +75,7 @@ form.addEventListener('submit', function (e) {
 		`);
     btNext.classList.remove('button_disabled');
     btReset.classList.add('button_color_white');
+    btReset.classList.remove('button_color_orange');
   } else {
     bt.insertAdjacentHTML('beforebegin', `
 		<section class="test-result test-result_color_red">
