@@ -162,6 +162,10 @@ function showResultTest() {
     testRetake.classList.remove("content__button_retake-wrong");
     btnMvdActive();
     testRetake.disabled = true;
+    resultsTitle.textContent = "83%";
+    resultTextOne.textContent = "Отличный результат!";
+    resultTextTwo.textContent = "Нажите «Далее» чтобы продолжить.";
+    resultTextThree.textContent = "Если считаете, что сможете лучше, нажмите «Пересдать». В случае если результат будет хуже, засчитается наивысший результат.";
   } else {
     testButton.classList.add("button__hidden");
     testRetake.classList.remove("button__hidden");
@@ -172,10 +176,7 @@ function showResultTest() {
     resultTextOne.textContent =
       "К сожалению, вы не набрали проходной результат.";
     resultTextTwo.textContent = "Нажмите «Пересдать», чтобы попробовать снова.";
-
-    resultTextThree.remove();
-    // resultTextTwo.textContent = 'К сожалению, вы не набрали проходной результат.';
-    // resultTextThree.textContent = 'Нажмите «Пересдать», чтобы попробовать снова.';
+    resultTextThree.textContent = ''
     hideButton();
   }
 }
@@ -224,12 +225,13 @@ buttonForward.addEventListener("click", function () {
     updateBreadCrumps();
     btnMvdDisabled();
     testBlock.classList.add('hidden');
+
   }
-  if (results.classList.contains("results__red")) {
+  if (results.classList.contains("results__red")&&(testBlock.classList.contains('hidden')===false)) {
     hideResultsShowCompleted();
     updateBreadCrumps();
     btnLableChange();
-  } else if (results.classList.contains("results__green")) {
+  } else if (results.classList.contains("results__green")&&(testBlock.classList.contains('hidden')===false)) {
     completedCourseTextThree.remove();
     hideResultsShowCompleted();
     showPositiveTextCompletedResult();
@@ -468,13 +470,18 @@ function openTest() {
   testBlock.classList.remove("hidden");
 }
 // слушатель кнопки "начать тест" в блоке "о тесте"
-cardButton.addEventListener("click", startTest);
+cardButton.addEventListener("click", () => {
+  startTest();
+});
 // ф-я при нажатии на кнопку "начать тест" в блоке "о тесте"
 function startTest() {
   // закрыть о тесте
   closeAboutTest();
   // открыть тест
   openTest();
+  if (results.classList.contains("results__green")) {
+    btnMvdActive()
+  }
 }
 // слушатель для кнопки "вернуться к тесту"
 buttonReturnToTheTest.addEventListener("click", returnToTheTest);
@@ -484,7 +491,7 @@ function returnToTheTest() {
   buttonReturnToTheTest.classList.add("hidden");
   mainContentSection.classList.remove("hidden");
   aboutTest.classList.add("hidden");
-  if (results.classList.contains("results__green") || results.classList.contains("results__red")) {
+  if (results.classList.contains("results__green")) {
     btnMvdActive()
   }
 }

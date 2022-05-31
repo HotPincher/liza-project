@@ -9,7 +9,7 @@
   left: 3px;
   width: 15px;
   height: 12px;
-  background: url('/images/FirstTestCorrectAnswer.svg'), no-repeat;
+  background: url('../../../images/FirstTestCorrectAnswer.svg'), no-repeat;
   content: '';
   display: block;
   position: absolute;
