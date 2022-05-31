@@ -1,0 +1,22 @@
+.button-test {
+  width: 184px;
+  height: 48px;
+  padding: 0;
+  border: 1.2px solid;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Golos', sans-serif;
+  cursor: pointer;
+  transition: opacity .2s linear;
+}
+
+.button-test:hover {
+  opacity: .6;
+}

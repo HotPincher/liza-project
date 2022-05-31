@@ -1,22 +1,10 @@
-.button {
-  width: 184px;
-  height: 48px;
+.button{
   padding: 0;
-  border: 1.2px solid;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 500;
-  font-family: 'Golos', sans-serif;
-  cursor: pointer;
-  transition: opacity .2s linear;
-}
-
-.button:hover {
-  opacity: .6;
+	margin: 0;
+	font-family: Golos, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1.33;
+  border: none;
 }
