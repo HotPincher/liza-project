@@ -176,7 +176,7 @@ function showResultTest() {
     resultTextOne.textContent =
       "К сожалению, вы не набрали проходной результат.";
     resultTextTwo.textContent = "Нажмите «Пересдать», чтобы попробовать снова.";
-    resultTextThree.textContent = ''
+    resultTextThree.textContent = ""
     hideButton();
   }
 }
@@ -200,9 +200,9 @@ let buttonForward = document.querySelector("#button_forward");
 
 //функция скрывающая сексии с результатами и основного контента и показывающее результирующее окно курса
 function hideResultsShowCompleted() {
-  results.classList.add("hidden");
-  mainContentSection.classList.add("hidden");
-  completedCourseSection.classList.remove("hidden");
+  results.classList.add("content_hidden");
+  mainContentSection.classList.add("content_hidden");
+  completedCourseSection.classList.remove("content_hidden");
 }
 
 //функция, которая меняет текст в сексии окна окончании курса при негативном результате
@@ -218,20 +218,20 @@ const video = document.querySelector("#block-video");
 buttonForward.addEventListener("click", function () {
   if (
     video.classList.contains("content") &&
-    !video.classList.contains("hidden")
+    !video.classList.contains("content_hidden")
   ) {
-    aboutTest.classList.remove("hidden");
-    video.classList.add("hidden");
+    aboutTest.classList.remove("content_hidden");
+    video.classList.add("content_hidden");
     updateBreadCrumps();
     btnMvdDisabled();
-    testBlock.classList.add('hidden');
+    testBlock.classList.add("content_hidden");
 
   }
-  if (results.classList.contains("results__red")&&(testBlock.classList.contains('hidden')===false)) {
+  if (results.classList.contains("results__red")&&(testBlock.classList.contains("content_hidden")===false)) {
     hideResultsShowCompleted();
     updateBreadCrumps();
     btnLableChange();
-  } else if (results.classList.contains("results__green")&&(testBlock.classList.contains('hidden')===false)) {
+  } else if (results.classList.contains("results__green")&&(testBlock.classList.contains("content_hidden")===false)) {
     completedCourseTextThree.remove();
     hideResultsShowCompleted();
     showPositiveTextCompletedResult();
@@ -463,11 +463,11 @@ const testBlock = document.getElementById("block-main");
 const buttonReturnToTheTest = aboutTest.querySelector(".content__link-button");
 // закрыть блок "о тесте"
 function closeAboutTest() {
-  aboutTest.classList.add("hidden");
+  aboutTest.classList.add("content_hidden");
 }
 // открыть блок "тест"
 function openTest() {
-  testBlock.classList.remove("hidden");
+  testBlock.classList.remove("content_hidden");
 }
 // слушатель кнопки "начать тест" в блоке "о тесте"
 cardButton.addEventListener("click", () => {
@@ -487,10 +487,10 @@ function startTest() {
 buttonReturnToTheTest.addEventListener("click", returnToTheTest);
 // ф-я "вернуться к тесту"
 function returnToTheTest() {
-  cardButton.classList.remove("hidden");
-  buttonReturnToTheTest.classList.add("hidden");
-  mainContentSection.classList.remove("hidden");
-  aboutTest.classList.add("hidden");
+  cardButton.classList.remove("content__link-button_hidden");
+  buttonReturnToTheTest.classList.add("content__link-button_hidden");
+  mainContentSection.classList.remove("content_hidden");
+  aboutTest.classList.add("content_hidden");
   if (results.classList.contains("results__green")) {
     btnMvdActive()
   }
@@ -499,15 +499,15 @@ function returnToTheTest() {
 // Логика для страницы "О тесте (посмотреть результаты)"
 // открыть блок "о тесте"
 function openAboutTest() {
-  aboutTest.classList.remove("hidden");
+  aboutTest.classList.remove("content_hidden");
 }
 // погасить кнопку "начать тест" в блоке "о тесте"
 function hideStartTestButton() {
-  cardButton.classList.add("hidden");
+  cardButton.classList.add("content__link-button_hidden");
 }
 // активировать кнопку-ссылку "вернуться к тесту"
 function showReturnToTheTestButton() {
-  buttonReturnToTheTest.classList.remove("hidden");
+  buttonReturnToTheTest.classList.remove("content__link-button_hidden");
 }
 
 function showTheClause() {
@@ -520,6 +520,6 @@ const testDescription = document.querySelector("#AboutTest");
 
 testDescription.addEventListener("click", () => {
   showTheClause();
-  mainContentSection.classList.add("hidden");
+  mainContentSection.classList.add("content_hidden");
   btnMvdDisabled();
 });

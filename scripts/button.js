@@ -28,12 +28,12 @@ function btnLableChange() {
 // Функция, которая будет менять класс карточки, чтобы она стала НЕ ВИДИМОЙ
 function visibleCard(card) {
   card.classList.add('visible')
-  card.classList.remove('hidden')
+  card.classList.remove('content_hidden')
 }
 
 // Функция, которая будет менять класс карточкии, чтобы она стала ВИДИМОЙ
 function hiddenCard(card) {
-  card.classList.add('hidden')
+  card.classList.add('content_hidden')
   card.classList.remove('visible')
 }
 
@@ -41,15 +41,15 @@ function hiddenCard(card) {
 const buttonBack = document.querySelector('#button_back')
 
 buttonBack.addEventListener('click', () => {
-  if (!aboutTest.classList.contains('hidden')) {
-    video.classList.remove('hidden')
-    aboutTest.classList.add('hidden')
+  if (!aboutTest.classList.contains('content_hidden')) {
+    video.classList.remove('content_hidden')
+    aboutTest.classList.add('content_hidden')
     btnMvdActive()
     updateBreadCrumps()
   }
-  if (!testBlock.classList.contains('hidden')) {
-    testBlock.classList.add('hidden')
-    aboutTest.classList.remove('hidden')
+  if (!testBlock.classList.contains('content_hidden')) {
+    testBlock.classList.add('content_hidden')
+    aboutTest.classList.remove('content_hidden')
     updateBreadCrumps()
     btnMvdDisabled()
   }
@@ -59,10 +59,10 @@ buttonBack.addEventListener('click', () => {
   //   updateBreadCrumps()
   //   btnMvdDisabled()
   // }
-  if (!buttonReturnToTheTest.classList.contains('hidden')) {
-    aboutTest.classList.add('hidden')
-    video.classList.add('hidden')
-    testBlock.classList.remove('hidden')
+  if (!buttonReturnToTheTest.classList.contains('content__link-button_hidden')) {
+    aboutTest.classList.add('content_hidden')
+    video.classList.add('content_hidden')
+    testBlock.classList.remove('content_hidden')
     updateBreadCrumps()
     btnMvdDisabled()
     returnToTheTest()
@@ -70,9 +70,9 @@ buttonBack.addEventListener('click', () => {
       btnMvdActive()
     }
   }
-  if (!completedCourseSection.classList.contains('hidden')) {
-    testBlock.classList.remove('hidden')
-    completedCourseSection.classList.add('hidden')
+  if (!completedCourseSection.classList.contains('content_hidden')) {
+    testBlock.classList.remove('content_hidden')
+    completedCourseSection.classList.add('content_hidden')
     updateBreadCrumps()
     document.querySelector(".breadcrumbs > ul > li:nth-child(3)").style.display = 'block'
     ButtonText.textContent = 'Далее';
@@ -83,7 +83,7 @@ buttonBack.addEventListener('click', () => {
 })
 
 btnMoved.addEventListener('click', () => {
-  if ((btnMoved.textContent === 'Завершить')&&(completedCourseSection.classList.contains('hidden')) === false) {
+  if ((btnMoved.textContent === 'Завершить')&&(completedCourseSection.classList.contains('content_hidden')) === false) {
     window.location.href='index.html'
   }
 })
