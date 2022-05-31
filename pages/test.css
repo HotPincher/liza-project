@@ -107,7 +107,7 @@
 
 @import url(../blocks/action-panel/action-panel.css);
 @import url(../blocks/button-test/button-test.css);
-@import url(../blocks/button/button_returned.css);
-@import url(../blocks/button/button_moved.css);
-@import url(../blocks/button/_moved_disabled/button_moved_disabled.css);
+@import url(../blocks/button-test/_moved/button-test_moved.css);
+@import url(../blocks/button-test/_returned/button-test_returned.css);
 @import url(../blocks/button/__hidden/button__hidden.css);
+@import url(../blocks/button-test/_moved/_disabled/button-test_moved_disabled.css);

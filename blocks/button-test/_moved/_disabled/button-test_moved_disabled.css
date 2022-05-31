@@ -1,4 +1,4 @@
-.button_moved_disabled {
+.button-test_moved_disabled {
   background-color: rgba(230, 231, 235, 1);
   color: rgba(147, 151, 163, 1);
   cursor: default;
@@ -6,6 +6,6 @@
   transition: none;
 }
 
-.button_moved_disabled:hover {
+.button-test_moved_disabled:hover {
   opacity: 1;
 }
