@@ -53,6 +53,7 @@
 @import url("../blocks/media-player/__wrapper/media-player__wrapper.css");
 
 @import url(../blocks/button/button.css);
+@import url(../blocks/button/_size/button_size_m.css);
 @import url(../blocks/button/__icon/button__icon.css);
 @import url(../blocks/button/_color/button_color_white.css);
 @import url(../blocks/button/_color/button_color_orange.css);

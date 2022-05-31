@@ -14,10 +14,6 @@
 @import url(../blocks/menu/__link/_active/menu__link_active.css);
 @import url(../blocks/menu/__icon/menu__icon.css);
 
-/* button */
-@import url(../blocks/button/button.css);
-
-
 /* title */
 
 @import url(../blocks/page-title/page-title.css);
@@ -31,10 +27,11 @@
 @import url(../blocks/sidebar-account/__image/sidebar-account__image.css);
 @import url(../blocks/sidebar-account/__title/sidebar-account__title.css);
 @import url(../blocks/button/button.css);
-@import url(../blocks/button//__icon/_size/button__icon_size_s.css);
+@import url(../blocks/button/__icon/_size/button__icon_size_s.css);
 @import url(../blocks/button/_color/button_color_orange.css);
 @import url(../blocks/button/_color/button_color_white.css);
 @import url(../blocks/button/_size/button_size_xl.css);
+@import url(../blocks/button/_disabled/button_disabled.css);
 
 @import url(../blocks/parameters/parameters.css);
 @import url(../blocks/parameters/__list-item/parameters__list-item.css);
