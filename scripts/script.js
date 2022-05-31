@@ -162,6 +162,10 @@ function showResultTest() {
     testRetake.classList.remove("content__button_retake-wrong");
     btnMvdActive();
     testRetake.disabled = true;
+    resultsTitle.textContent = "83%";
+    resultTextOne.textContent = "Отличный результат!";
+    resultTextTwo.textContent = "Нажите «Далее» чтобы продолжить.";
+    resultTextThree.textContent = "Если считаете, что сможете лучше, нажмите «Пересдать». В случае если результат будет хуже, засчитается наивысший результат.";
   } else {
     testButton.classList.add("button__hidden");
     testRetake.classList.remove("button__hidden");
@@ -172,10 +176,7 @@ function showResultTest() {
     resultTextOne.textContent =
       "К сожалению, вы не набрали проходной результат.";
     resultTextTwo.textContent = "Нажмите «Пересдать», чтобы попробовать снова.";
-
-    resultTextThree.remove();
-    // resultTextTwo.textContent = 'К сожалению, вы не набрали проходной результат.';
-    // resultTextThree.textContent = 'Нажмите «Пересдать», чтобы попробовать снова.';
+    resultTextThree.textContent = ''
     hideButton();
   }
 }
