@@ -1,4 +1,4 @@
-.completed-course__text {
+.content__text {
   max-width: 680px;
   margin: 0;
   margin-left: 96px;
@@ -9,10 +9,10 @@
   text-align: center;
 }
 
-.completed-course__text:nth-child(5) {
+.content__text:nth-child(5) {
   padding-top: 0;
 }
 
-.completed-course__text:last-child {
+.content__text:last-child {
   margin-bottom: 32px;
 }

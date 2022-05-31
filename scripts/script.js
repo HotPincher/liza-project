@@ -142,13 +142,13 @@ let resultTextThree = document.querySelector(".results__text_three");
 
 // //функция, которая скрывает кнопку Проверить и открывает кнопку Пересдать
 const hideButton = function () {
-  testButton.classList.add("button__hidden");
-  testRetake.classList.remove("button__hidden");
+  testButton.classList.add("content__button_hidden");
+  testRetake.classList.remove("content__button_hidden");
 };
 
 const showButton = function () {
-  testButton.classList.remove("button__hidden");
-  testRetake.classList.add("button__hidden");
+  testButton.classList.remove("content__button_hidden");
+  testRetake.classList.add("content__button_hidden");
 };
 function showResultTest() {
   let x = document.forms["testFirst"]["checkbox1"].checked;
@@ -167,8 +167,8 @@ function showResultTest() {
     resultTextTwo.textContent = "Нажите «Далее» чтобы продолжить.";
     resultTextThree.textContent = "Если считаете, что сможете лучше, нажмите «Пересдать». В случае если результат будет хуже, засчитается наивысший результат.";
   } else {
-    testButton.classList.add("button__hidden");
-    testRetake.classList.remove("button__hidden");
+    testButton.classList.add("content__button_hidden");
+    testRetake.classList.remove("content__button_hidden");
     testRetake.classList.remove("content__button_retake-success");
     testRetake.classList.add("content__button_retake-wrong");
     results.classList.add("results__red");
@@ -184,7 +184,7 @@ function showResultTest() {
 //переменные с текстом окна завершения курса
 let completedCourseSection = document.querySelector("#block-result");
 let completedCourseSubtitle = completedCourseSection.querySelector(
-  ".completed-course__subtitle"
+  ".content__subtitle"
 );
 let completedCourseTextOne = completedCourseSection.querySelector(
   "#completed-course_text_one"
