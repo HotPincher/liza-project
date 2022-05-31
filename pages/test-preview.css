@@ -38,6 +38,7 @@
 @import url('../blocks/breadcrumbs/__link/breadcrumbs__link.css');
 @import url('../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css');
 @import url('../blocks/content/content.css');
+@import url('../blocks/content/__block/contenct__block.css');
 @import url('../blocks/block-header/block-header.css');
 @import url('../blocks/block-header/_type/block-header_type_additional.css');
 @import url('../blocks/block-header/__title/block-header__title.css');

@@ -35,6 +35,7 @@
 @import url('../blocks/custom-list-item/__icon/_type/custom-list__icon_type_test.css');
 
 @import url("../blocks/content/content.css");
+@import url('../blocks/content/__block/contenct__block.css');
 
 @import url("../blocks/breadcrumbs/breadcrumbs.css");
 @import url("../blocks/breadcrumbs/__crumbs-list/breadcrumbs__crumbs-list.css");
