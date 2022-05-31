@@ -1,0 +1,11 @@
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  width: 242px;
+  list-style: none;
+  margin: 0;
+}

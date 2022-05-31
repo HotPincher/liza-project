@@ -1,0 +1,19 @@
+.checkbox__label-success {
+  padding-left: 30px;
+  font: 400 18px/24px 'Golos', sans-serif;
+  color: #008000;
+}
+
+.checkbox__label-success::before {
+  content: '';
+  background: none;
+  background: url('../../../images/icon-green.svg'), no-repeat;
+  top: 2px;
+  left: 2px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  position: absolute;
+  z-index: 2;
+}

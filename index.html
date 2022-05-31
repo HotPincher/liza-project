@@ -1,179 +1,398 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="This is courses web-page">
-	<title>Курсы</title>
-	<link rel="stylesheet" href="./pages/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>LizaAlert</title>
 </head>
+<body>
+  <div class="page">
+    <header class="header">
+      <article>
+        <h1 class="header__logo">Учебная платформа</h1>
+      </article>
+        <ul class="header__navigation">
+          <li class="header__item">
+            <div class="header__icon header__icon_course"></div>
+            <a href="#" class="header__text">Курсы</a>
+          </li>
+          <li class="header__item">
+            <div class="header__icon header__icon_profile"></div>
+            <a href="./account.html" class="header__text">Профиль</a>
+          </li>
+        </ul>
+      </article>
+    </header>
+    <main>
+      <!------------------------------------------- Начало хлебных крошек ------------------------------------------->
+      <section class="breadcrumbs">
+        <ul class="breadcrumbs__items">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Курсы</a>
+            <img src="./images/type=Arrow-right.svg" class="breadcrumbs__icon-next">
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Кинологическое направление</a>
+            <img src="./images/type=Arrow-right.svg" class="breadcrumbs__icon-next">
+          </li>
+          <li class="breadcrumbs__item">
+            <a data-path='five' class="breadcrumbs__link" href="#">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a>
+            <img src="./images/type=Arrow-right.svg" class="breadcrumbs__icon-next">
+          </li>
+            <li class="breadcrumbs__item">
+              <p class="breadcrumbs__link breadcrumbs__link_current"></p>
+            </li>
+        </ul>
+      </section>
+      <!------------------------------------------- Конец хлебных крошек ------------------------------------------->
+      <div class="blocks">
+        <div>
+          <!------------------------------------------------- Начало страницы №1 С видео ---------------------------------------------------->
+          <section class="content" id="block-video">
+            <div class="content__block">
+            <h2 class="content__title">Видео</h2>
+            </div>
+              <div class="media-player">
+                  <img src="./images/foto-prirody.jpeg" alt="video" class="media-player__video">
+                <div class="media-player__control-bar">
+                  <button type="button" class="media-player__button-play" aria-label="Play"></button>
+                  <input type="range" id="range-time" class="media-player__timeline" min="0" max="100" value="0">
+                  <div class="media-player__sound">
+                    <button type="button" class="media-player__button-sound" aria-label="Sound"></button>
+                    <input type="range" id="range-time" class="media-player__sound-progress" min="0" max="100" value="40">
+                  </div>
+                  <button type="button" class="media-player__button-fullscreen" aria-label="Во весь экран"></button>
+                </div>
+              </div>
+            </section>
 
-<body class="page">
-	<header class="header">
-		<a class="header__link" target="_blank" href="#">Учебная платформа</a>
-		<nav class="menu">
-			<ul class="menu__list">
-				<li class="menu__list-item">
-					<a id="courses-page-link" class="menu__link menu__link_active" href="./index.html">
-						<img class="menu__icon" src="./images/logo_courses_active.svg" alt="Курсы">Курсы
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a class="menu__link" href="./account.html">
-						<img class="menu__icon" src="./images/logo_profile.svg" alt="Профиль">Профиль
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<h1 class="page-title">Курсы</h1>
-	<main class="articles">
-		<ul class="card-list">
-		</ul>
-	</main>
-	<aside class="aside sidebar">
-		<form class="aside__filter-form" action="#" method="get" name="filter-form">
-			<div class="aside__form-head">
-				<h2 class="aside__title">Фильтры</h2>
-				<button class="button aside__reset-button" type="reset">Очистить</button>
-			</div>
-			<ul class="aside__filter-list">
-				<li class="aside__filter-block">
-					<a class="aside__filter-block-head">
-						<h3 class="aside__filter-block-name">Категория</h3>
-						<div class="aside__accordion-item-toggler"></div>
-					</a>
-					<ul class="aside__filter-items">
-						<li class="aside__filter-item"></li>
-					</ul>
-				</li>
-				<li class="aside__filter-block">
-					<a class="aside__filter-block-head">
-						<h3 class="aside__filter-block-name">Тематика</h3>
-						<div class="aside__accordion-item-toggler"></div>
-					</a>
-					<ul class="aside__filter-items">
-						<li class="aside__filter-item"></li>
-					</ul>
-				</li>
-				<li class="aside__filter-block">
-					<a class="aside__filter-block-head">
-						<h3 class="aside__filter-block-name">Уровень</h3>
-						<div class="aside__accordion-item-toggler"></div>
-					</a>
-					<ul class="aside__filter-items">
-						<li class="aside__filter-item" data-level="level">
-							<label class="aside__checkbox" for="level-new">
-								<input class="aside__checkbox-options" type="checkbox" value="Новичок" name="level-new"
-									id="level-new" data-level="Уровень" />
-								<span class="aside__checkbox-pseudo"></span>
-								<span class="aside__checkbox-label">Новичок</span>
-							</label>
-						</li>
-						<li class="aside__filter-item">
-							<label class="aside__checkbox" for="level-experienced">
-								<input class="aside__checkbox-options" type="checkbox" value="Бывалый"
-									name="level-experienced" id="level-experienced" data-level="Уровень" />
-								<span class="aside__checkbox-pseudo"></span>
-								<span class="aside__checkbox-label">Бывалый</span>
-							</label>
-						</li>
-						<li class="aside__filter-item">
-							<label class="aside__checkbox" for="level-profecional">
-								<input class="aside__checkbox-options" type="checkbox" value="Профессионал"
-									name="level-profecional" id="level-profecional" data-level="Уровень" />
-								<span class="aside__checkbox-pseudo"></span>
-								<span class="aside__checkbox-label">Профессионал</span>
-							</label>
-						</li>
-					</ul>
-				</li>
-				<li class="aside__filter-block">
-					<a class="aside__filter-block-head">
-						<h3 class="aside__filter-block-name">Статус</h3>
-						<div class="aside__accordion-item-toggler"></div>
-					</a>
-					<ul class="aside__filter-items">
-						<li class="aside__filter-item">
-							<label class="aside__checkbox" for="status-inactive">
-								<input class="aside__checkbox-options aside__checkbox-options_group" type="checkbox"
-									value="Не активный" name="status-inactive" id="status-inactive" data-status="Статус"
-									data-btn="Не активный" />
-								<span class="aside__checkbox-pseudo"></span>
-								<span class="aside__checkbox-label">Не активный</span>
-							</label>
-						</li>
-						<li class="aside__filter-item">
-							<label class="aside__checkbox" for="status-registration">
-								<input class="aside__checkbox-options" type="checkbox" value="Вы записаны"
-									name="status-registration" id="status-registration" data-status="Статус"
-									data-btn="Вы записаны" />
-								<span class="aside__checkbox-pseudo"></span>
-								<span class="aside__checkbox-label">Вы записаны</span>
-							</label>
-						</li>
-						<li class="aside__filter-item">
-							<label class="aside__checkbox" for="status-passed">
-								<input class="aside__checkbox-options aside__checkbox-options_group" type="checkbox"
-									value="Активный" name="status-passed" id="status-passed" data-status="Статус"
-									data-btn="Активный" />
-								<span class="aside__checkbox-pseudo"></span>
-								<span class="aside__checkbox-label">Активный</span>
-							</label>
-						</li>
-						<li class="aside__filter-item">
-							<label class="aside__checkbox" for="status-active">
-								<input class="aside__checkbox-options" type="checkbox" value="Пройден"
-									name="status-active" id="status-active" data-status="Статус" data-btn="Пройден" />
-								<span class="aside__checkbox-pseudo"></span>
-								<span class="aside__checkbox-label">Пройден</span>
-							</label>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</form>
-		<ul class="aside__checked-options-list">
-		</ul>
-	</aside>
-	<template id="cardTemplate">
-		<div class="card-list__base">
-			<a class="card-list__overlay" href="#" target="_blank">
-				<img src="#" alt="№" class="card-list__image">
-				<div class="card-list__description">
-					<h2 class="card-list__heading"></h2>
-					<span class="card-list__tier"></span>
-					<p class="card-list__info"></p>
-				</div>
-				<div class="card-list__timing">
-					<div class="card-list__timing-item">
-						<img class="card-list__icon" src="./images/articles_book.svg" alt="книга">
-						<p class="card-list__time" id="lessons"></p>
-					</div>
-					<div class="card-list__timing-item">
-						<img class="card-list__icon" src="./images/articles_clock.svg" alt="часы">
-						<p class="card-list__time" id="time"></p>
-					</div>
-				</div>
-			</a>
-			<a href="#" class="button card-list__button"></a>
-		</div>
-	</template>
-	<template class="checked-item-template">
-		<li class="aside__checked-item">
-			<div class="aside__deselect-option">
-				<p class="aside__name-checked-option"></p>
-				<button class="button aside__deselect-button" type="button">
-					<img src="./images/sidebar_delete-option.svg" alt="удалить" class="aside__deselect-button-img">
-				</button>
-			</div>
-		</li>
-	</template>
-	<script src="./scripts/open-filter-details.js"></script>
-	<script src="./scripts/initial-cards.js"></script>
-	<script src="./scripts/index.js"></script>
+            <!------------------------------------------------- Конец страницы №1 С видео ---------------------------------------------------->
+          <!------------------------------------------------- Начало страницы №2 О тесте  ---------------------------------------------------->
+          <section class="content hidden" id="block-about">
+            <div class="content__block">
+              <h2 class="content__title">Тест</h2>
+              <button class="content__link-button hidden">Вернуться к тесту</button>
+            </div>
+              <p class="content__paragraph">Что мы узнали об особенностях привлечения следовых расчётов на ПСР и особенностях взаимодействия между участниками ППС</p>
+              <ul class="content__info">
+
+                <li class="content__info-element">
+                  <div class="content__row">
+                    <div class="content__row-icon content__row-icon_checked"></div>
+                    <p class="content__row-text">Проходной балл:</p>
+                  </div>
+                  <p class="content__row-text">80%</p>
+                </li>
+
+                <li class="content__info-element">
+                  <div class="content__row">
+                    <div class="content__row-icon content__row-icon_refresh"></div>
+                    <p class="content__row-text">Количество попыток:</p>
+                  </div>
+                  <p class="content__row-text">3</p>
+                </li>
+
+                <li class="content__info-element">
+                  <div class="content__row">
+                    <div class="content__row-icon content__row-icon_clock"></div>
+                    <p class="content__row-text">Срок сдачи:</p>
+                  </div>
+                  <p class="content__row-text">22.02.2022 г. 16:20 (GMT+3)</p>
+                </li>
+
+              </ul>
+              <button class="content__start-button">Начать тест</button>
+
+          </section>
+          <!------------------------------------------------- Конец страницы №2 О тесте  ----------------------------------------------------------->
+          <!------------------------------------------------- Начало страницы №3 с main тестом  ---------------------------------------------------->
+          <section class="content hidden" id="block-main">
+            <div class="content__block">
+              <h2 class="content__title">Тест</h2>
+              <p class="content__about-test" id="AboutTest">Посмотреть условия</p>
+            </div>
+            <h2 class="content__test-title">1. В каких случаях перспективно применение следовых кинологических расчётов?</h2>
+            <div class="test">
+              <form name="testFirst" onsubmit="return validateForm()" onclick="return ifCurrect()" method="post">
+                <div class="checkbox">
+                  <input type="checkbox" class="checkbox__input checkbox__input_success" id="checkbox_1" name="checkbox1">
+                  <label id="checkboxLabelFirst" for="checkbox_1" class="checkbox__label">Оказание помощи гражданам,
+                    оказавшимся в зонах бедствия или пропавшим в безлюдной местности</label>
+                </div>
+
+
+                <div class="checkbox">
+                  <input type="checkbox" class="checkbox__input" id="checkbox_2" name="checkbox2">
+                  <label id="checkboxLabelSecond" for="checkbox_2" class="checkbox__label">Обучение животного идти как по горячему,
+                    так и по остывшему следу</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" class="checkbox__input" id="checkbox_3" name="checkbox3">
+                  <label id="checkboxLabelThird" for="checkbox_3" class="checkbox__label">Поиск тел и их остатков с применением
+                    специально обученных собак</label>
+                </div>
+              </form>
+            </div>
+            <h2 class="content__test-title">2. С какого возраста следует начинать дрессировку по курсу ПСС?</h2>
+            <form name="testSecond" onsubmit="return validateForm()" onclick="return ifCurrect()" method="post">
+              <div class="radio">
+                <input type="radio" name="answer" class="radio__input" id="radio_1" >
+                <label id="radioLabelFirst" for="radio_1" class="radio__label">6 месяцев</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="answer" class="radio__input" id="radio_2" >
+                <label id="radioLabelSecond" for="radio_2" class="radio__label">1–1,5 года</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="answer" class="radio__input" id="radio_3">
+                <label id="radioLabelThird" for="radio_3" class="radio__label">3 года</label>
+              </div>
+            <section class="results" id="results">
+              <h2 class="results__title">83%</h2>
+              <p id="results_text_one" class="results__text">Отличный результат!</p>
+              <p id="results_text_two" class="results__text">Нажите «Далее» чтобы продолжить.</p>
+              <p id="results_text_three" class="results__text">Если считаете, что сможете лучше, нажмите «Пересдать».
+                В случае если результат будет хуже, засчитается наивысший результат.</p>
+            </section>
+            <!-- конец заготовки для секции о результатах теста -->
+            </form>
+              <button type="submit" class="content__button" id="showResultButton">Показать результат</button>
+              <button type="submit" class="content__button button__hidden content__button_retake-success" id="retakeTestButton">Пересдать</button>
+          </section>
+          <!------------------------------------------------------- Конец страницы №3 ---------------------------------------------------------->
+          <!------------------------------------------------------- Начало страницы №4 Курс завершён--------------------------------------------------------->
+          <!-- тут заготовка для секции об окончании курса
+            в неё нужно будет подставить текст в зависимости от того, пройден курс или нет -->
+            <section class="content hidden" id="block-result">  <!-- completed-course -->
+              <div class="content__block">
+                <h2 class="content__title">Курс завершен</h2>
+              </div>
+              <h3 class="completed-course__subtitle">Сожалеем</h3>
+              <p id="completed-course_text_one" class="completed-course__text">
+                Курс
+                <span class="completed-course__text-span">
+                  «Кинологическое направление»
+                </span>
+                не пройден.</p>
+              <p id="completed-course_text_two" class="completed-course__text">Мы предъявляем очень строгие требования к участникам поисково-спасательных
+                мероприятий, из-за чего обучение может быть сложным.</p>
+              <p id="completed-course_text_three" class="completed-course__text">Вы можете попробовать себя
+                <span class="completed-course__text-span">
+                  в других направлениях.
+                </span>
+                </p>
+            </section>
+          <!------------------------------------------------------- Конец страницы №4 --------------------------------------------------------->
+          <!------------------------------------------------------- Кнопки навигации ---------------------------------------------------------->
+          <div class="action-panel">
+            <button id="button_back" type="button" aria-label="Назад" class="button button_returned"><img src="./images/arrow-left.svg" alt="Стрелка влево">Назад</button>
+            <button id="button_forward" type="button" aria-label="Далее" class="button button_moved">Далее<img src="./images/arrow-right.svg" id="button__arrow_right" alt="Стрелка враво"></button>
+          </div>
+        </div>
+        <!------------------------------------------------------------ Sidebar ------------------------------------------------------------>
+        <aside class="sidebar-content">
+          <div class="sidebar-content__container">
+            <h2 class="sidebar-content__header">Содержание</h2>
+
+            <ul class="sidebar-content__list">
+              <li>
+                <div class="sidebar-content__wrapper">
+                  <p data-path="one" class="sidebar-content__item">
+                    1. В каких случаях перспективно применение следовых кинологических
+                    расчётов
+                  </p>
+                  <span data-path="one" class="sidebar-content__item-icon"></span>
+                </div>
+
+                <ul data-target="one" class="sidebar-content__options">
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_lesson"></span>
+                      <p class="sidebar-content__option">Урок</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <div class="sidebar-content__wrapper">
+                  <p data-path="two" class="sidebar-content__item">
+                    2. Необходимые обеспечительные меры для успешного применения
+                    следовых (розыскных собак)
+                  </p>
+                  <span data-path="two" class="sidebar-content__item-icon"></span>
+                </div>
+
+                <ul data-target="two" class="sidebar-content__options">
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_lesson"></span>
+                      <p class="sidebar-content__option">Урок</p>
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li>
+                <div class="sidebar-content__wrapper">
+                  <p data-path="three" class="sidebar-content__item">
+                    3. Особенности привлечения следовых расчётов
+                    на&nbsp;ПСР&nbsp;и&nbsp;особенности
+                    взаимодействия
+                  </p>
+                  <span data-path="three" class="sidebar-content__item-icon"></span>
+                </div>
+
+                <ul data-target="three" class="sidebar-content__options">
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_lesson"></span>
+                      <p class="sidebar-content__option">Урок</p>
+                    </a>
+                  </li>
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_web"></span>
+                      <p class="sidebar-content__option">Вебинар</p>
+                    </a>
+                  </li>
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_lesson"></span>
+                      <p class="sidebar-content__option">Урок</p>
+                    </a>
+                  </li>
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_video"></span>
+                      <p class="sidebar-content__option">Видео</p>
+                    </a>
+                  </li>
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_test"></span>
+                      <p class="sidebar-content__option">Тест</p>
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li>
+                <div class="sidebar-content__wrapper">
+                  <p data-path="four" class="sidebar-content__item">
+                    4. Корректная постановка задачи кинологу и особенности
+                    её&nbsp;исполнения
+                  </p>
+                  <span data-path="four" class="sidebar-content__item-icon"></span>
+                </div>
+
+                <ul data-target="four" class="sidebar-content__options">
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_web"></span>
+                      <p class="sidebar-content__option">Вебинар</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <div class="sidebar-content__wrapper">
+                  <p data-path="five" class="sidebar-content__item">
+                    5. Работа «второго номера» совместно со следовым кинологическим
+                    расчётом
+                  </p>
+                  <span data-path="five" class="sidebar-content__item-icon"></span>
+                </div>
+
+
+
+                <ul data-target="five" class="sidebar-content__options">
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_lesson"></span>
+                      <p class="sidebar-content__option" id="lesson1">Дрессировка поисково-спасательных собак</p>
+                    </a>
+                  </li>
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_web"></span>
+                      <p class="sidebar-content__option">Вебинар</p>
+                    </a>
+                  </li>
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_lesson"></span>
+                      <p class="sidebar-content__option">Урок</p>
+                    </a>
+                  </li>
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_video"></span>
+                      <p class="sidebar-content__option">Видео</p>
+                    </a>
+                  </li>
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_test"></span>
+                      <p class="sidebar-content__option">Тест</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <div class="sidebar-content__wrapper">
+                  <p data-path="six" class="sidebar-content__item">
+                    6. Оценка качества и особенности анализа результата проделанной
+                    следовым кинологическим расчётом работы
+                  </p>
+                  <span data-path="six" class="sidebar-content__item-icon"></span>
+                </div>
+
+                <ul data-target="six" class="sidebar-content__options">
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_lesson"></span>
+                      <p class="sidebar-content__option">Урок</p>
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li>
+                <div class="sidebar-content__wrapper">
+                  <p data-path="seven" class="sidebar-content__item">
+                    7. Особенности и пределы использования РПРС ом&nbsp;полученной&nbsp;в
+                    ходе
+                    применения специальной&nbsp;следовой собаки информации в целях успешного разрешения поисков
+                  </p>
+                  <span data-path="seven" class="sidebar-content__item-icon"></span>
+                </div>
+
+                <ul data-target="seven" class="sidebar-content__options">
+                  <li class="sidebar-content__option-wrapper">
+                    <a href="#" class="sidebar-content__link">
+                      <span class="sidebar-content__option-icon sidebar-content__option-icon_lesson"></span>
+                      <p class="sidebar-content__option">Урок</p>
+                    </a>
+                 </li>
+                </ul>
+            </li>
+        </ul>
+      </div>
+        </aside>
+    </div>
+  </main>
+</div>
+  <script src="./scripts/button.js"></script>
+  <script src="./scripts/script-breadcrumbs.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/script-input.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,9 @@
+.sidebar-content__link {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20px auto;
+  text-decoration: none;
+  gap: 10px;
+  color: #212329;
+  align-items: flex-start;
+}

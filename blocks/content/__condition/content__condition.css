@@ -1,0 +1,10 @@
+.content__condition {
+  margin: 34px 32px 0 0;
+  font: 500 18px/24px 'Golos', sans-serif;
+  cursor: pointer;
+  transition: text-decoration .2s linear;
+}
+
+.content__condition:hover {
+  text-decoration: underline;
+}

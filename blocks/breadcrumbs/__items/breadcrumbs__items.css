@@ -1,0 +1,14 @@
+.breadcrumbs__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-left: 60px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1439px) {
+  .breadcrumbs__items {
+    padding: 0 20px;
+  }
+}

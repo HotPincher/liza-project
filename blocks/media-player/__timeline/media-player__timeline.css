@@ -1,0 +1,53 @@
+.media-player__timeline {
+  width: 468px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #9397A3;
+  background-image: linear-gradient(#ff4500, #ff4500);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.media-player__timeline::-webkit-slider-runnable-track {
+  border-radius: 16px;
+  height: 6px;
+  border: none;
+ z-index: -1;
+  border-radius: 3px;
+}
+.media-player__timeline::-webkit-slider-thumb {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  width:20px;
+  height: 20px;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+.media-player__timeline::-moz-range-track {
+  border-radius: 16px;
+  height: 6px;
+  border: none;
+
+}
+
+.media-player__timeline::-moz-range-thumb {
+  background: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  width:20px;
+  height: 20px;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+@media screen and (max-width: 1439px) {
+  .media-player__timeline {
+    width: 270px;
+  }
+}

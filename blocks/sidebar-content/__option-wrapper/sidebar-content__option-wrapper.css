@@ -1,0 +1,10 @@
+.sidebar-content__option-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 16px;
+}
+
+.sidebar-content__option-wrapper:last-of-type {
+  padding-bottom: 32px;
+}

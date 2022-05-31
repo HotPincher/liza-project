@@ -1,0 +1,7 @@
+.results__red {
+  display: block;
+  color: #FF0000;
+  background-color: rgba(255, 0, 0, 0.12);
+  border: 1.2px solid rgba(255, 0, 0, 0.6);
+  border-radius: 16px;
+}

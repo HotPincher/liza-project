@@ -1,0 +1,20 @@
+.radio__label-cross-answer {
+  padding-left: 31px;
+  font: 400 18px/24px 'Golos', sans-serif;
+}
+
+
+.radio__label-cross-answer::before {
+  border: none;
+  top: 1px;
+  left: 0px;
+  height: 22px;
+  width: 22px;
+  background: url('/images/RadioLabelCross.svg'), no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
