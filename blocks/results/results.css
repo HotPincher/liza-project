@@ -1,0 +1,7 @@
+.results {
+  display: none;
+  max-width: 808px;
+  margin: 32px 32px 0;
+  padding: 32px 32px 32px 32px;
+  font-family: 'Golos', sans-serif;
+}

@@ -1,0 +1,20 @@
+.media-player__button-play{
+  width: 24px;
+  height: 24px;
+  border-style: none;
+  background-color: transparent;
+  background-image: url('../../../images/Play.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.media-player__button-play:hover {
+  opacity: 0.8;
+  transition: opacity .3s;
+}

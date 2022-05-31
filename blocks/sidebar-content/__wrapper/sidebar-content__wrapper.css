@@ -1,0 +1,7 @@
+.sidebar-content__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  border-top: 1px solid rgba(230, 231, 235, 1);
+  gap: 10px;
+}
