@@ -74,7 +74,9 @@
 @import url(../blocks/completed-course/__text/-span/completed-course__text-span.css);
 
 @import url(../blocks/results/results.css);
-@import url(../blocks/results/___text/results__text.css);
+@import url(../blocks/results/__text/results__text.css);
+@import url(../blocks/results/__text/_one/results__text_one.css);
+@import url(../blocks/results/__text/_three/results__text_three.css);
 @import url(../blocks/results/__green/results__green.css);
 @import url(../blocks/results/__red/results__red.css);
 @import url(../blocks/results/__title/results__title.css);

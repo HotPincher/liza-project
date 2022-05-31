@@ -43,9 +43,7 @@
 @import url(../blocks/aside/__filter-block/_active/aside__filter-block_active.css);
 @import url(../blocks/aside/__deselect-button/aside__deselect-button.css);
 
-
 @import url(../blocks/articles/articles.css);
-
 
 @import url(../blocks/card-list/card-list.css);
 @import url(../blocks/card-list/__base/card-list__base.css);
@@ -64,3 +62,12 @@
 @import url(../blocks/card-list/__button/_registration/card-list__button_registration.css);
 @import url(../blocks/card-list/__button/_initiate/card-list__button_initiate.css);
 @import url(../blocks/card-list/__button/_disable/card-list__button_disable.css);
+
+
+@import url(../blocks/results/results.css);
+@import url(../blocks/results/__green/results__green.css);
+@import url(../blocks/results/__red/results__red.css);
+@import url(../blocks/results/__text/results__text.css);
+@import url(../blocks/results/__text/_one/results__text_one.css);
+@import url(../blocks/results/__text/_three/results__text_three.css);
+@import url(../blocks/results/__title/results__title.css);
