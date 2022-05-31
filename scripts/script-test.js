@@ -41,18 +41,18 @@ let time = 0;
 form.addEventListener('submit', function (e) {
   e.preventDefault();
   for (let i = 0; i < inputs.length; i++) {
-    if (inputs[i].checked && inputs[i].classList.contains('checkbox__options_disabled_true')) {
+    if (inputs[i].checked && inputs[i].classList.contains('checkbox__options_true')) {
       icons[i].classList.add('checkbox__pseudo_type_true-check');
       testText[i].classList.add('checkbox__label_theme_true');
       time++;
 
-    } if (!(inputs[i].checked) && inputs[i].classList.contains('checkbox__options_disabled_true')) {
+    } if (!(inputs[i].checked) && inputs[i].classList.contains('checkbox__options_true')) {
       icons[i].classList.add('checkbox__pseudo_type_true-uncheck');
     }
-    if (inputs[i].checked && inputs[i].classList.contains('checkbox__options_disabled_false')) {
+    if (inputs[i].checked && inputs[i].classList.contains('checkbox__options_false')) {
       icons[i].classList.add('checkbox__pseudo_type_false-check');
       testText[i].classList.add('checkbox__label_theme_false');
-    } if (!(inputs[i].checked) && inputs[i].classList.contains('checkbox__options_disabled_false')) {
+    } if (!(inputs[i].checked) && inputs[i].classList.contains('checkbox__options_false')) {
       icons[i].classList.add('checkbox__pseudo_type_false-uncheck');
     } if (inputs[i].checked) {
       inputs[i].checked = false;
@@ -75,7 +75,6 @@ form.addEventListener('submit', function (e) {
 		`);
     btNext.classList.remove('button_disabled');
     btReset.classList.add('button_color_white');
-    btReset.classList.remove('button_color_orange');
   } else {
     bt.insertAdjacentHTML('beforebegin', `
 		<section class="test-result test-result_color_red">
