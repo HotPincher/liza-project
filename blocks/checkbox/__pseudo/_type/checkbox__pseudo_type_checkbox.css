@@ -1,3 +1,7 @@
 .checkbox__pseudo_type_checkbox{
   background: url(../../../../images/test/test_checkbox_uncheck_icon.svg) center no-repeat;
 }
+
+.checkbox__options:checked + .checkbox__pseudo_type_checkbox{
+	background: url(../../../../images/test/test_checkbox_chek_icon.svg) center no-repeat;
+}

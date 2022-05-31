@@ -1,3 +1,7 @@
 .checkbox__pseudo_type_radio{
   background: url(../../../../images/test/test_radio_uncheck_icon.svg) center no-repeat;
 }
+
+.checkbox__options:checked + .checkbox__pseudo_type_radio{
+	background: url(../../../../images/test/test_radio_check_icon.svg) center no-repeat;
+	}

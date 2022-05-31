@@ -3,7 +3,6 @@
 	color: inherit;
 	background-color: transparent;
 	cursor: pointer;
-<<<<<<< HEAD
 	text-decoration: none;
 }
 
@@ -11,11 +10,3 @@
 	text-decoration: underline;
 }
 
-=======
-  text-decoration: none;
-}
-
-.block-header__button:hover{
-  text-decoration: underline;
-}
->>>>>>> develop

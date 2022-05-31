@@ -4,3 +4,7 @@
 	line-height: 133%;
 	margin-left: 20px;
 }
+
+.checkbox__options:checked + .checkbox__pseudo + .checkbox__label{
+	color:  #F06000;
+	}
