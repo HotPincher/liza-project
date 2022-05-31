@@ -134,11 +134,11 @@ const validateAnswers = () => {
 //переменная с текстом % результата
 let resultsTitle = document.querySelector(".results__title");
 //переменная с первой строкой текста "Отличный результат!" в блоке с результатами
-let resultTextOne = document.querySelector("#results_text_one");
+let resultTextOne = document.querySelector(".results_text_one");
 //переменная со второй строкой текста в блоке с результатами
-let resultTextTwo = document.querySelector("#results_text_two");
+let resultTextTwo = document.querySelector(".results_text_two");
 //переменная с третьей строкой текста в блоке с результатами
-let resultTextThree = document.querySelector("#results_text_three");
+let resultTextThree = document.querySelector(".results_text_three");
 
 // //функция, которая скрывает кнопку Проверить и открывает кнопку Пересдать
 const hideButton = function () {
