@@ -1,10 +1,3 @@
 .personal-info__button-submit {
 	margin: 0 auto;
 }
-
-.personal-info__button-submit[disabled] {
-	background-color: #e6e7eb;
-	color: #9397a3;
-	cursor: auto;
-	transform: scale(1);
-}

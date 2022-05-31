@@ -24,7 +24,7 @@ const createCard = card => {
     cardButtonType.setAttribute('value', `${card.button}`);
 
     if (card.button === 'Записаться') {
-        cardButtonType.classList.add('button_color_white');
+        cardButtonType.classList.add('button_color_white', 'button_size_m');
         cardButtonType.addEventListener('click', evt => {
             evt.target
                 .closest('.card-list__button')
@@ -34,10 +34,9 @@ const createCard = card => {
             cardTemplateElement.dataset.status = 'Вы записаны';
         });
     }	else if (card.button === 'Продолжить') {
-        cardButtonType.classList.add('button_color_orange');
+        cardButtonType.classList.add('button_color_orange', 'button_size_m');
     } else if (card.button === 'Пройден') {
-        cardButtonType.classList.add('button_disabled');
-        cardButtonType.setAttribute('disabled', 'disabled');
+        cardButtonType.classList.add('button_disabled', 'button_size_m');
     }
     if (card.buttonLink) {
         cardButtonType.setAttribute('href', card.buttonLink);

@@ -42,7 +42,7 @@
 @import url("../blocks/breadcrumbs/__link/breadcrumbs__link.css");
 @import url("../blocks/breadcrumbs/__link/_type/breadcrumbs__link_type_current.css");
 
-@import url("../blocks/block-header/block-header");
+@import url("../blocks/block-header/block-header.css");
 @import url("../blocks/block-header/_type/block-header_type_additional.css");
 @import url("../blocks/block-header/__title/block-header__title.css");
 @import url("../blocks/block-header/__button/block-header__button.css");
@@ -64,3 +64,5 @@
 @import url("../blocks/button/__icon/button__icon.css");
 @import url("../blocks/button/_disabled/button_disabled.css");
 @import url("../blocks/button-wrapper/button-wrapper.css");
+@import url("../blocks/button/_size/button_size_m.css");
+
