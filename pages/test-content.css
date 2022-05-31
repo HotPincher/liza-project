@@ -75,8 +75,6 @@
 @import url(../blocks/checkbox/__pseudo/_type/checkbox__pseudo_type_false-uncheck.css);
 
 @import url(../blocks/checkbox/__options/checkbox__options.css);
-@import url(../blocks/checkbox/__options/_disabled/checkbox__options_disabled_true.css);
-@import url(../blocks/checkbox/__options/_disabled/checkbox__options_disabled_false.css);
 
 @import url("../blocks/test-result/test-result.css");
 @import url("../blocks/test-result/_color/test-result_color_green.css");

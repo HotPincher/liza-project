@@ -64,3 +64,5 @@
 @import url("../blocks/button/__icon/button__icon.css");
 @import url("../blocks/button/_disabled/button_disabled.css");
 @import url("../blocks/button-wrapper/button-wrapper.css");
+@import url("../blocks/button/_size/button_size_m.css");
+

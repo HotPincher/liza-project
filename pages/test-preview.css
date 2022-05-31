@@ -58,4 +58,4 @@
 @import url('../blocks/button/__icon/button__icon.css');
 @import url('../blocks/button/_disabled/button_disabled.css');
 @import url('../blocks/button-wrapper/button-wrapper.css');
-@import url('../blocks/button/_type/button-wrapper_type_additional.css');
+@import url("../blocks/button/_type/button_type_additional.css");
