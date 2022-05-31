@@ -1,0 +1,20 @@
+.radio__label-success-answer {
+  padding-left: 31px;
+  font: 400 18px/24px 'Golos', sans-serif;
+  color: green;
+}
+
+.radio__label-success-answer::before {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url('/images/icon-green.svg'), no-repeat;
+  top: 2px;
+  left: 2px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

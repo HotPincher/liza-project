@@ -1,0 +1,5 @@
+.sidebar-content__item-icon_active {
+  transform: rotate(180deg);
+  background-position-y: top;
+  cursor: pointer;
+}

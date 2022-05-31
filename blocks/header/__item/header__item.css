@@ -1,0 +1,13 @@
+.header__item {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+align-items: center;
+}
+
+.header__item:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+  cursor: pointer;
+}

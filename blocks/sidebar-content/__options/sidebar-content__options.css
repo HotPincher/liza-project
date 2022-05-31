@@ -1,0 +1,9 @@
+  .sidebar-content__options {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .2s;
+    list-style: none;
+    padding-left: 0px;
+  }
+

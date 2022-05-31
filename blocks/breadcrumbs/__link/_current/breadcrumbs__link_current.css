@@ -1,0 +1,12 @@
+.breadcrumbs__link_current {
+  color: #9397A3;
+}
+
+.breadcrumbs__link_current:hover {
+  transition: none;
+  text-decoration: none;
+  opacity: 1;
+  cursor:default;
+}
+
+

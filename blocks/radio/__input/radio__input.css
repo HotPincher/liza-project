@@ -1,0 +1,16 @@
+.radio__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.radio__input:checked + .radio__label::before {
+  border-color: #F06000;
+}
+
+.radio__input:checked + .radio__label::after {
+  opacity: 1;
+}
+.radio__input:checked + .radio__label {
+  color: #F06000;
+}

@@ -1,0 +1,10 @@
+.completed-course__subtitle {
+  max-width: 808px;
+  margin: 0;
+  padding-top: 64px;
+  padding-left: 32px;
+  margin-bottom: 3px;
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+}
