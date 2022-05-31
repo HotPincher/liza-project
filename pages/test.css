@@ -6,13 +6,13 @@
 @import url(../blocks/test/test.css);
 
 @import url(../blocks/header-test/header-test.css);
-@import url(../blocks/header/__logo/header__logo.css);
-@import url(../blocks/header/__navigation/header__navigation.css);
-@import url(../blocks/header/__item/header__item.css);
-@import url(../blocks/header/__icon/header__icon.css);
-@import url(../blocks/header/__icon/_course/header__icon_course.css);
-@import url(../blocks/header/__icon/_profile/header__icon_profile.css);
-@import url(../blocks/header/__text/header__text.css);
+@import url(../blocks/header-test/__icon/_course/header-test__icon_course.css);
+@import url(../blocks/header-test/__icon/_profile/header-test__icon_profile.css);
+@import url(../blocks/header-test/__icon/header-test__icon.css);
+@import url(../blocks/header-test/__item/header-test__item.css);
+@import url(../blocks/header-test/__logo/header-test__logo.css);
+@import url(../blocks/header-test/__navigation/header-test__navigation.css);
+@import url(../blocks/header-test/__text/header-test__text.css);
 
 @import url(../blocks/breadcrumbs/breadcrumbs.css);
 @import url(../blocks/breadcrumbs/__items/breadcrumbs__items.css);
