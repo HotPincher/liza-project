@@ -225,12 +225,13 @@ buttonForward.addEventListener("click", function () {
     updateBreadCrumps();
     btnMvdDisabled();
     testBlock.classList.add('hidden');
+
   }
-  if (results.classList.contains("results__red")) {
+  if (results.classList.contains("results__red")&&(testBlock.classList.contains('hidden')===false)) {
     hideResultsShowCompleted();
     updateBreadCrumps();
     btnLableChange();
-  } else if (results.classList.contains("results__green")) {
+  } else if (results.classList.contains("results__green")&&(testBlock.classList.contains('hidden')===false)) {
     completedCourseTextThree.remove();
     hideResultsShowCompleted();
     showPositiveTextCompletedResult();
@@ -469,13 +470,18 @@ function openTest() {
   testBlock.classList.remove("hidden");
 }
 // слушатель кнопки "начать тест" в блоке "о тесте"
-cardButton.addEventListener("click", startTest);
+cardButton.addEventListener("click", () => {
+  startTest();
+});
 // ф-я при нажатии на кнопку "начать тест" в блоке "о тесте"
 function startTest() {
   // закрыть о тесте
   closeAboutTest();
   // открыть тест
   openTest();
+  if (results.classList.contains("results__green")) {
+    btnMvdActive()
+  }
 }
 // слушатель для кнопки "вернуться к тесту"
 buttonReturnToTheTest.addEventListener("click", returnToTheTest);
@@ -485,7 +491,7 @@ function returnToTheTest() {
   buttonReturnToTheTest.classList.add("hidden");
   mainContentSection.classList.remove("hidden");
   aboutTest.classList.add("hidden");
-  if (results.classList.contains("results__green") || results.classList.contains("results__red")) {
+  if (results.classList.contains("results__green")) {
     btnMvdActive()
   }
 }

@@ -3,7 +3,7 @@ const btnReturned = actionPanel.querySelector('.button_returned');
 const btnMoved = actionPanel.querySelector('.button_moved');
 const btnArrowRight = btnMoved.querySelector('#button__arrow_right');
 const cmplCourse = document.querySelector('.completed-course');
-
+const ButtonText = document.querySelector('.button-test__text');
 // Функция для активной кнопки, при ДОСТАТОЧНОМ количестве балов
 function btnMvdActive() {
   btnMoved.removeAttribute('disabled');
@@ -20,7 +20,9 @@ function btnMvdDisabled() {
 
 // Функция для замены Далее/Завершить
 function btnLableChange() {
-  btnMoved.textContent = 'Завершить';
+  ButtonText.textContent = 'Завершить';
+  btnArrowRight.src = ''
+  btnArrowRight.alt = ''
 }
 
 // Функция, которая будет менять класс карточки, чтобы она стала НЕ ВИДИМОЙ
@@ -51,13 +53,20 @@ buttonBack.addEventListener('click', () => {
     updateBreadCrumps()
     btnMvdDisabled()
   }
+  // if (results.classList.contains("results__green")) {
+  //   testBlock.classList.add('hidden')
+  //   aboutTest.classList.remove('hidden')
+  //   updateBreadCrumps()
+  //   btnMvdDisabled()
+  // }
   if (!buttonReturnToTheTest.classList.contains('hidden')) {
     aboutTest.classList.add('hidden')
     video.classList.add('hidden')
     testBlock.classList.remove('hidden')
     updateBreadCrumps()
     btnMvdDisabled()
-    if (results.classList.contains("results__green")||results.classList.contains("results__red")) {
+    returnToTheTest()
+    if (results.classList.contains("results__green")) {
       btnMvdActive()
     }
   }
@@ -66,7 +75,15 @@ buttonBack.addEventListener('click', () => {
     completedCourseSection.classList.add('hidden')
     updateBreadCrumps()
     document.querySelector(".breadcrumbs > ul > li:nth-child(3)").style.display = 'block'
-    btnMoved.textContent = 'Далее';
+    ButtonText.textContent = 'Далее';
+    btnArrowRight.src = "./images/arrow-right.svg";
+    btnArrowRight.alt = "Стрелка вправо"
   }
   resetOptionColorIconBackwards()
+})
+
+btnMoved.addEventListener('click', () => {
+  if ((btnMoved.textContent === 'Завершить')&&(completedCourseSection.classList.contains('hidden')) === false) {
+    window.location.href='index.html'
+  }
 })
