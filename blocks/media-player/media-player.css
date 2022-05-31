@@ -1,5 +1,6 @@
 .media-player {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
@@ -8,11 +9,12 @@
   width: 808px;
   height: 456px;
   background: #212329;
-  background-image: url('../../images/foto-prirody.jpeg');
   background-size: cover;
   background-position: center;
   /*box-shadow: 0px 0px 4px rgba(233, 234, 237, 0.6), 0px 4px 16px rgba(233, 234, 237, 0.4);*/
   border-radius: 8px;
+  z-index: 0;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1439px) {

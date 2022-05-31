@@ -24,17 +24,12 @@
 @import url(../blocks/media-player/media-player.css);
 @import url(../blocks/media-player/__control-bar/media-player__control-bar.css);
 @import url(../blocks/media-player/__button-play/media-player__button-play.css);
-@import url(../blocks/media-player/__timeline-bar/media-player__timeline-bar.css);
 @import url(../blocks/media-player/__timeline/media-player__timeline.css);
 @import url(../blocks/media-player/__sound/media-player__sound.css);
-@import url(../blocks/media-player/__sound-progress-bar/media-player__sound-progress-bar.css);
-@import url(../blocks/media-player/__sound-bar/media-player__sound-bar.css);
-@import url(../blocks/media-player/__sound-progress-bar/);
-@import url(../blocks/media-player/__button-progress/media-player__button-progress.css);
-@import url(../blocks/media-player/__button-progress/_mark/media-player__button-progress_mark.css);
 @import url(../blocks/media-player/__button-fullscreen/media-player__fullscreen.css);
 @import url(../blocks/media-player/__button-sound/media-player__button-sound.css);
 @import url(../blocks/media-player/__sound-progress/media-player__sound-progress.css);
+@import url(../blocks/media-player/__video/media-player__video.css);
 
 @import url(../blocks/content/content.css);
 @import url(../blocks/content/__block/content__block.css);
