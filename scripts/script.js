@@ -15,18 +15,39 @@ const radioLabelSecond = document.querySelector("#radioLabelSecond");
 const radioLabelThird = document.querySelector("#radioLabelThird");
 const results = document.querySelector("#results");
 
+
+/*console.log(count)
+if(count >= 3) {
+  testButton.classList.toggle("content__button_active");
+  console.log('fool')
+  btnMvdActive()
+}*/
+
+let count = 0;
 testButton.addEventListener("click", () => {
+  count++
   if (
     (testCheck1.checked || testCheck2.checked || testCheck3.checked) &&
-    (testRadio1.checked || testRadio2.checked || testRadio3.checked)
+    (testRadio1.checked || testRadio2.checked || testRadio3.checked) && count <=3
   ) {
+
     validateAnswers();
     showResultTest();
   }
+
+  //console.log(count)
+  if(count >= 3 &&  resultsTitle.textContent === "33%") {
+    testRetake.classList.add('content__button_retake-success');
+    testRetake.classList.remove('content__button_retake-wrong');
+    testRetake.setAttribute('disabled', true)
+    btnMvdActive()
+  }
+
 });
 
+
 const showResult = () => {
-  testButton.classList.toggle("content__button_active");
+ testButton.classList.toggle("content__button_active");
 };
 
 correctAswers = {
@@ -240,7 +261,10 @@ buttonForward.addEventListener("click", function () {
   } else {
     console.log("Пройдите тест!");
   }
+  resetOptionColorIconForward()
+
 });
+
 
 testRetake.addEventListener("click", function () {
   testButton.classList.remove("content__button_active");
@@ -357,7 +381,7 @@ function resetOptionColorIconForward() {
 
 resetOptionColorIconForward()
 
-//Функция изменения цвета иконок и пунктов содержания при загрузке и нажатии на кнопку "назад"
+//Функция изменения цвета иконок и пунктов содержания при  нажатии на кнопку "назад"
 
 function resetOptionColorIconBackwards() {
   arrCoursesAll.forEach(function (item) {
@@ -385,7 +409,7 @@ function resetOptionColorIconBackwards() {
   });
 }
 
-frowardButton.addEventListener("click", resetOptionColorIconForward);
+
 
 
 //Функция изменения цвета у текущего пункта содержания
