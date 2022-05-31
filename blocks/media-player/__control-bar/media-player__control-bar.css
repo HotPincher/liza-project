@@ -2,7 +2,23 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 32px;
-  margin-bottom: 32px;
+  padding: 32px;
   gap: 32px;
+  background-color: rgba(0,0,0, .5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  opacity: 0;
+  transition: opacity .5s 3s;
 }
+
+.media-player__control-bar:hover {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+@media screen and (max-width: 1439px) {
+  .media-player__control-bar {
+    padding: 28px;
+  }
+}
+
