@@ -1,0 +1,12 @@
+.checkbox__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__input:checked  {
+  opacity: 1;
+}
+.checkbox__input:checked {
+  color: #F06000;
+}

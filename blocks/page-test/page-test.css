@@ -1,0 +1,12 @@
+.page-test {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 calc(100%-1440px);
+  font-family: 'Golos', Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 1439px) {
+  .page-test {
+    padding: 0 calc(100%-1024px);
+  }
+}
