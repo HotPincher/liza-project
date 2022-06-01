@@ -11,17 +11,6 @@
   color: #9397A3;
 }
 
-.content__button_active {
-  background-color: #F06000;
-  color: white;
-  cursor: pointer;
-  transition: opacity .2s linear;
-}
-
-.content__button_active:hover {
-  opacity: .6;
-}
-
 @media screen and (max-width: 1439px) {
   .content__button {
     margin: 32px 240px 0;
