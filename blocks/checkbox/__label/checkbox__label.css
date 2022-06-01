@@ -3,6 +3,7 @@
   font: 400 18px/24px 'Golos', sans-serif;
   cursor: pointer;
   transition: color .05s linear;
+
 }
 
 .checkbox__label::before {
@@ -29,6 +30,5 @@
   top: 1px;
   left: 0;
   z-index: 2;
-
   transition: opacity .05s linear;
 }

@@ -4,9 +4,9 @@
   position: absolute;
 }
 
-.checkbox__input:checked + .checkbox__label::after {
+.checkbox__input:checked  {
   opacity: 1;
 }
-.checkbox__input:checked + .checkbox__label {
+.checkbox__input:checked {
   color: #F06000;
 }

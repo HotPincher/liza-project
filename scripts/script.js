@@ -186,6 +186,12 @@ function showResultTest() {
     resultTextOne.textContent = "Отличный результат!";
     resultTextTwo.textContent = "Нажите «Далее» чтобы продолжить.";
     resultTextThree.textContent = "Если считаете, что сможете лучше, нажмите «Пересдать». В случае если результат будет хуже, засчитается наивысший результат.";
+    checkboxLabelFirst.classList.remove('checkbox__label_colored');
+    checkboxLabelFirst.classList.remove('checkbox__label_selected');
+    checkboxLabelSecond.classList.remove('checkbox__label_colored');
+    checkboxLabelSecond.classList.remove('checkbox__label_selected');
+    checkboxLabelThird.classList.remove('checkbox__label_colored');
+    checkboxLabelThird.classList.remove('checkbox__label_selected');
   } else {
     testButton.classList.add("content__button_hidden");
     testRetake.classList.remove("content__button_hidden");
@@ -198,6 +204,12 @@ function showResultTest() {
     resultTextTwo.textContent = "Нажмите «Пересдать», чтобы попробовать снова.";
     resultTextThree.textContent = ""
     hideButton();
+    checkboxLabelFirst.classList.remove('checkbox__label_colored');
+    checkboxLabelFirst.classList.remove('checkbox__label_selected');
+    checkboxLabelSecond.classList.remove('checkbox__label_colored');
+    checkboxLabelSecond.classList.remove('checkbox__label_selected');
+    checkboxLabelThird.classList.remove('checkbox__label_colored');
+    checkboxLabelThird.classList.remove('checkbox__label_selected');
   }
 }
 
@@ -293,6 +305,15 @@ testRetake.addEventListener("click", function () {
   radioLabelThird.classList.remove("radio__label-cross-answer");
   radioLabelThird.classList.remove("radio__label-wrong-answer");
   radioLabelThird.classList.add("radio__label");
+  radioLabelSecond.classList.remove('radio__label_colored');
+  radioLabelSecond.classList.remove('radio__label_selected');
+  radioLabelSecond.classList.remove('radio__label_bordered');
+  radioLabelFirst.classList.remove('radio__label_colored');
+  radioLabelFirst.classList.remove('radio__label_selected');
+  radioLabelFirst.classList.remove('radio__label_bordered');
+  radioLabelThird.classList.remove('radio__label_colored');
+  radioLabelThird.classList.remove('radio__label_selected');
+  radioLabelThird.classList.remove('radio__label_bordered');
   document.forms["testFirst"].reset();
   document.forms["testSecond"].reset();
   showButton();
@@ -545,4 +566,85 @@ testDescription.addEventListener("click", () => {
   showTheClause();
   mainContentSection.classList.add("content_hidden");
   btnMvdDisabled();
+});
+
+// при клике на первый чекбокс добавлять\убирать цвет и галочку
+checkboxLabelFirst.addEventListener("click", function () {
+  if (!(results.classList.contains("results__green"))&&!(results.classList.contains("results__red"))) {
+  checkboxLabelFirst.classList.toggle('checkbox__label_colored');
+  checkboxLabelFirst.classList.toggle('checkbox__label_selected');
+   } else {
+    checkboxLabelFirst.classList.remove('checkbox__label_colored');
+    checkboxLabelFirst.classList.remove('checkbox__label_selected');
+  }
+});
+
+// при клике на второй чекбокс добавлять\убирать цвет и галочку
+checkboxLabelSecond.addEventListener("click", function () {
+  if (!(results.classList.contains("results__green"))&&!(results.classList.contains("results__red")))  {
+    checkboxLabelSecond.classList.toggle('checkbox__label_colored');
+    checkboxLabelSecond.classList.toggle('checkbox__label_selected');
+    } else {
+      checkboxLabelSecond.classList.remove('checkbox__label_colored');
+      checkboxLabelSecond.classList.remove('checkbox__label_selected');
+    }
+});
+
+// при клике на третий чекбокс добавлять\убирать цвет и галочку
+checkboxLabelThird.addEventListener("click", function () {
+  if (!(results.classList.contains("results__green"))&&!(results.classList.contains("results__red")))  {
+    checkboxLabelThird.classList.toggle('checkbox__label_colored');
+    checkboxLabelThird.classList.toggle('checkbox__label_selected');
+    } else {
+      checkboxLabelThird.classList.remove('checkbox__label_colored');
+      checkboxLabelThird.classList.remove('checkbox__label_selected');
+    }
+});
+
+// при клике на первую радиокнопку добавлять\убирать цвет, точку и границу
+radioLabelFirst.addEventListener("click", function () {
+  radioLabelFirst.classList.add('radio__label_colored');
+  radioLabelFirst.classList.add('radio__label_selected');
+  radioLabelFirst.classList.add('radio__label_bordered');
+
+  radioLabelSecond.classList.remove('radio__label_colored');
+  radioLabelSecond.classList.remove('radio__label_selected');
+  radioLabelSecond.classList.remove('radio__label_bordered');
+
+  radioLabelThird.classList.remove('radio__label_colored');
+  radioLabelThird.classList.remove('radio__label_selected');
+  radioLabelThird.classList.remove('radio__label_bordered');
+
+});
+
+// при клике на вторую радиокнопку добавлять\убирать цвет, точку и границу
+radioLabelSecond.addEventListener("click", function () {
+  radioLabelSecond.classList.add('radio__label_colored');
+  radioLabelSecond.classList.add('radio__label_selected');
+  radioLabelSecond.classList.add('radio__label_bordered');
+
+  radioLabelFirst.classList.remove('radio__label_colored');
+  radioLabelFirst.classList.remove('radio__label_selected');
+  radioLabelFirst.classList.remove('radio__label_bordered');
+
+  radioLabelThird.classList.remove('radio__label_colored');
+  radioLabelThird.classList.remove('radio__label_selected');
+  radioLabelThird.classList.remove('radio__label_bordered');
+
+});
+
+// при клике на третью радиокнопку добавлять\убирать цвет, точку и границу
+radioLabelThird.addEventListener("click", function () {
+  radioLabelThird.classList.add('radio__label_colored');
+  radioLabelThird.classList.add('radio__label_selected');
+  radioLabelThird.classList.add('radio__label_bordered');
+
+  radioLabelSecond.classList.remove('radio__label_colored');
+  radioLabelSecond.classList.remove('radio__label_selected');
+  radioLabelSecond.classList.remove('radio__label_bordered');
+
+  radioLabelFirst.classList.remove('radio__label_colored');
+  radioLabelFirst.classList.remove('radio__label_selected');
+  radioLabelFirst.classList.remove('radio__label_bordered');
+
 });
