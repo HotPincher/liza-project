@@ -56,6 +56,9 @@
 @import url(../blocks/content/__text/content__text.css);
 @import url(../blocks/content/__subtitle/content__subtitle.css);
 @import url(../blocks/content/__button/_hidden/content__button_hidden.css);
+@import url(../blocks/content/_hidden/content_hidden.css);
+@import url(../blocks/content/__link-button/_hidden/content__link-button_hidden.css);
+
 
 @import url(../blocks/checkbox/checkbox.css);
 @import url(../blocks/checkbox/__input/checkbox__input.css);
