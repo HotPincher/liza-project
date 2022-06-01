@@ -11,6 +11,13 @@ function btnMvdActive() {
   btnArrowRight.src = "./images/arrow-right.svg";
 }
 
+function btnMvdActiveThemeWhite() {
+  btnMoved.removeAttribute('disabled');
+  btnMoved.classList.remove('button-test_moved_disabled');
+  btnMoved.classList.add('button-test_returned')
+  btnArrowRight.src = "./images/arrow-right_orange.jpg";
+}
+
 // Функция для не активной кнопки, при НЕ ДОСТАТОЧНОМ количестве балов
 function btnMvdDisabled() {
   btnArrowRight.src = "./images/arrow-right-disabled.svg";
@@ -70,9 +77,30 @@ buttonBack.addEventListener('click', () => {
       btnMvdActive()
     }
   }
-  if (!completedCourseSection.classList.contains('content_hidden')) {
+  if (!completedCourseSection.classList.contains('content_hidden') &&
+  completedCourseSubtitle.textContent !== 'Сожалеем') {
     testBlock.classList.remove('content_hidden')
     completedCourseSection.classList.add('content_hidden')
+    updateBreadCrumps()
+    document.querySelector(".breadcrumbs > ul > li:nth-child(3)").style.display = 'block'
+    ButtonText.textContent = 'Далее';
+    btnArrowRight.src = "./images/arrow-right.svg";
+    btnArrowRight.alt = "Стрелка вправо"
+  }
+
+  if (resultsTitle.textContent === "33%") {
+    video.classList.remove('content_hidden')
+    aboutTest.classList.add('content_hidden')
+    updateBreadCrumps()
+    btnMvdActive()
+
+  }
+
+  if (!completedCourseSection.classList.contains('content_hidden') &&
+   completedCourseSubtitle.textContent === 'Сожалеем') {
+    testBlock.classList.remove('content_hidden')
+    completedCourseSection.classList.add('content_hidden')
+    video.classList.add('content_hidden')
     updateBreadCrumps()
     document.querySelector(".breadcrumbs > ul > li:nth-child(3)").style.display = 'block'
     ButtonText.textContent = 'Далее';
@@ -83,7 +111,8 @@ buttonBack.addEventListener('click', () => {
 })
 
 btnMoved.addEventListener('click', () => {
-  if ((btnMoved.textContent === 'Завершить')&&(completedCourseSection.classList.contains('content_hidden')) === false) {
-    window.location.href='index.html'
+  if ((btnMoved.textContent === 'Завершить') && (completedCourseSection.classList.contains('content_hidden')) === false) {
+    window.location.href = 'index.html'
   }
 })
+
