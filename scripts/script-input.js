@@ -1,4 +1,4 @@
-const rangeInputs = document.querySelectorAll("input[type="range"]")
+const rangeInputs = document.querySelectorAll('input[type="range"]')
 
 function handleInputChange(e) {
   let target = e.target
