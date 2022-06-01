@@ -47,15 +47,6 @@ buttonBack.addEventListener('click', () => {
     updateBreadCrumps()
     btnMvdDisabled()
   }
-  // if (results.classList.contains("results__green")) {
-  //   testBlock.classList.add('hidden')
-  //   aboutTest.classList.remove('hidden')
-  //   updateBreadCrumps()
-  //   btnMvdDisabled()
-  // }
-  // if (results.classList.contains("results__red")) {
-  //   video.classList.add('content_hidden')
-  // }
   if (!buttonReturnToTheTest.classList.contains('content__link-button_hidden')) {
     aboutTest.classList.add('content_hidden')
     video.classList.add('content_hidden')
@@ -66,10 +57,16 @@ buttonBack.addEventListener('click', () => {
     if (results.classList.contains("results__green")) {
       btnMvdActive()
     }
-    // if (results.classList.contains("results__red")) {
-    //   video.classList.add('content_hidden')
-    // }
+    if (results.classList.contains("results__red")) {
+      video.classList.add('content_hidden')
+      aboutTest.classList.add('content_hidden')
+      updateBreadCrumps()
+      // btnMvdActive()
+      btnMvdDisabled()
+
+    }
   }
+
   if (!completedCourseSection.classList.contains('content_hidden') &&
   completedCourseSubtitle.textContent !== 'Сожалеем') {
     testBlock.classList.remove('content_hidden')
@@ -81,13 +78,6 @@ buttonBack.addEventListener('click', () => {
     btnArrowRight.alt = "Стрелка вправо"
   }
 
-  if (resultsTitle.textContent === "33%") {
-    video.classList.remove('content_hidden')
-    aboutTest.classList.add('content_hidden')
-    updateBreadCrumps()
-    btnMvdActive()
-
-  }
 
   if (!completedCourseSection.classList.contains('content_hidden') &&
    completedCourseSubtitle.textContent === 'Сожалеем') {
