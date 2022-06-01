@@ -101,7 +101,6 @@ answerMapQ2 = {
   1: radioLabelSecond,
   2: radioLabelThird,
 };
-
 function ifCurrect() {
   const q1Answer = collectAnswers(document.forms["testFirst"]);
   const q2Answer = collectAnswers(document.forms["testSecond"]);
