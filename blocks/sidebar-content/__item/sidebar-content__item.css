@@ -1,0 +1,9 @@
+.sidebar-content__item {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+}

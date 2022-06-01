@@ -1,0 +1,8 @@
+.sidebar-content__item-icon {
+  background: url(../../../images/sidebar_close-option.svg) no-repeat 50% 90%;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+}
+

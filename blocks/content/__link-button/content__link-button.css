@@ -1,0 +1,14 @@
+.content__link-button{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #212329;
+  background-color: transparent;
+  border: 0;
+  margin: 32px 32px 0 0;
+  padding: 0;
+}
+.content__link-button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}

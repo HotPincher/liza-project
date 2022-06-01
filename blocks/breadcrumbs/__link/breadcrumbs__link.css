@@ -1,0 +1,25 @@
+.breadcrumbs__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212329;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumbs__link:hover {
+  text-decoration: underline;
+  opacity: .6;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.breadcrumbs__link:nth-child(2) {
+  min-width: 200px;
+}
+.breadcrumbs__link:nth-child(3) {
+  min-width: 300px;
+
+}

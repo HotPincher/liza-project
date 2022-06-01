@@ -1,0 +1,25 @@
+.content__start-button{
+  background-color: #FF6600;
+  color: #fff;
+  border-radius: 16px;
+  padding: 12px 39px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 32px 0 0;
+  align-self: center;
+  border: 0;
+  margin: 32px 0 0 344px;
+  transition: opacity .2s linear;
+}
+
+.content__start-button:hover{
+  opacity: .6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1439px) {
+  .content__start-button {
+    margin-left: 240px;
+  }
+}

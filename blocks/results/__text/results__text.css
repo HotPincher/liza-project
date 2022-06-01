@@ -1,0 +1,9 @@
+.results__text {
+  max-width: 680px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Golos', sans-serif;
+  text-align: center;
+}
