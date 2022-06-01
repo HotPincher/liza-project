@@ -1,7 +1,7 @@
 .content__info-element{
   display: flex;
   justify-content: space-between;
-  margin: 0 0 16px 0;
+  margin: 0 0 16px;
 }
 .content__info-element:last-child{
   margin: 0;

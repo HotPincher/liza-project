@@ -1,7 +1,5 @@
 .content__info {
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin: 0 32px;
 }
