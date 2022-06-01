@@ -31,7 +31,6 @@ function hiddenCard(card) {
   card.classList.add('content_hidden')
 }
 
-
 const buttonBack = document.querySelector('#button_back')
 
 buttonBack.addEventListener('click', () => {
@@ -61,9 +60,7 @@ buttonBack.addEventListener('click', () => {
       video.classList.add('content_hidden')
       aboutTest.classList.add('content_hidden')
       updateBreadCrumps()
-      // btnMvdActive()
       btnMvdDisabled()
-
     }
   }
 
@@ -77,7 +74,6 @@ buttonBack.addEventListener('click', () => {
     btnArrowRight.src = "./images/arrow-right.svg";
     btnArrowRight.alt = "Стрелка вправо"
   }
-
 
   if (!completedCourseSection.classList.contains('content_hidden') &&
    completedCourseSubtitle.textContent === 'Сожалеем') {

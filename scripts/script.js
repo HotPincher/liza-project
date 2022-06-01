@@ -15,14 +15,6 @@ const radioLabelSecond = document.querySelector("#radioLabelSecond");
 const radioLabelThird = document.querySelector("#radioLabelThird");
 const results = document.querySelector("#results");
 
-
-/*console.log(count)
-if(count >= 3) {
-  testButton.classList.toggle("content__button_active");
-  console.log('fool')
-  btnMvdActive()
-}*/
-
 let count = 0;
 testButton.addEventListener("click", () => {
   count++
@@ -35,16 +27,13 @@ testButton.addEventListener("click", () => {
     showResultTest();
   }
 
-  //console.log(count)
   if(count >= 3 &&  resultsTitle.textContent === "33%") {
     testRetake.classList.add('content__button_retake-success');
     testRetake.classList.remove('content__button_retake-wrong');
     testRetake.setAttribute('disabled', true)
     btnMvdActive()
   }
-
 });
-
 
 const showResult = () => {
  testButton.classList.toggle("content__button_active");
@@ -57,7 +46,6 @@ correctAswers = {
 
 const collectAnswers = (form) => {
   const answerList = [];
-
   for (const [index, element] of Array.from(form).entries()) {
     answerList.push(element.checked);
   }
@@ -151,16 +139,11 @@ const validateAnswers = () => {
     );
   }
 };
-//переменная с текстом % результата
 let resultsTitle = document.querySelector(".results__title");
-//переменная с первой строкой текста "Отличный результат!" в блоке с результатами
 let resultTextOne = document.querySelector(".results__text_one");
-//переменная со второй строкой текста в блоке с результатами
 let resultTextTwo = document.querySelector(".results__text_two");
-//переменная с третьей строкой текста в блоке с результатами
 let resultTextThree = document.querySelector(".results__text_three");
 
-// //функция, которая скрывает кнопку Проверить и открывает кнопку Пересдать
 const hideButton = function () {
   testButton.classList.add("content__button_hidden");
   testRetake.classList.remove("content__button_hidden");
@@ -213,7 +196,6 @@ function showResultTest() {
   }
 }
 
-//переменные с текстом окна завершения курса
 let completedCourseSection = document.querySelector("#block-result");
 let completedCourseSubtitle = completedCourseSection.querySelector(
   ".content__subtitle"
@@ -230,14 +212,12 @@ let completedCourseTextThree = completedCourseSection.querySelector(
 let mainContentSection = document.querySelector("#block-main");
 let buttonForward = document.querySelector("#button_forward");
 
-//функция скрывающая сексии с результатами и основного контента и показывающее результирующее окно курса
 function hideResultsShowCompleted() {
   results.classList.add("content_hidden");
   mainContentSection.classList.add("content_hidden");
   completedCourseSection.classList.remove("content_hidden");
 }
 
-//функция, которая меняет текст в сексии окна окончании курса при негативном результате
 function showPositiveTextCompletedResult() {
   completedCourseSubtitle.textContent = "Поздравляем!";
   completedCourseTextOne.textContent =
@@ -246,7 +226,7 @@ function showPositiveTextCompletedResult() {
     "Теперь вы можете участвовать в поисково-спасательных мероприятиях со своей собакой.";
 }
 const video = document.querySelector("#block-video");
-//показывает окно завершения курса
+
 buttonForward.addEventListener("click", function () {
   if (
     video.classList.contains("content") &&
@@ -275,7 +255,6 @@ buttonForward.addEventListener("click", function () {
   resetOptionColorIconForward()
 
 });
-
 
 testRetake.addEventListener("click", function () {
   testButton.classList.remove("content__button_active");
@@ -362,17 +341,10 @@ dropDownTriggerText.forEach(function (item) {
 
 //Изменение иконок и цвета пунков содержания
 
-
-// Преобразую NodeList из подпунктов содержания в массив, ищу элемент, чей текст
-//совпадает с текстом в основном блоке,
-//меняю его цвет и создаю новый массив от начала до этого элемента, а также от текущего
-//элемента до конца
-
 const arrCoursesAll = [...optionsItem];
 let arrCoursesCompleted;
 let arrCoursesNonCompleted;
 
-//Функция изменения цвета и иконок пунктов содержания при загрузке и нажатии на кнопку "вперед"
 function resetOptionColorIconForward() {
 
   arrCoursesAll.forEach(function (item) {
@@ -401,8 +373,6 @@ function resetOptionColorIconForward() {
 
 resetOptionColorIconForward()
 
-//Функция изменения цвета иконок и пунктов содержания при  нажатии на кнопку "назад"
-
 function resetOptionColorIconBackwards() {
   arrCoursesAll.forEach(function (item) {
     const optionItemCurrent = item.closest("ul").dataset.target;
@@ -429,12 +399,6 @@ function resetOptionColorIconBackwards() {
   });
 }
 
-
-
-
-//Функция изменения цвета у текущего пункта содержания
-//При добавлении страниц необходимо будет добавитить соответствующие условия
-
 function highlightCurrentOption(el) {
   const icon = el.firstElementChild;
   const optionText = el.childNodes[3];
@@ -449,9 +413,6 @@ function highlightCurrentOption(el) {
 
 }
 
-//Функция возврата пункта меню к белой теме при нажатии на кнопку "назад".
-//При добавлении страниц необходимо будет добавитить соответствующие условия
-
 function resetOption(el) {
   const icon = el.firstElementChild;
   const optionText = el.childNodes[3];
@@ -462,9 +423,6 @@ function resetOption(el) {
     icon.classList.add("sidebar-content__option-icon_test")
   }
 }
-
-//Функция смены иконки пройденной темы
-//При добавлении страниц необходимо будет добавитить соответствующие условия
 
 function changeIconGreen(el) {
   const icon = el.childNodes[1];
@@ -496,40 +454,33 @@ function changeIconGreen(el) {
   }
 }
 
-// Логика для страницы №2 о тесте
-// блок "о тесте"
 const aboutTest = document.getElementById("block-about");
-// кнопка "начать тест" в блоке "о тесте"
 const cardButton = aboutTest.querySelector(".content__start-button");
-// блок "тест"
 const testBlock = document.getElementById("block-main");
-// кнопка "вернуться к тесту" в блоке "о тесте"
 const buttonReturnToTheTest = aboutTest.querySelector(".content__link-button");
-// закрыть блок "о тесте"
+
 function closeAboutTest() {
   aboutTest.classList.add("content_hidden");
 }
-// открыть блок "тест"
+
 function openTest() {
   testBlock.classList.remove("content_hidden");
 }
-// слушатель кнопки "начать тест" в блоке "о тесте"
+
 cardButton.addEventListener("click", () => {
   startTest();
 });
-// ф-я при нажатии на кнопку "начать тест" в блоке "о тесте"
+
 function startTest() {
-  // закрыть о тесте
   closeAboutTest();
-  // открыть тест
   openTest();
   if (results.classList.contains("results__green")) {
     btnMvdActive()
   }
 }
-// слушатель для кнопки "вернуться к тесту"
+
 buttonReturnToTheTest.addEventListener("click", returnToTheTest);
-// ф-я "вернуться к тесту"
+
 function returnToTheTest() {
   cardButton.classList.remove("content__link-button_hidden");
   buttonReturnToTheTest.classList.add("content__link-button_hidden");
@@ -541,15 +492,15 @@ function returnToTheTest() {
 }
 
 // Логика для страницы "О тесте (посмотреть результаты)"
-// открыть блок "о тесте"
+
 function openAboutTest() {
   aboutTest.classList.remove("content_hidden");
 }
-// погасить кнопку "начать тест" в блоке "о тесте"
+
 function hideStartTestButton() {
   cardButton.classList.add("content__link-button_hidden");
 }
-// активировать кнопку-ссылку "вернуться к тесту"
+
 function showReturnToTheTestButton() {
   buttonReturnToTheTest.classList.remove("content__link-button_hidden");
 }
@@ -568,7 +519,6 @@ testDescription.addEventListener("click", () => {
   btnMvdDisabled();
 });
 
-// при клике на первый чекбокс добавлять\убирать цвет и галочку
 checkboxLabelFirst.addEventListener("click", function () {
   if (!(results.classList.contains("results__green"))&&!(results.classList.contains("results__red"))) {
   checkboxLabelFirst.classList.toggle('checkbox__label_colored');
@@ -579,7 +529,6 @@ checkboxLabelFirst.addEventListener("click", function () {
   }
 });
 
-// при клике на второй чекбокс добавлять\убирать цвет и галочку
 checkboxLabelSecond.addEventListener("click", function () {
   if (!(results.classList.contains("results__green"))&&!(results.classList.contains("results__red")))  {
     checkboxLabelSecond.classList.toggle('checkbox__label_colored');
@@ -590,7 +539,6 @@ checkboxLabelSecond.addEventListener("click", function () {
     }
 });
 
-// при клике на третий чекбокс добавлять\убирать цвет и галочку
 checkboxLabelThird.addEventListener("click", function () {
   if (!(results.classList.contains("results__green"))&&!(results.classList.contains("results__red")))  {
     checkboxLabelThird.classList.toggle('checkbox__label_colored');
@@ -601,7 +549,6 @@ checkboxLabelThird.addEventListener("click", function () {
     }
 });
 
-// при клике на первую радиокнопку добавлять\убирать цвет, точку и границу
 radioLabelFirst.addEventListener("click", function () {
   radioLabelFirst.classList.add('radio__label_colored');
   radioLabelFirst.classList.add('radio__label_selected');
@@ -617,7 +564,6 @@ radioLabelFirst.addEventListener("click", function () {
 
 });
 
-// при клике на вторую радиокнопку добавлять\убирать цвет, точку и границу
 radioLabelSecond.addEventListener("click", function () {
   radioLabelSecond.classList.add('radio__label_colored');
   radioLabelSecond.classList.add('radio__label_selected');
@@ -633,7 +579,6 @@ radioLabelSecond.addEventListener("click", function () {
 
 });
 
-// при клике на третью радиокнопку добавлять\убирать цвет, точку и границу
 radioLabelThird.addEventListener("click", function () {
   radioLabelThird.classList.add('radio__label_colored');
   radioLabelThird.classList.add('radio__label_selected');

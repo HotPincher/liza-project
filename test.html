@@ -13,17 +13,16 @@
       <article>
         <h1 class="header-test__logo">Учебная платформа</h1>
       </article>
-        <ul class="header-test__navigation">
-          <li class="header-test__item">
-            <div class="header-test__icon header-test__icon_course"></div>
-            <a href="./index.html" class="header-test__text">Курсы</a>
-          </li>
-          <li class="header-test__item">
-            <div class="header-test__icon header-test__icon_profile"></div>
-            <a href="./account.html" class="header-test__text">Профиль</a>
-          </li>
-        </ul>
-      </article>
+      <ul class="header-test__navigation">
+        <li class="header-test__item">
+          <div class="header-test__icon header-test__icon_course"></div>
+          <a href="./index.html" class="header-test__text">Курсы</a>
+        </li>
+        <li class="header-test__item">
+          <div class="header-test__icon header-test__icon_profile"></div>
+          <a href="./account.html" class="header-test__text">Профиль</a>
+        </li>
+      </ul>
     </header>
     <main>
       <!------------------------------------------- Начало хлебных крошек ------------------------------------------->
@@ -31,15 +30,15 @@
         <ul class="breadcrumbs__items">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="./index.html">Курсы</a>
-            <img src="./images/type=Arrow-right.svg" class="breadcrumbs__icon-next">
+            <img src="./images/type=Arrow-right.svg" alt="Стрелка вправо" class="breadcrumbs__icon-next">
           </li>
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">Кинологическое направление</a>
-            <img src="./images/type=Arrow-right.svg" class="breadcrumbs__icon-next">
+            <img src="./images/type=Arrow-right.svg" alt="Стрелка вправо" class="breadcrumbs__icon-next">
           </li>
           <li class="breadcrumbs__item">
             <a data-path='five' class="breadcrumbs__link" href="#">5. Работа «второго номера» совместно со следовым кинологическим расчётом</a>
-            <img src="./images/type=Arrow-right.svg" class="breadcrumbs__icon-next">
+            <img src="./images/type=Arrow-right.svg" alt="Стрелка вправо" class="breadcrumbs__icon-next">
           </li>
             <li class="breadcrumbs__item">
               <p class="breadcrumbs__link breadcrumbs__link_current"></p>
@@ -52,19 +51,19 @@
           <!------------------------------------------------- Начало страницы №1 С видео ---------------------------------------------------->
           <section class="content" id="block-video">
             <h2 class="content__title">Видео</h2>
-              <div class="media-player">
-                  <img src="./images/foto-prirody.jpeg" alt="video" class="media-player__video">
-                <div class="media-player__control-bar">
-                  <button type="button" class="media-player__button-play" aria-label="Play"></button>
-                  <input type="range" id="range-time" class="media-player__timeline" min="0" max="100" value="0">
-                  <div class="media-player__sound">
-                    <button type="button" class="media-player__button-sound" aria-label="Sound"></button>
-                    <input type="range" id="range-time" class="media-player__sound-progress" min="0" max="100" value="40">
-                  </div>
-                  <button type="button" class="media-player__button-fullscreen" aria-label="Во весь экран"></button>
+            <div class="media-player">
+              <img src="./images/foto-prirody.jpeg" alt="Видео" class="media-player__video">
+              <div class="media-player__control-bar">
+                <button type="button" class="media-player__button-play" aria-label="Play"></button>
+                <input type="range" class="media-player__timeline" min="0" max="100" value="0">
+                <div class="media-player__sound">
+                  <button type="button" class="media-player__button-sound" aria-label="Sound"></button>
+                  <input type="range" class="media-player__sound-progress" min="0" max="100" value="40">
                 </div>
+                <button type="button" class="media-player__button-fullscreen" aria-label="Во весь экран"></button>
               </div>
-            </section>
+            </div>
+          </section>
 
             <!------------------------------------------------- Конец страницы №1 С видео ---------------------------------------------------->
           <!------------------------------------------------- Начало страницы №2 О тесте  ---------------------------------------------------->
@@ -119,8 +118,6 @@
                   <label id="checkboxLabelFirst" for="checkbox_1" class="checkbox__label">Оказание помощи гражданам,
                     оказавшимся в зонах бедствия или пропавшим в безлюдной местности</label>
                 </div>
-
-
                 <div class="checkbox">
                   <input type="checkbox" class="checkbox__input" id="checkbox_2" name="checkbox2">
                   <label id="checkboxLabelSecond" for="checkbox_2" class="checkbox__label">Обучение животного идти как по горячему,
@@ -162,7 +159,7 @@
           <!------------------------------------------------------- Конец страницы №3 ---------------------------------------------------------->
           <!------------------------------------------------------- Начало страницы №4 Курс завершён--------------------------------------------------------->
             <section class="content content_hidden" id="block-result">  <!-- completed-course -->
-                <h2 class="content__title">Курс завершен</h2>
+              <h2 class="content__title">Курс завершен</h2>
               <h3 class="content__subtitle">Сожалеем</h3>
               <p id="completed-course_text_one" class="content__text">
                 Курс
@@ -176,7 +173,7 @@
                 <span class="content__text-span">
                   в других направлениях.
                 </span>
-                </p>
+              </p>
             </section>
           <!------------------------------------------------------- Конец страницы №4 --------------------------------------------------------->
           <!------------------------------------------------------- Кнопки навигации ---------------------------------------------------------->
@@ -377,13 +374,13 @@
                     </a>
                  </li>
                 </ul>
-            </li>
-        </ul>
-      </div>
+              </li>
+            </ul>
+          </div>
         </aside>
-    </div>
-  </main>
-</div>
+      </div>
+    </main>
+  </div>
   <script src="./scripts/button.js"></script>
   <script src="./scripts/script-breadcrumbs.js"></script>
   <script src="./scripts/script.js"></script>
